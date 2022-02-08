@@ -11,6 +11,7 @@ namespace Sanctuary.Harry.Control
     public class AIController : MonoBehaviour
     {
         [SerializeField] float aggroRange = 5f, suspicionTime = 3f, waypointTolerance = 1f, waypointDwellTime = 3f;
+        [Range(0,1)] [SerializeField] float patSpeedFract = 0.2f;
         [SerializeField] PatrolPath patrolPath = null;
 
         Fight fight;
@@ -81,7 +82,7 @@ namespace Sanctuary.Harry.Control
                 nextPos = GetCurrentWaypoint();
             }
 
-            if(timeSinceArrivedAtWaypoint > waypointDwellTime) { move.StartMoveAction(nextPos); }
+            if(timeSinceArrivedAtWaypoint > waypointDwellTime) { move.StartMoveAction(nextPos, patSpeedFract); }
         }
 
         private Vector3 GetCurrentWaypoint()

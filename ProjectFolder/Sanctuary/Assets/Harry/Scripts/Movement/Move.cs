@@ -9,6 +9,8 @@ namespace Sanctuary.Harry.Movement
     public class Move : MonoBehaviour, IAction
     {
         [SerializeField] Transform target;
+        [SerializeField] float maxSpeed = 6f;
+
         NavMeshAgent navMeshAgent;
         Health health;
 
@@ -26,9 +28,10 @@ namespace Sanctuary.Harry.Movement
             UpdateAnimator();
         }
 
-        public void MoveTo(Vector3 destination)
+        public void MoveTo(Vector3 destination, float speedFraction)
         {
             navMeshAgent.destination = destination;
+            navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
             navMeshAgent.isStopped = false;
         }
 
@@ -45,10 +48,10 @@ namespace Sanctuary.Harry.Movement
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
-        public void StartMoveAction(Vector3 destination)
+        public void StartMoveAction(Vector3 destination, float speedFraction)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            MoveTo(destination);
+            MoveTo(destination, speedFraction);
         }
     }
 }

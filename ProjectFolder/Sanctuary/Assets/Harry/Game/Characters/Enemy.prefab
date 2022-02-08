@@ -10,10 +10,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 2
+  m_Radius: 0.5325254
+  m_Height: 2.1784897
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0.0005636215, y: 0.8236296, z: -0.004945874}
 --- !u!114 &1133392290622404283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,6 +42,7 @@ MonoBehaviour:
   suspicionTime: 3
   waypointTolerance: 1
   waypointDwellTime: 3
+  patSpeedFract: 0.3
   patrolPath: {fileID: 0}
 --- !u!1001 &911843565229839929
 PrefabInstance:
@@ -50,6 +51,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4417698462184422206, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: wepRange
       value: 1.5

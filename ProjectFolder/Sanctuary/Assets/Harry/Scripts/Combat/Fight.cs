@@ -22,7 +22,7 @@ namespace Sanctuary.Harry.Combat
 
             if(tgt.IsDead()) return;
 
-            if (!GetIsInRange()) { GetComponent<Move>().MoveTo(tgt.transform.position); }
+            if (!GetIsInRange()) { GetComponent<Move>().MoveTo(tgt.transform.position, 1f); }
             else
             {
                 GetComponent<Move>().Cancel();
@@ -79,6 +79,7 @@ namespace Sanctuary.Harry.Combat
         {
             StopAttack();
             tgt = null;
+            GetComponent<Move>().Cancel();
         }
 
         private void StopAttack()

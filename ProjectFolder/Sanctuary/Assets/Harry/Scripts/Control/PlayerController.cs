@@ -48,7 +48,7 @@ namespace Sanctuary.Harry.Control
             {
                 if (Input.GetMouseButton(0) || Input.GetMouseButton(1))
                 {
-                    GetComponent<Move>().StartMoveAction(hit.point); 
+                    GetComponent<Move>().StartMoveAction(hit.point, 1f); 
                 }
                 return true;
             }

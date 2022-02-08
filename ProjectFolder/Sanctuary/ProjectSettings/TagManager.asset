@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stair
+  - Climb
+  - Fly
+  - Animal
+  - Water
+  - Tree
+  - Terrain
   layers:
   - Default
   - TransparentFX
@@ -25,18 +32,18 @@ TagManager:
   - 
   - 
   - 
+  - Animal
+  - 
+  - 
+  - Enemy
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Item
+  - Terrain
   m_SortingLayers:
   - name: Default
     uniqueID: 0
