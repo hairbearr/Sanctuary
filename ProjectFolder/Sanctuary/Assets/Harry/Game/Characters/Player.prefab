@@ -8289,32 +8289,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -10.231058, y: -2.7793875, z: 1.8416467}
     m_Extent: {x: 12.261997, y: 6.450369, z: 10.377817}
   m_DirtyAABB: 0
---- !u!114 &1714899561610339745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046179940813090931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7955a121b6091c748b13011cd7a01f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!136 &1338927389
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046179940813090931}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.0204337
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.89800584, z: 0}
 --- !u!1 &1057304076879309698
 GameObject:
   m_ObjectHideFlags: 0
@@ -61614,6 +61588,32 @@ SkinnedMeshRenderer:
     m_Center: {x: 28.312145, y: 3.388957, z: -8.332821}
     m_Extent: {x: 19.262463, y: 9.463503, z: 16.561287}
   m_DirtyAABB: 0
+--- !u!136 &1338927389
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.0204337
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.89800584, z: 0}
+--- !u!114 &1714899561610339745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7955a121b6091c748b13011cd7a01f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8338714156715195880
 GameObject:
   m_ObjectHideFlags: 0
@@ -68347,6 +68347,10 @@ PrefabInstance:
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: healthPts
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005722894168878737, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9022751334206812372, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Avatar
