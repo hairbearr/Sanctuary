@@ -1,13 +1,16 @@
-﻿using System.Collections;
+﻿using RPG.Saving;
+using System.Collections;
 using UnityEngine;
 
 namespace Sanctuary.Harry.Core
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float healthPts = 100f;
 
         bool isDead = false;
+
+        
 
         public bool IsDead()
         {
@@ -27,6 +30,15 @@ namespace Sanctuary.Harry.Core
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+        public object CaptureState()
+        {
+            return healthPts;
+        }
+        public void RestoreState(object state)
+        {
+            healthPts = (float)state;
+            if (healthPts == 0) { DeathBehaviour(); }
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 
-namespace Sanctuary.Harry.Core
+namespace Sanctuary.Harry.SceneManagement
 {
     public class Portal : MonoBehaviour
     {
@@ -17,6 +17,7 @@ namespace Sanctuary.Harry.Core
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationID destination;
+        [SerializeField] float fadeOutTime = 0.5f, fadeInTime = 1f, fadeWaitTime = 0.5f;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -32,10 +33,26 @@ namespace Sanctuary.Harry.Core
             }
 
             DontDestroyOnLoad(gameObject);
+
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeOut(fadeOutTime);
+
+            SavingWrapper wrapper = FindObjectOfType<SavingWrapper>();
+
+            wrapper.Save();
+
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            
+            wrapper.Load();
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+
+            wrapper.Save();
+
+            yield return new WaitForSeconds(fadeWaitTime);
+            yield return fader.FadeIn(fadeInTime);
 
             Destroy(gameObject);
         }

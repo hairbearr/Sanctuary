@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using RPG.Saving;
 
 namespace Sanctuary.Harry.Movement
 {
-    public class Move : MonoBehaviour, IAction
+    public class Move : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform target;
         [SerializeField] float maxSpeed = 6f;
@@ -52,6 +53,30 @@ namespace Sanctuary.Harry.Movement
         {
             GetComponent<ActionScheduler>().StartAction(this);
             MoveTo(destination, speedFraction);
+        }
+
+        [System.Serializable]
+        struct MoveSaveData
+        {
+            public SerializableVector3 position;
+            public SerializableVector3 rotation;
+        }
+
+        public object CaptureState()
+        {
+            MoveSaveData data = new MoveSaveData();
+            data.position = new SerializableVector3(transform.position);
+            data.rotation = new SerializableVector3(transform.eulerAngles);
+            return data;
+        }
+
+        public void RestoreState(object state)
+        {
+            MoveSaveData data = (MoveSaveData)state;
+            GetComponent<NavMeshAgent>().enabled = false;
+            transform.position = data.position.ToVector();
+            transform.eulerAngles = data.rotation.ToVector();
+            GetComponent<NavMeshAgent>().enabled = true;
         }
     }
 }
