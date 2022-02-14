@@ -69154,6 +69154,14 @@ PrefabInstance:
       propertyPath: wepDmg
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: handTrans
+      value: 
+      objectReference: {fileID: 1064133317427694352}
+    - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: wepPrefab
+      value: 
+      objectReference: {fileID: 5125141210947805582, guid: 440d2dd8a7cfe204d8c64cd635eed417, type: 3}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: healthPts
       value: 200

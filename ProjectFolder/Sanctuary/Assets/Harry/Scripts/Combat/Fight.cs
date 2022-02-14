@@ -3,16 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sanctuary.Harry.Movement;
 using Sanctuary.Harry.Core;
+using System;
 
 namespace Sanctuary.Harry.Combat
 {
     public class Fight : MonoBehaviour, IAction
     {
         [SerializeField] float wepRange = 2f, atkSpd = 1f, wepDmg = 5f;
+        [SerializeField] GameObject wepPrefab = null;
+        [SerializeField] Transform handTrans = null;
+
 
         Health tgt;
         float timeSinceLastAtk = Mathf.Infinity;
 
+        private void Start()
+        {
+            SpawnWeapon();
+        }
+
+       
 
         private void Update()
         {
@@ -92,6 +102,11 @@ namespace Sanctuary.Harry.Combat
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, wepRange);
+        }
+
+        private void SpawnWeapon()
+        {
+            Instantiate(wepPrefab, handTrans);
         }
 
     }
