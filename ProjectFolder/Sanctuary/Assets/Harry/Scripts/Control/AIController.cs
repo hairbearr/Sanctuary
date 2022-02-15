@@ -13,8 +13,6 @@ namespace Sanctuary.Harry.Control
         [SerializeField] float aggroRange = 5f, suspicionTime = 3f, waypointTolerance = 1f, waypointDwellTime = 3f;
         [Range(0,1)] [SerializeField] float patSpeedFract = 0.2f;
         [SerializeField] PatrolPath patrolPath = null;
-        [SerializeField] GameObject wepPrefab = null;
-        [SerializeField] Transform handTrans = null;
 
         Fight fight;
         Health health;
@@ -31,8 +29,6 @@ namespace Sanctuary.Harry.Control
             health = GetComponent<Health>();
             player = GameObject.FindGameObjectWithTag("Player");
             move = GetComponent<Move>();
-            SpawnWeapon();
-
 
             startPos = transform.position;
         }
@@ -123,9 +119,5 @@ namespace Sanctuary.Harry.Control
             Gizmos.DrawWireSphere(transform.position, aggroRange);
         }
 
-        private void SpawnWeapon()
-        {
-            Instantiate(wepPrefab, handTrans);
-        }
     }
 }

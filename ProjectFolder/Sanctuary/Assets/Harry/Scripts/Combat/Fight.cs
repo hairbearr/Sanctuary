@@ -9,17 +9,17 @@ namespace Sanctuary.Harry.Combat
 {
     public class Fight : MonoBehaviour, IAction
     {
-        [SerializeField] float wepRange = 2f, atkSpd = 1f, wepDmg = 5f;
-        [SerializeField] GameObject wepPrefab = null;
-        [SerializeField] Transform handTrans = null;
-
+        [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
+        [SerializeField] Weapon defaultWeapon = null;
 
         Health tgt;
         float timeSinceLastAtk = Mathf.Infinity;
+        Weapon currentWeapon = null;
+
 
         private void Start()
         {
-            SpawnWeapon();
+            EquipWeapon(defaultWeapon);
         }
 
        
@@ -44,7 +44,7 @@ namespace Sanctuary.Harry.Combat
         {
             transform.LookAt(tgt.transform); //rotate towards enemy after you start attacking
 
-            if(timeSinceLastAtk > atkSpd)
+            if(timeSinceLastAtk > currentWeapon.GetAttackSpeed())
             {
                 // This will trigger the Hit Event
                 TriggerAtk();
@@ -62,7 +62,14 @@ namespace Sanctuary.Harry.Combat
         void Hit() //Animation Event
         {
             if (tgt == null) return;
-            tgt.TakeDamage(wepDmg);
+
+            if (currentWeapon.HasProjectile()) { currentWeapon.LaunchProjectile(rightHandTrans, leftHandTrans, tgt); }
+            else { tgt.TakeDamage(currentWeapon.GetWeaponDamage()); }            
+        }
+
+        void Shoot()
+        {
+            Hit();
         }
 
         public bool CanAtk(GameObject fightTgt)
@@ -82,7 +89,7 @@ namespace Sanctuary.Harry.Combat
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, tgt.transform.position) < wepRange;
+            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeapon.GetWeaponRange();
         }
 
         public void Cancel()
@@ -101,12 +108,14 @@ namespace Sanctuary.Harry.Combat
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, wepRange);
+            Gizmos.DrawWireSphere(transform.position, currentWeapon.GetWeaponRange());
         }
 
-        private void SpawnWeapon()
+        public void EquipWeapon(Weapon weapon)
         {
-            Instantiate(wepPrefab, handTrans);
+            currentWeapon = weapon;
+            Animator animator = GetComponent<Animator>();
+            weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
     }
