@@ -8,16 +8,26 @@ namespace Sanctuary.Harry.Combat
 {
     public class Projectile : MonoBehaviour
     {
-        [SerializeField] float speed = 1f;
+        [SerializeField] float speed = 1f, maxLifeTime = 10f, lifeAfterImpact = 2f;
+        [SerializeField] GameObject hitEffect = null;
+        [SerializeField] GameObject[] destroyOnHit = null;
+        
 
         Health tgt = null;
         float dmg = 0f;
+        bool isHoming = true;
+
+        private void Start()
+        {
+            transform.LookAt(GetAimLocation());
+        }
 
         void Update()
         {
             if (tgt == null) return;
 
-            transform.LookAt(GetAimLocation());
+            if (isHoming && !tgt.IsDead()) { transform.LookAt(GetAimLocation()); }
+
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
@@ -25,6 +35,8 @@ namespace Sanctuary.Harry.Combat
         {
             this.tgt = target;
             this.dmg = damage;
+
+            Destroy(gameObject, maxLifeTime);
         }
 
         private Vector3 GetAimLocation()
@@ -40,9 +52,17 @@ namespace Sanctuary.Harry.Combat
         private void OnTriggerEnter(Collider other)
         {
             if (other.GetComponent<Health>() != tgt) return;
-
+            if (tgt.IsDead()) { return; }
             tgt.TakeDamage(dmg);
-            Destroy(gameObject);
+
+            if (hitEffect != null) { Instantiate(hitEffect, GetAimLocation(), transform.rotation); }
+
+            foreach(GameObject toDestroy in destroyOnHit)
+            {
+                Destroy(toDestroy);
+            }
+
+            Destroy(gameObject, lifeAfterImpact);
         }
     }
 }

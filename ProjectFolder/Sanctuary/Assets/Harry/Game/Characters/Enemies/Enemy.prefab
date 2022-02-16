@@ -43,9 +43,17 @@ PrefabInstance:
       propertyPath: rightHandTrans
       value: 
       objectReference: {fileID: 5560312348941711129}
+    - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: defaultWeaponName
+      value: Enemy Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: health
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: healthPts
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9005722894168878737, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Speed

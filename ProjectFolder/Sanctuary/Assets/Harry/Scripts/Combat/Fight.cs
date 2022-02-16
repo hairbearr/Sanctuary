@@ -4,13 +4,15 @@ using UnityEngine;
 using Sanctuary.Harry.Movement;
 using Sanctuary.Harry.Core;
 using System;
+using RPG.Saving;
 
 namespace Sanctuary.Harry.Combat
 {
-    public class Fight : MonoBehaviour, IAction
+    public class Fight : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] Weapon defaultWeapon = null;
+        [SerializeField] string defaultWeaponName = "Unarmed";
 
         Health tgt;
         float timeSinceLastAtk = Mathf.Infinity;
@@ -19,7 +21,7 @@ namespace Sanctuary.Harry.Combat
 
         private void Start()
         {
-            EquipWeapon(defaultWeapon);
+            if(currentWeapon == null) { EquipWeapon(defaultWeapon); }
         }
 
        
@@ -105,11 +107,11 @@ namespace Sanctuary.Harry.Combat
             GetComponent<Animator>().SetTrigger("stopAtk");
         }
 
-        private void OnDrawGizmosSelected()
+        /*private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, currentWeapon.GetWeaponRange());
-        }
+        }*/
 
         public void EquipWeapon(Weapon weapon)
         {
@@ -118,5 +120,16 @@ namespace Sanctuary.Harry.Combat
             weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
+
+        public void RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
+        }
     }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: PlayerBow
+  m_Name: Player Bow
   m_EditorClassIdentifier: 
   wepRange: 12
   atkSpd: 1.2

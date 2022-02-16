@@ -69204,7 +69204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9022751334206812372, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9022751334213902674, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_RootOrder

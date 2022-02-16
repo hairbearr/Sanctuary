@@ -217,6 +217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 269270655525781207, guid: 112080c67105ac1478e275103b4dc320, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 5008627166645536446, guid: 0e82e1d1ca1ab4843970b497a1a9eb5b, type: 3}
     - target: {fileID: 1128534961027941776, guid: 112080c67105ac1478e275103b4dc320, type: 3}
       propertyPath: m_RootOrder
       value: 0

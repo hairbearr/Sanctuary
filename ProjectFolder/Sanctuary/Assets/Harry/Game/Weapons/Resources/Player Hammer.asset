@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Hammer
+  m_Name: Player Hammer
   m_EditorClassIdentifier: 
   wepRange: 2
   atkSpd: 1
-  wepDmg: 12
+  dmg: 10
   animatorOverride: {fileID: 22100000, guid: 88bf08ac54459d1418176bbd26655466, type: 2}
   equippedPrefab: {fileID: 5125141210947805582, guid: 440d2dd8a7cfe204d8c64cd635eed417, type: 3}
+  isRightHanded: 1
+  projectile: {fileID: 0}
