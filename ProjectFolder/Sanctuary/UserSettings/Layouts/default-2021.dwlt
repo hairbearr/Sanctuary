@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 111187
+  controlID: 6269
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 111188
+  controlID: 6270
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 111189
+  controlID: 6271
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 111240
+  controlID: 6761
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 111199
+  controlID: 6699
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,8 +402,8 @@ MonoBehaviour:
     y: 898
     width: 876
     height: 409
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 29}
   m_Panes:
   - {fileID: 29}
@@ -534,9 +534,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aee72100
-      m_LastClickedID: 2221998
-      m_ExpandedIDs: d2aae2ffd8abe2ff9ec8e2ffea89e3ff3ce2e3ff36eae3ffd6dfe4ff242ce5ffc2eee5ff9c36e6ffb662e7ffd885e7ff42a2e7ffaa21e8ff46a5e8ff5c91e9ff5e91e9fff8deeaff640febff7082ebff447cecff0088ecff3aa6ecffd208edff5e96edff189aedff80a5edffb8bbedffd8e3edffb64deeff56d2eeff006eefff44cbf2ff4ccbf2ff50cbf2ff58cbf2ffb8cbf2ffbccbf2ffc0cbf2ffc8cbf2ffcccbf2ffe287f5ff2aa9f5fff6d8f5ffbc30f6fff686f6fff2a7f7ffe8d2f7ff10d9f7fff825f8ffa42bf8fff431f8ff0c4cf8ff2c06fbff3806fbff7a17fbff8617fbffb62cfbffc22cfbffd631fbffd8d7fbff68ddfbff5e9afdffe8dbfdfff47cfeff70c4ffff78c4ffff7cc4ffff84c4ffffe4c4ffffe8c4ffffecc4fffff4c4fffff8c4ffff1efbffff4a6f00008c02030034210300d81a0400622104001c2504004c27040008290400602904000c370400e437040062400400504104003a4304009e4e04008052040010170c009a2e0c003ecc0f003cd40f00fed90f00d2e30f008eed0f0018f60f0032fe0f0090b01500b8b116008eb916008cba1600e2ba160084bd16003ac9160032cb160022d51600da1f1a00c4711a0022741a001a791a00a07e1a004a831a0066861a00448b1a00728d1a00328e1a0052971a00c0971a008a991a00aaa01a00c2161b001a201b00b26d1b0030781b00da7c1b00f67f1b00d4841b0002871b00c2871b00e0901b004e911b0018931b00389a1b0004ec1b00465e1c00ea651c0034671c002c6c1c0004711c00b2711c00f6751c005c761c0078791c00567e1c0084801c0044811c005c871c00628a1c00d08a1c009a8c1c00a6901c00ba931c0008951c00b61e1e00c61e1e000c1f1e00401f1e00501f1e008a1f1e00e41f1e00ec1f1e001e201e0056201e006e201e0072201e00ec201e0020211e0048261e00dc291e007e2b1e00242f1e0044741e001aac1e002ade20003cf12100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: ee9bfbffa0f5ffff1efbffff2c6e0000369a0200ca9a0200a89e0200c89e020082a10200baa4020042a6020034ae0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.24043219, y: -0.25425738, z: 0.06409889, w: -0.9348735}
     speed: 2
-    m_Value: {x: -0.2389638, y: -0.2542832, z: 0.06369947, w: -0.9349752}
+    m_Value: {x: -0.24043217, y: -0.25425735, z: 0.06409889, w: -0.9348735}
   m_Size:
     m_Target: 6.4504576
     speed: 2
@@ -1221,22 +1221,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Harry/Game/PickUps
+    - Assets/Harry/Game/Core
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Harry/Game/PickUps
+  - Assets/Harry/Game/Core
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Git Repositories\Unity\Sanctuary\ProjectFolder\Sanctuary
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 62c80000
-    m_LastClickedID: 51298
-    m_ExpandedIDs: 00000000b4c50000b6c50000b8c50000bac50000bcc50000bec50000c0c50000c2c50000c4c50000c6c50000c8c50000cac50000ccc50000cec50000d0c50000d2c50000d4c50000d6c50000d8c50000dcc50000dec50000e0c50000e2c50000e4c500004cc800005ec8000066c800008cc800007ac9000012ca000018ca0000d8e5000024e600002e19010006620700
+    scrollPos: {x: 0, y: 4}
+    m_SelectedIDs: 72bf0000
+    m_LastClickedID: 49010
+    m_ExpandedIDs: 0000000040bf000042bf000044bf000046bf000048bf00004abf00004cbf00004ebf000050bf000052bf000054bf000056bf000058bf00005abf00005cbf00005ebf000060bf000062bf000064bf000066bf000068bf00006abf00006cbf00006ebf000070bf000072bf000074bf000076bf000078bf00007abf00007cbf00007ebf000080bf000082bf000084bf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1264,7 +1264,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 18a30000
     m_LastClickedID: 41752
-    m_ExpandedIDs: 00000000b4c50000b6c50000b8c50000bac50000bcc50000bec50000c0c50000c2c50000c4c50000c6c50000c8c50000cac50000ccc50000cec50000d0c50000d2c50000d4c50000d6c50000d8c50000dcc50000dec50000e0c50000e2c50000e4c500004cc800005ec8000066c800008cc800007ac9000012ca000018ca0000d8e5000024e600002e19010006620700
+    m_ExpandedIDs: 0000000040bf000042bf000044bf000046bf000048bf00004abf00004cbf00004ebf000050bf000052bf000054bf000056bf000058bf00005abf00005cbf00005ebf000060bf000062bf000064bf000066bf000068bf00006abf00006cbf00006ebf000070bf000072bf000074bf000076bf000078bf00007abf00007cbf00007ebf000080bf000082bf000084bf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 2221998
+  m_LastSelectedObjectID: 173764
 --- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1562,7 +1562,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 693
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

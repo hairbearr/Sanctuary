@@ -63,5 +63,9 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Player Hammer
       objectReference: {fileID: 0}
+    - target: {fileID: 4557647180391073867, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b335124d41de904e88c1b375d244d52, type: 3}

@@ -5,6 +5,7 @@ using Sanctuary.Harry.Movement;
 using Sanctuary.Harry.Core;
 using System;
 using RPG.Saving;
+using Sanctuary.Harry.Attributes;
 
 namespace Sanctuary.Harry.Combat
 {

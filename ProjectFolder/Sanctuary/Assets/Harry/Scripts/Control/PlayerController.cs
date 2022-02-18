@@ -4,6 +4,7 @@ using UnityEngine;
 using Sanctuary.Harry.Movement;
 using Sanctuary.Harry.Combat;
 using Sanctuary.Harry.Core;
+using Sanctuary.Harry.Attributes;
 
 namespace Sanctuary.Harry.Control
 {

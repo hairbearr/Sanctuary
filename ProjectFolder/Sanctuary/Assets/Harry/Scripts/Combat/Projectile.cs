@@ -1,3 +1,4 @@
+using Sanctuary.Harry.Attributes;
 using Sanctuary.Harry.Core;
 using System;
 using System.Collections;

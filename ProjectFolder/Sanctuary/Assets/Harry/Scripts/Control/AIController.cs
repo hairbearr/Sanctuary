@@ -1,4 +1,5 @@
 using Sanctuary.Harry.Combat;
+using Sanctuary.Harry.Attributes;
 using Sanctuary.Harry.Core;
 using Sanctuary.Harry.Movement;
 using System;
