@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wepRange: 2
   atkSpd: 1
-  dmg: 10
+  dmg: 5
   animatorOverride: {fileID: 22100000, guid: 88bf08ac54459d1418176bbd26655466, type: 2}
   equippedPrefab: {fileID: 5125141210947805582, guid: 440d2dd8a7cfe204d8c64cd635eed417, type: 3}
   isRightHanded: 1

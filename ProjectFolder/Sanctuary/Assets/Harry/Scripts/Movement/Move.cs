@@ -16,12 +16,11 @@ namespace Sanctuary.Harry.Movement
         NavMeshAgent navMeshAgent;
         Health health;
 
-        private void Start()
+        private void Awake()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
             health = GetComponent<Health>();
         }
-
 
         void Update()
         {
@@ -74,10 +73,10 @@ namespace Sanctuary.Harry.Movement
         public void RestoreState(object state)
         {
             MoveSaveData data = (MoveSaveData)state;
-            GetComponent<NavMeshAgent>().enabled = false;
+            navMeshAgent.enabled = false;
             transform.position = data.position.ToVector();
             transform.eulerAngles = data.rotation.ToVector();
-            GetComponent<NavMeshAgent>().enabled = true;
+            navMeshAgent.enabled = true;
         }
     }
 }

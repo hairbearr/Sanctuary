@@ -6,23 +6,35 @@ using Sanctuary.Harry.Core;
 using System;
 using RPG.Saving;
 using Sanctuary.Harry.Attributes;
+using Sanctuary.Harry.Stats;
+using GameDevTV.Utils;
 
 namespace Sanctuary.Harry.Combat
 {
-    public class Fight : MonoBehaviour, IAction, ISaveable
+    public class Fight : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] Weapon defaultWeapon = null;
-        [SerializeField] string defaultWeaponName = "Unarmed";
 
         Health tgt;
         float timeSinceLastAtk = Mathf.Infinity;
-        Weapon currentWeapon = null;
+        LazyValue<Weapon> currentWeapon;
 
+
+        private void Awake()
+        {
+            currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
+        }
+
+        private Weapon SetupDefaultWeapon()
+        {
+            AttachWeapon(defaultWeapon);
+            return defaultWeapon;
+        }
 
         private void Start()
         {
-            if(currentWeapon == null) { EquipWeapon(defaultWeapon); }
+            currentWeapon.ForceInit();
         }
 
        
@@ -47,7 +59,7 @@ namespace Sanctuary.Harry.Combat
         {
             transform.LookAt(tgt.transform); //rotate towards enemy after you start attacking
 
-            if(timeSinceLastAtk > currentWeapon.GetAttackSpeed())
+            if(timeSinceLastAtk > currentWeapon.value.GetAttackSpeed())
             {
                 // This will trigger the Hit Event
                 TriggerAtk();
@@ -65,9 +77,9 @@ namespace Sanctuary.Harry.Combat
         void Hit() //Animation Event
         {
             if (tgt == null) return;
-
-            if (currentWeapon.HasProjectile()) { currentWeapon.LaunchProjectile(rightHandTrans, leftHandTrans, tgt); }
-            else { tgt.TakeDamage(currentWeapon.GetWeaponDamage()); }            
+            float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            if (currentWeapon.value.HasProjectile()) { currentWeapon.value.LaunchProjectile(rightHandTrans, leftHandTrans, tgt, gameObject, damage); }
+            else {  tgt.TakeDamage(gameObject, damage); }            
         }
 
         void Shoot()
@@ -92,7 +104,7 @@ namespace Sanctuary.Harry.Combat
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeapon.GetWeaponRange();
+            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeapon.value.GetWeaponRange();
         }
 
         public void Cancel()
@@ -108,6 +120,21 @@ namespace Sanctuary.Harry.Combat
             GetComponent<Animator>().SetTrigger("stopAtk");
         }
 
+        public IEnumerable<float> GetAdditiveMods(Stat stat)
+        {
+            if(stat == Stat.Damage)
+            {
+                yield return currentWeapon.value.GetWeaponDamage();
+            }
+        }
+        public IEnumerable<float> GetPercentageMods(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.value.GetPercentageBonus();
+            }
+        }
+
         /*private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
@@ -116,14 +143,19 @@ namespace Sanctuary.Harry.Combat
 
         public void EquipWeapon(Weapon weapon)
         {
-            currentWeapon = weapon;
+            currentWeapon.value = weapon;
+            AttachWeapon(weapon);
+        }
+
+        private void AttachWeapon(Weapon weapon)
+        {
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
         public object CaptureState()
         {
-            return currentWeapon.name;
+            return currentWeapon.value.name;
         }
 
         public void RestoreState(object state)
@@ -132,5 +164,12 @@ namespace Sanctuary.Harry.Combat
             Weapon weapon = Resources.Load<Weapon>(weaponName);
             EquipWeapon(weapon);
         }
+
+        public Health GetTarget()
+        {
+            return tgt;
+        }
+
+        
     }
 }

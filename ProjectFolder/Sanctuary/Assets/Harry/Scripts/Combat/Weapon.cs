@@ -8,7 +8,7 @@ namespace Sanctuary.Harry.Combat
     [CreateAssetMenu(fileName = "Weapon", menuName = "Sanctuary/Weapons/Make New Weapon", order = 0)]
     public class Weapon : ScriptableObject
     {
-        [SerializeField] float wepRange=0, atkSpd=0, dmg=0;
+        [SerializeField] float wepRange = 0, atkSpd = 0, dmg = 0, percentageBonus = 0;
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] GameObject equippedPrefab = null;
         [SerializeField] bool isRightHanded = true;
@@ -56,6 +56,11 @@ namespace Sanctuary.Harry.Combat
             return wepRange;
         }
 
+        public float GetPercentageBonus()
+        {
+            return percentageBonus;
+        }
+
         public float GetWeaponDamage()
         {
             return dmg;
@@ -66,10 +71,10 @@ namespace Sanctuary.Harry.Combat
             return atkSpd;
         }
 
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDmg)
         {
             Projectile projInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
-            projInstance.SetTarget(target,dmg);
+            projInstance.SetTarget(target, instigator, calculatedDmg);
         }
 
         private void DestroyOldWeapon(Transform rightHand, Transform leftHand)

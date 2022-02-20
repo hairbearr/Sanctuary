@@ -17,6 +17,7 @@ namespace Sanctuary.Harry.Combat
         Health tgt = null;
         float dmg = 0f;
         bool isHoming = true;
+        GameObject instigator = null;
 
         private void Start()
         {
@@ -32,10 +33,11 @@ namespace Sanctuary.Harry.Combat
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target, GameObject instigator,  float damage)
         {
             this.tgt = target;
             this.dmg = damage;
+            this.instigator = instigator;
 
             Destroy(gameObject, maxLifeTime);
         }
@@ -54,7 +56,7 @@ namespace Sanctuary.Harry.Combat
         {
             if (other.GetComponent<Health>() != tgt) return;
             if (tgt.IsDead()) { return; }
-            tgt.TakeDamage(dmg);
+            tgt.TakeDamage(instigator, dmg);
 
             if (hitEffect != null) { Instantiate(hitEffect, GetAimLocation(), transform.rotation); }
 

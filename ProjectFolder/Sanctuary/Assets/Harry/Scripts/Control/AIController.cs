@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameDevTV.Utils;
 
 namespace Sanctuary.Harry.Control
 {
@@ -21,17 +22,26 @@ namespace Sanctuary.Harry.Control
         Move move;
 
         float timeSinceLastSawPlayer = Mathf.Infinity, timeSinceArrivedAtWaypoint = Mathf.Infinity;
-        Vector3 startPos;
+        LazyValue<Vector3> startPos;
         int currentWaypointIndex = 0;
 
-        private void Start()
+        private void Awake()
         {
             fight = GetComponent<Fight>();
             health = GetComponent<Health>();
             player = GameObject.FindGameObjectWithTag("Player");
             move = GetComponent<Move>();
+            startPos = new LazyValue<Vector3>(GetStartPos);
+        }
 
-            startPos = transform.position;
+        private Vector3 GetStartPos()
+        {
+            return transform.position;
+        }
+
+        private void Start()
+        {
+            startPos.ForceInit();
         }
 
         private void Update()
@@ -71,7 +81,7 @@ namespace Sanctuary.Harry.Control
 
         private void PatrolState()
         {
-            Vector3 nextPos = startPos;
+            Vector3 nextPos = startPos.value;
 
             if(patrolPath != null)
             {
