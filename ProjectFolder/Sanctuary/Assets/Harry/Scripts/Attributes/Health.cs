@@ -5,12 +5,15 @@ using Sanctuary.Harry.Stats;
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Sanctuary.Harry.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
         LazyValue<float> healthPts;
+
+        [SerializeField] UnityEvent<float> takeDamage;
 
         bool isDead = false;
 
@@ -58,9 +61,16 @@ namespace Sanctuary.Harry.Attributes
 
         public void TakeDamage(GameObject instigator, float dmgTaken)
         {
-            print($"{gameObject.name} took {dmgTaken} damage.");
+            
             healthPts.value = Mathf.Max(healthPts.value - dmgTaken, 0);
-            if(healthPts.value == 0) { DeathBehaviour(); AwardXP(instigator); }
+
+            takeDamage.Invoke(dmgTaken);
+
+            if (healthPts.value == 0)
+            {
+                DeathBehaviour();
+                AwardXP(instigator);
+            }
         }
 
         public float GetHealthPts()
@@ -75,12 +85,17 @@ namespace Sanctuary.Harry.Attributes
 
         public float GetPercentage()
         {
-            return 100 * (healthPts.value / GetComponent<BaseStats>().GetStat(Stat.Health));
+            return 100 * (GetFraction());
+        }
+
+        public float GetFraction()
+        {
+            return healthPts.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public object CaptureState()
         {
-            return healthPts;
+            return healthPts.value;
         }
         public void RestoreState(object state)
         {
