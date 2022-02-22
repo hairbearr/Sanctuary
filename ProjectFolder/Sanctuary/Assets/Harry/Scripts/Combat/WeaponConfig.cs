@@ -16,14 +16,16 @@ namespace Sanctuary.Harry.Combat
 
         const string weaponName = "Weapon";
 
-        public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
+        public Weapons Spawn(Transform rightHand, Transform leftHand, Animator animator)
         {
             DestroyOldWeapon(rightHand, leftHand);
+
+            Weapons weapon = null;
 
             if(equippedPrefab != null)
             {
                 Transform handTransform = GetTransform(rightHand, leftHand);
-                Weapons weapon = Instantiate(equippedPrefab, handTransform);
+                weapon = Instantiate(equippedPrefab, handTransform);
                 weapon.gameObject.name = weaponName;
             }
 
@@ -34,6 +36,8 @@ namespace Sanctuary.Harry.Combat
                 animator.runtimeAnimatorController = animatorOverride;
             }
             else if (overrideController != null) { animator.runtimeAnimatorController = overrideController.runtimeAnimatorController; }
+
+            return weapon;
         }
 
         private Transform GetTransform(Transform rightHand, Transform leftHand)

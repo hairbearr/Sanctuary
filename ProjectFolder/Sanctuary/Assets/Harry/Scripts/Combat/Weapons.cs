@@ -8,7 +8,7 @@ namespace Sanctuary.Harry.Combat
     {
         public void OnHit()
         {
-
+            print($"Weapon Hit by: {gameObject.name}");
         }
     }
 }

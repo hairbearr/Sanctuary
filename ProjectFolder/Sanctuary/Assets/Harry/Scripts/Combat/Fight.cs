@@ -18,26 +18,25 @@ namespace Sanctuary.Harry.Combat
 
         Health tgt;
         float timeSinceLastAtk = Mathf.Infinity;
-        LazyValue<WeaponConfig> currentWeapon;
+        WeaponConfig currentWeaponConfig;
+        LazyValue<Weapons> currentWeapon;
 
 
         private void Awake()
         {
-            currentWeapon = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
+            currentWeaponConfig = defaultWeapon;
+            currentWeapon = new LazyValue<Weapons>(SetupDefaultWeapon);
         }
 
-        private WeaponConfig SetupDefaultWeapon()
+        private Weapons SetupDefaultWeapon()
         {
-            AttachWeapon(defaultWeapon);
-            return defaultWeapon;
+            return AttachWeapon(defaultWeapon);
         }
 
         private void Start()
         {
             currentWeapon.ForceInit();
         }
-
-       
 
         private void Update()
         {
@@ -59,7 +58,7 @@ namespace Sanctuary.Harry.Combat
         {
             transform.LookAt(tgt.transform); //rotate towards enemy after you start attacking
 
-            if(timeSinceLastAtk > currentWeapon.value.GetAttackSpeed())
+            if(timeSinceLastAtk > currentWeaponConfig.GetAttackSpeed())
             {
                 // This will trigger the Hit Event
                 TriggerAtk();
@@ -78,7 +77,10 @@ namespace Sanctuary.Harry.Combat
         {
             if (tgt == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
-            if (currentWeapon.value.HasProjectile()) { currentWeapon.value.LaunchProjectile(rightHandTrans, leftHandTrans, tgt, gameObject, damage); }
+
+            if(currentWeapon.value != null) { currentWeapon.value.OnHit(); }
+
+            if (currentWeaponConfig.HasProjectile()) { currentWeaponConfig.LaunchProjectile(rightHandTrans, leftHandTrans, tgt, gameObject, damage); }
             else {  tgt.TakeDamage(gameObject, damage); }            
         }
 
@@ -104,7 +106,7 @@ namespace Sanctuary.Harry.Combat
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeapon.value.GetWeaponRange();
+            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeaponConfig.GetWeaponRange();
         }
 
         public void Cancel()
@@ -124,14 +126,14 @@ namespace Sanctuary.Harry.Combat
         {
             if(stat == Stat.Damage)
             {
-                yield return currentWeapon.value.GetWeaponDamage();
+                yield return currentWeaponConfig.GetWeaponDamage();
             }
         }
         public IEnumerable<float> GetPercentageMods(Stat stat)
         {
             if (stat == Stat.Damage)
             {
-                yield return currentWeapon.value.GetPercentageBonus();
+                yield return currentWeaponConfig.GetPercentageBonus();
             }
         }
 
@@ -143,19 +145,19 @@ namespace Sanctuary.Harry.Combat
 
         public void EquipWeapon(WeaponConfig weapon)
         {
-            currentWeapon.value = weapon;
-            AttachWeapon(weapon);
+            currentWeaponConfig = weapon;
+            currentWeapon.value = AttachWeapon(weapon);
         }
 
-        private void AttachWeapon(WeaponConfig weapon)
+        private Weapons AttachWeapon(WeaponConfig weapon)
         {
             Animator animator = GetComponent<Animator>();
-            weapon.Spawn(rightHandTrans, leftHandTrans, animator);
+            return weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
         public object CaptureState()
         {
-            return currentWeapon.value.name;
+            return currentWeaponConfig.name;
         }
 
         public void RestoreState(object state)
