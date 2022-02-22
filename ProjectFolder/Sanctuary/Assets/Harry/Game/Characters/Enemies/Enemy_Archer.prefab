@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bfbe2e8b331e2cc42be1591f949c0e41, type: 2}
+    - target: {fileID: 5612590560770140386, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ebf38d5081e6024eb5214ce611bd747, type: 3}
     - target: {fileID: 7971340431959951402, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: defaultWeapon
       value: 
@@ -79,11 +83,20 @@ PrefabInstance:
       propertyPath: healthPts
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6531525231299470741}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
 --- !u!4 &6516001023865264440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5560312348941685839, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 1677396210885922167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6531525231299470741 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5612590560770140386, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
   m_PrefabInstance: {fileID: 1677396210885922167}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3368947144282139650

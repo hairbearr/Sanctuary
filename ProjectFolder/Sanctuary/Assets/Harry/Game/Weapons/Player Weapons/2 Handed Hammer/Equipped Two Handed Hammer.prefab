@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5986962719779803853}
+  - component: {fileID: 7697864343282961108}
   m_Layer: 0
   m_Name: Equipped Two Handed Hammer
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7697864343282961108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948453326075523849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a5c3f6c53a0324e8a62d42eb892588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &936066260109810574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61,15 +74,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402833965041678, guid: ae20f979577bee44f995673132676687, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.7
+      value: 8.4
       objectReference: {fileID: 0}
     - target: {fileID: 4402833965041678, guid: ae20f979577bee44f995673132676687, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 4402833965041678, guid: ae20f979577bee44f995673132676687, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.8
+      value: -10.8
       objectReference: {fileID: 0}
     - target: {fileID: 4402833965041678, guid: ae20f979577bee44f995673132676687, type: 3}
       propertyPath: m_LocalRotation.w

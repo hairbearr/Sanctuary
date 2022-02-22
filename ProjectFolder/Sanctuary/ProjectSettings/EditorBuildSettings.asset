@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Harry/Scenes/The Wolfwood.unity
     guid: 87c33d458f7d0e84cb6e2e7d4a8f5987
-  - enabled: 1
+  - enabled: 0
     path: Assets/Harry/Scenes/The Old Pael Mine.unity
     guid: 3470ec99d6a8b014ea1454f234eaa49f
   - enabled: 1

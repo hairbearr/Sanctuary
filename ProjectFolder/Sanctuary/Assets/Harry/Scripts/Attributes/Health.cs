@@ -14,6 +14,7 @@ namespace Sanctuary.Harry.Attributes
         LazyValue<float> healthPts;
 
         [SerializeField] UnityEvent<float> takeDamage;
+        [SerializeField] UnityEvent onDie;
 
         bool isDead = false;
 
@@ -68,6 +69,7 @@ namespace Sanctuary.Harry.Attributes
 
             if (healthPts.value == 0)
             {
+                onDie.Invoke();
                 DeathBehaviour();
                 AwardXP(instigator);
             }

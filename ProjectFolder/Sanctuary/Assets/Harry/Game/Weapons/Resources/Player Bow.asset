@@ -15,7 +15,8 @@ MonoBehaviour:
   wepRange: 12
   atkSpd: 1.2
   dmg: 10
+  percentageBonus: 0
   animatorOverride: {fileID: 22100000, guid: c30b751681a5cee4381c6d4353bb29cd, type: 2}
-  equippedPrefab: {fileID: 7045697785134691969, guid: d804189f104ba4642b6fe5bf0a8c5994, type: 3}
+  equippedPrefab: {fileID: 6834592482120869180, guid: d804189f104ba4642b6fe5bf0a8c5994, type: 3}
   isRightHanded: 0
   projectile: {fileID: 6709371153497413621, guid: c69131506ab3d70429319b1aac16ad89, type: 3}

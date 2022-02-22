@@ -9,12 +9,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2411921713614695063, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4417698462184422206, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: maxSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4702999930299104987, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: da4f5695bff34bf4b88959334d31f55f, type: 3}
     - target: {fileID: 5544921126373478300, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: characterClass
       value: 3
@@ -65,35 +69,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2728132261190752584}
+      objectReference: {fileID: 5612590560770140386}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: UpdateHealthBar
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Sanctuary.Harry.Attributes.HealthBar, Assembly-CSharp
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8183256493630693789}
+      objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9005722894168878737, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Speed
@@ -153,6 +157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d04f9abdf02729f468416295549249c1, type: 3}
+--- !u!82 &5612590560770140386 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4702999930299104987, guid: d04f9abdf02729f468416295549249c1, type: 3}
+  m_PrefabInstance: {fileID: 911843565229839929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8183256493630453611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9022751334213902674, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -370,14 +379,3 @@ PrefabInstance:
       objectReference: {fileID: 8503594938610721176}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59444fe1ed080594793ec1a7a056745d, type: 3}
---- !u!114 &2728132261190752584 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6499893321258498684, guid: 59444fe1ed080594793ec1a7a056745d, type: 3}
-  m_PrefabInstance: {fileID: 9216624746094207796}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9826feb34af78bb40951b67f7cf20ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

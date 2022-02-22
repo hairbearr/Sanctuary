@@ -78,5 +78,15 @@ namespace Sanctuary.Harry.Movement
             transform.eulerAngles = data.rotation.ToVector();
             navMeshAgent.enabled = true;
         }
+
+        void FootR()
+        {
+
+        }
+
+        void FootL()
+        {
+
+        }
     }
 }

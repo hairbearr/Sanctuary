@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5592799664514875420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940812842629, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940813090931, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_Name
+      value: Player_Arkhryn_Everbright
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046179940822529795, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264351046284024260, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a555d11c06fbb4fb903d393c62aef4, type: 2}
+    - target: {fileID: 1264351046284024260, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: defaultWeaponName
+      value: Player Hammer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699235682785179842, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_Name
+      value: LeftFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[2].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[3].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[4].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[0].texture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce5dc72a2c53d5e49917ae08ad7172d5, type: 3}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[1].texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 51cb6ee928f89b64691ef4dfd57c03e9, type: 3}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[2].texture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce683041f000c7c48b73e8fbda566384, type: 3}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[3].texture
+      value: 
+      objectReference: {fileID: 2800000, guid: a9ae0267b06e7b24d90f188a4370cce3, type: 3}
+    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: cursorMappings.Array.data[4].texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 6d0916f30d4a8e84c839a037bed24d2a, type: 3}
+    - target: {fileID: 4557647180391073867, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557647180391073867, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: levelUpParticleFX
+      value: 
+      objectReference: {fileID: 8312237647054361189, guid: ae3d448c7f42d7a429bd9fdb4340d296, type: 3}
+    - target: {fileID: 6624419364104579643, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: m_Name
+      value: RightFoot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b335124d41de904e88c1b375d244d52, type: 3}

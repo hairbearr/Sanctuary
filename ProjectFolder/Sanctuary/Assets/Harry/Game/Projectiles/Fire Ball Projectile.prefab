@@ -4941,6 +4941,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1296422815001530417, guid: 112080c67105ac1478e275103b4dc320, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06e8d56c0a8b9004e96c996508dd45d1, type: 3}
     - target: {fileID: 1383026495256935006, guid: 112080c67105ac1478e275103b4dc320, type: 3}
       propertyPath: m_Name
       value: Fire Ball Projectile
@@ -4972,6 +4976,14 @@ PrefabInstance:
     - target: {fileID: 3388287106835490366, guid: 112080c67105ac1478e275103b4dc320, type: 3}
       propertyPath: m_Center.z
       value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510373007176368909, guid: 112080c67105ac1478e275103b4dc320, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 28a815309803c884ba3f582436b62c9a, type: 3}
+    - target: {fileID: 5235743140890610439, guid: 112080c67105ac1478e275103b4dc320, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112080c67105ac1478e275103b4dc320, type: 3}

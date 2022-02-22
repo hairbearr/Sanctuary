@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Sanctuary.Harry.Combat
 {
@@ -12,7 +13,7 @@ namespace Sanctuary.Harry.Combat
         [SerializeField] float speed = 1f, maxLifeTime = 10f, lifeAfterImpact = 2f;
         [SerializeField] GameObject hitEffect = null;
         [SerializeField] GameObject[] destroyOnHit = null;
-        
+        [SerializeField] UnityEvent onHit;
 
         Health tgt = null;
         float dmg = 0f;
@@ -57,6 +58,10 @@ namespace Sanctuary.Harry.Combat
             if (other.GetComponent<Health>() != tgt) return;
             if (tgt.IsDead()) { return; }
             tgt.TakeDamage(instigator, dmg);
+
+            speed = 0;
+
+            onHit.Invoke();
 
             if (hitEffect != null) { Instantiate(hitEffect, GetAimLocation(), transform.rotation); }
 
