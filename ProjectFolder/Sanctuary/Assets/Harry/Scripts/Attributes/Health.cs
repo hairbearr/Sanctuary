@@ -75,6 +75,11 @@ namespace Sanctuary.Harry.Attributes
             }
         }
 
+        public void Heal(float healthToRestore)
+        {
+            healthPts.value = Mathf.Min(healthPts.value + healthToRestore, GetMaxHealthPts());
+        }
+
         public float GetHealthPts()
         {
             return healthPts.value;

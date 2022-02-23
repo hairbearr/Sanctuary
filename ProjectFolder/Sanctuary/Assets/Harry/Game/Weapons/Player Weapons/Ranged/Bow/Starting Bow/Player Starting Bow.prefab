@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6503363410380076694}
   - component: {fileID: 6834592482120869180}
   m_Layer: 0
-  m_Name: Equipped Player Bow
+  m_Name: Player Starting Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,3 +1,4 @@
+using Sanctuary.Harry.Attributes;
 using Sanctuary.Harry.Control;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,20 +9,21 @@ namespace Sanctuary.Harry.Combat
     public class WeaponPickUp : MonoBehaviour, IRaycastable
     {
         [SerializeField] WeaponConfig weapon = null;
-        [SerializeField] float respawnTime = 5f;
+        [SerializeField] float healthToRestore = 0, respawnTime = 5f;
 
         private void OnTriggerEnter(Collider other)
         {
 
             if (other.gameObject.tag == "Player")
             {
-                Pickup(other.GetComponent<Fight>());
+                Pickup(other.gameObject);
             }
         }
 
-        private void Pickup(Fight fighter)
+        private void Pickup(GameObject subject)
         {
-            fighter.EquipWeapon(weapon);
+            if (weapon != null) { subject.GetComponent<Fight>().EquipWeapon(weapon); }
+            if (healthToRestore > 0) { subject.GetComponent<Health>().Heal(healthToRestore); }
             StartCoroutine(HideForSeconds(respawnTime));
         }
 
@@ -45,7 +47,7 @@ namespace Sanctuary.Harry.Combat
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Pickup(callingController.GetComponent<Fight>());
+                Pickup(callingController.gameObject);
             }
             return true;
         }

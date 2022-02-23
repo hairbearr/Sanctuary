@@ -18,7 +18,7 @@ namespace Sanctuary.Harry.Control
         [System.Serializable] struct CursorMapping { public CursorType type; public Texture2D texture; public Vector2 hotspot; }
 
         [SerializeField] CursorMapping[] cursorMappings = null;
-        [SerializeField] float maxNavMeshProjDist = 1f, maxNavPathLength = 40f;
+        [SerializeField] float maxNavMeshProjDist = 1f;
 
         private void Awake()
         {
@@ -96,6 +96,8 @@ namespace Sanctuary.Harry.Control
             bool hasHit = RaycastNavMesh(out target);
             if (hasHit) 
             {
+                if (!GetComponent<Move>().CanMoveTo(target)) return false;
+
                 if (Input.GetMouseButton(0))
                 {
                     GetComponent<Move>().StartMoveAction(target, 1f); 
@@ -123,26 +125,12 @@ namespace Sanctuary.Harry.Control
             target = navMeshHit.position;
 
             //decide whether or not you want to go that way based on the path
-            NavMeshPath path = new NavMeshPath();
-            bool hasPath = NavMesh.CalculatePath(transform.position, target, NavMesh.AllAreas, path);
-            if (!hasPath) { return false; }
-            if (path.status != NavMeshPathStatus.PathComplete) return false;
-            if (GetPathLength(path) > maxNavPathLength) return false;
+            
 
             return true;
         }
 
-        private float GetPathLength(NavMeshPath path)
-        {
-            float total = 0;
-            if (path.corners.Length < 2) return total;
-            for (int i = 0; i < path.corners.Length - 1; i++)
-            {
-                total += Vector3.Distance(path.corners[i], path.corners[i + 1]);
-            }
-
-            return total;
-        }
+        
 
         private static Ray GetMouseRay()
         {

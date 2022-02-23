@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
+  respawnTime: 5
 --- !u!54 &-6357181005155819921
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Enemy Sword
+  m_Name: Player Unarmed
   m_EditorClassIdentifier: 
-  wepRange: 2
+  wepRange: 1
   atkSpd: 1
-  dmg: 5
+  dmg: 0
   percentageBonus: 0
-  animatorOverride: {fileID: 22100000, guid: 02017aa1e29d313429b2d399b3ab0ad9, type: 2}
-  equippedPrefab: {fileID: 890188117177983463, guid: fb26e61eb2f67064ab64011339755537, type: 3}
+  animatorOverride: {fileID: 0}
+  equippedPrefab: {fileID: 9185325784756719858, guid: 510b0799e43da8641868287ad5cb33ba, type: 3}
   isRightHanded: 1
   projectile: {fileID: 0}

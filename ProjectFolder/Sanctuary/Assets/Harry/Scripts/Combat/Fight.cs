@@ -92,6 +92,7 @@ namespace Sanctuary.Harry.Combat
         public bool CanAtk(GameObject fightTgt)
         {
             if(fightTgt == null) { return false; }
+            if (!GetComponent<Move>().CanMoveTo(fightTgt.transform.position)) { return false; }
 
             Health trgtToTst = fightTgt.GetComponent<Health>();
             return trgtToTst != null && !trgtToTst.IsDead();
