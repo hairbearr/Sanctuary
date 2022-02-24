@@ -11,7 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Harry/Scenes/The Old Pael Mine.unity
     guid: 3470ec99d6a8b014ea1454f234eaa49f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Harry/Scenes/Prototype Sandbox.unity
     guid: 18dbb8587c08b5840b9710a590f05b73
+  - enabled: 1
+    path: Assets/Harry/Scenes/Enemy Pack Size Playtest Scenes/Scene_1.unity
+    guid: 4c8a3648d593feb46b5a9ad840a69087
+  - enabled: 1
+    path: Assets/Harry/Scenes/Enemy Pack Size Playtest Scenes/Scene_2.unity
+    guid: 8a9bde893720f6b42a349dc53aa6832c
+  - enabled: 1
+    path: Assets/Harry/Scenes/Enemy Pack Size Playtest Scenes/Scene_3.unity
+    guid: be494f759359d154da988eb74f86af29
   m_configObjects: {}
