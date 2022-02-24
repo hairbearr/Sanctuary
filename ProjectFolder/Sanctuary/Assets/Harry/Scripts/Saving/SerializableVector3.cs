@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RPG.Saving
+namespace Sanctuary.Harry.Saving
 {
     [System.Serializable]
     public class SerializableVector3

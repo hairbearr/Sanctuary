@@ -1,4 +1,4 @@
-namespace RPG.Saving
+namespace Sanctuary.Harry.Saving
 {
     public interface ISaveable
     {
