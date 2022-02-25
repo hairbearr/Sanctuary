@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -78,18 +78,18 @@ PrefabInstance:
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5612590560770140386}
+      objectReference: {fileID: 8299518277265614507}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
+      value: Aggro
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
+      value: Sanctuary.Harry.Control.AIController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
@@ -157,11 +157,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d04f9abdf02729f468416295549249c1, type: 3}
---- !u!82 &5612590560770140386 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4702999930299104987, guid: d04f9abdf02729f468416295549249c1, type: 3}
-  m_PrefabInstance: {fileID: 911843565229839929}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8183256493630453611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9022751334213902674, guid: d04f9abdf02729f468416295549249c1, type: 3}

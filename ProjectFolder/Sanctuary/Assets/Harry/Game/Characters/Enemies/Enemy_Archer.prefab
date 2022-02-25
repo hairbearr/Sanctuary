@@ -86,7 +86,11 @@ PrefabInstance:
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 6531525231299470741}
+      objectReference: {fileID: 7235737665402203100}
+    - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Aggro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
 --- !u!4 &6516001023865264440 stripped
@@ -94,11 +98,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5560312348941685839, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
   m_PrefabInstance: {fileID: 1677396210885922167}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &6531525231299470741 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5612590560770140386, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!114 &7235737665402203100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
   m_PrefabInstance: {fileID: 1677396210885922167}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6322e7db126ad5743911964333e9c48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3368947144282139650
 PrefabInstance:
   m_ObjectHideFlags: 0

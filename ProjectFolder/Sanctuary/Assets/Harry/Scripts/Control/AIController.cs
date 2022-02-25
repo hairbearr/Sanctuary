@@ -12,18 +12,21 @@ namespace Sanctuary.Harry.Control
 {
     public class AIController : MonoBehaviour
     {
-        [SerializeField] float aggroRange = 5f, suspicionTime = 3f, waypointTolerance = 1f, waypointDwellTime = 3f;
+        [SerializeField] float aggroRange = 5f, suspicionTime = 3f, waypointTolerance = 1f, waypointDwellTime = 3f, aggroCDTime = 5f, shoutDistance = 5f;
         [Range(0,1)] [SerializeField] float patSpeedFract = 0.2f;
         [SerializeField] PatrolPath patrolPath = null;
+        [SerializeField] bool hasShout = false;
 
         Fight fight;
         Health health;
         GameObject player;
         Move move;
 
-        float timeSinceLastSawPlayer = Mathf.Infinity, timeSinceArrivedAtWaypoint = Mathf.Infinity;
+        float timeSinceLastSawPlayer = Mathf.Infinity, timeSinceArrivedAtWaypoint = Mathf.Infinity, timeSinceLastAggroed = Mathf.Infinity;
         LazyValue<Vector3> startPos;
         int currentWaypointIndex = 0;
+        
+        
 
         private void Awake()
         {
@@ -55,17 +58,19 @@ namespace Sanctuary.Harry.Control
         {
             timeSinceLastSawPlayer += Time.deltaTime;
             timeSinceArrivedAtWaypoint += Time.deltaTime;
+            timeSinceLastAggroed += Time.deltaTime;
         }
 
-        private bool InAttackRangeofPlayer()
+        private bool IsAggroed()
         {
             float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
-            return distanceToPlayer < aggroRange;
+            
+            return distanceToPlayer < aggroRange || timeSinceLastAggroed<aggroCDTime;
         }
 
         private void HandleStates()
         {
-            if (InAttackRangeofPlayer() && fight.CanAtk(player))
+            if (IsAggroed() && fight.CanAtk(player))
             {
                 AttackState();
             }
@@ -77,6 +82,11 @@ namespace Sanctuary.Harry.Control
             {
                 PatrolState();
             }
+        }
+
+        public void Aggro()
+        {
+            timeSinceLastAggroed = 0;
         }
 
         private void PatrolState()
@@ -121,6 +131,21 @@ namespace Sanctuary.Harry.Control
         {
             timeSinceLastSawPlayer = 0;
             fight.Attack(player);
+
+            AggroNearbyEnemies();
+            hasShout = false;
+        }
+
+        private void AggroNearbyEnemies()
+        {
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position, shoutDistance, Vector3.up, 0);
+            foreach (RaycastHit hit in hits)
+            {
+                AIController ai = hit.collider.GetComponent<AIController>();
+                if (ai == null) continue;
+                if (ai == this) continue;
+                if(!hasShout) { ai.Aggro(); }
+            }
         }
 
         //Called by Unity

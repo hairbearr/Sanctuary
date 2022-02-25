@@ -46,7 +46,7 @@ namespace Sanctuary.Harry.Combat
 
             if(tgt.IsDead()) return;
 
-            if (!GetIsInRange()) { GetComponent<Move>().MoveTo(tgt.transform.position, 1f); }
+            if (!GetIsInRange(tgt.transform)) { GetComponent<Move>().MoveTo(tgt.transform.position, 1f); }
             else
             {
                 GetComponent<Move>().Cancel();
@@ -92,7 +92,7 @@ namespace Sanctuary.Harry.Combat
         public bool CanAtk(GameObject fightTgt)
         {
             if(fightTgt == null) { return false; }
-            if (!GetComponent<Move>().CanMoveTo(fightTgt.transform.position)) { return false; }
+            if (!GetComponent<Move>().CanMoveTo(fightTgt.transform.position) && !GetIsInRange(fightTgt.transform)) { return false; }
 
             Health trgtToTst = fightTgt.GetComponent<Health>();
             return trgtToTst != null && !trgtToTst.IsDead();
@@ -105,7 +105,7 @@ namespace Sanctuary.Harry.Combat
         }
 
 
-        private bool GetIsInRange()
+        private bool GetIsInRange(Transform tgtTransform)
         {
             return Vector3.Distance(transform.position, tgt.transform.position) < currentWeaponConfig.GetWeaponRange();
         }

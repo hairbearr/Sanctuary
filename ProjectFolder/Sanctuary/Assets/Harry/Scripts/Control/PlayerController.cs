@@ -18,7 +18,7 @@ namespace Sanctuary.Harry.Control
         [System.Serializable] struct CursorMapping { public CursorType type; public Texture2D texture; public Vector2 hotspot; }
 
         [SerializeField] CursorMapping[] cursorMappings = null;
-        [SerializeField] float maxNavMeshProjDist = 1f;
+        [SerializeField] float maxNavMeshProjDist = 1f, raycastRadius =1f;
 
         private void Awake()
         {
@@ -63,7 +63,7 @@ namespace Sanctuary.Harry.Control
         RaycastHit[] RaycastAllSorted()
         {
             //Get all hits
-            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            RaycastHit[] hits = Physics.SphereCastAll(GetMouseRay(), raycastRadius);
             
             //Sort by distance
                 //build array distances
