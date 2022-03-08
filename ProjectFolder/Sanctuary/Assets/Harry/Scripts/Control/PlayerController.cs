@@ -19,6 +19,7 @@ namespace Sanctuary.Harry.Control
 
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjDist = 1f, raycastRadius =1f;
+        [SerializeField] ParticleSystem clickFeedback;
 
         private void Awake()
         {
@@ -100,8 +101,9 @@ namespace Sanctuary.Harry.Control
 
                 if (Input.GetMouseButton(0))
                 {
-                    GetComponent<Move>().StartMoveAction(target, 1f); 
+                    GetComponent<Move>().StartMoveAction(target, 1f);
                 }
+                if (Input.GetMouseButtonDown(0)) { Instantiate(clickFeedback, target, Quaternion.identity); }
                 SetCursor(CursorType.Movement);
                 return true;
             }

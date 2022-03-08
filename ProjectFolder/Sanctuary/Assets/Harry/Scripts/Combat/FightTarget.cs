@@ -9,6 +9,7 @@ namespace Sanctuary.Harry.Combat
     [RequireComponent(typeof(Health))]
     public class FightTarget : MonoBehaviour, IRaycastable
     {
+
         public CursorType GetCursorType()
         {
             return CursorType.Combat;
