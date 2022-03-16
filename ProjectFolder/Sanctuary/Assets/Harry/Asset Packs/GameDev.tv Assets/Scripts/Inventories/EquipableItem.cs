@@ -11,7 +11,7 @@ namespace GameDevTV.Inventories
     {
         // CONFIG DATA
         [Tooltip("Where are we allowed to put this item.")]
-        [SerializeField] EquipLocation allowedEquipLocation = EquipLocation.Weapon;
+        [SerializeField] EquipLocation allowedEquipLocation = EquipLocation.MainHand;
 
         // PUBLIC
 

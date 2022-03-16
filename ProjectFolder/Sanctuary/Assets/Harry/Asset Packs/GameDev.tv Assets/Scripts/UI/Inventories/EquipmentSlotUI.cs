@@ -15,7 +15,7 @@ namespace GameDevTV.UI.Inventories
         // CONFIG DATA
 
         [SerializeField] InventoryItemIcon icon = null;
-        [SerializeField] EquipLocation equipLocation = EquipLocation.Weapon;
+        [SerializeField] EquipLocation equipLocation = EquipLocation.MainHand;
 
         // CACHE
         Equipment playerEquipment;

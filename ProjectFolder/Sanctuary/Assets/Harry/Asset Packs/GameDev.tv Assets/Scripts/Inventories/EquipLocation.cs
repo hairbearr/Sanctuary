@@ -7,13 +7,6 @@ namespace GameDevTV.Inventories
     /// </summary>
     public enum EquipLocation
     {
-        Helmet,
-        Necklace,
-        Body,
-        Trousers,
-        Boots,
-        Weapon,
-        Shield,
-        Gloves,
+        Head, Shoulder, Chest, Legs, Feet, Hands, Waist, MainHand, OffHand
     }
 }
