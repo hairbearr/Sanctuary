@@ -8,15 +8,17 @@ using GameDevTV.Saving;
 using Sanctuary.Harry.Attributes;
 using Sanctuary.Harry.Stats;
 using GameDevTV.Utils;
+using GameDevTV.Inventories;
 
 namespace Sanctuary.Harry.Combat
 {
-    public class Fight : MonoBehaviour, IAction, ISaveable, IModifierProvider
+    public class Fight : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
 
         Health tgt;
+        Equipment equipment;
         float timeSinceLastAtk = Mathf.Infinity;
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapons> currentWeapon;
@@ -26,6 +28,13 @@ namespace Sanctuary.Harry.Combat
         {
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapons>(SetupDefaultWeapon);
+
+            equipment = GetComponent<Equipment>();
+
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+            }
         }
 
         private Weapons SetupDefaultWeapon()
@@ -123,21 +132,6 @@ namespace Sanctuary.Harry.Combat
             GetComponent<Animator>().SetTrigger("stopAtk");
         }
 
-        public IEnumerable<float> GetAdditiveMods(Stat stat)
-        {
-            if(stat == Stat.Damage)
-            {
-                yield return currentWeaponConfig.GetWeaponDamage();
-            }
-        }
-        public IEnumerable<float> GetPercentageMods(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return currentWeaponConfig.GetPercentageBonus();
-            }
-        }
-
         /*private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
@@ -148,6 +142,13 @@ namespace Sanctuary.Harry.Combat
         {
             currentWeaponConfig = weapon;
             currentWeapon.value = AttachWeapon(weapon);
+        }
+
+        private void UpdateWeapon()
+        {
+            var weapon = equipment.GetItemInSlot(EquipLocation.MainHand) as WeaponConfig;
+            if(weapon == null) { EquipWeapon(defaultWeapon); }
+            else { EquipWeapon(weapon); }
         }
 
         private Weapons AttachWeapon(WeaponConfig weapon)

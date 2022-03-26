@@ -1,4 +1,5 @@
 using GameDevTV.Inventories;
+using Sanctuary.Harry.Movement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,9 +26,17 @@ namespace Sanctuary.Harry.Control
         {
             if (Input.GetMouseButtonDown(0))
             {
-                pickup.PickupItem();
+                callingController.GetComponent<Move>().StartMoveAction(transform.position, 1f);
             }
             return true;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                pickup.PickupItem();
+            }
         }
     }
 }

@@ -69150,6 +69150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2411921713614695063, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5544921126373478300, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: characterClass
       value: 0
@@ -69190,6 +69194,10 @@ PrefabInstance:
       propertyPath: rightHandTrans
       value: 
       objectReference: {fileID: 1064133317427694352}
+    - target: {fileID: 7117025269389760778, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: healthPts
       value: 200
@@ -69309,6 +69317,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xpPoints: 0
+--- !u!114 &920305917943381938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19ff972ec6859b48870488d7b1e81b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1109977859728613793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a55c7fbc8e1f14ba39fc6ce3beb52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1714899561610339745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69323,17 +69355,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorMappings:
   - type: 0
-    texture: {fileID: 2800000, guid: ce5dc72a2c53d5e49917ae08ad7172d5, type: 3}
+    texture: {fileID: 2800000, guid: 0f45821c9378469498c0044ff9068ea2, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 1
-    texture: {fileID: 2800000, guid: 51cb6ee928f89b64691ef4dfd57c03e9, type: 3}
+    texture: {fileID: 2800000, guid: 0f45821c9378469498c0044ff9068ea2, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 2
     texture: {fileID: 2800000, guid: ce683041f000c7c48b73e8fbda566384, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 3
-    texture: {fileID: 2800000, guid: a9ae0267b06e7b24d90f188a4370cce3, type: 3}
+    texture: {fileID: 2800000, guid: 51cb6ee928f89b64691ef4dfd57c03e9, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 4
     texture: {fileID: 2800000, guid: 6d0916f30d4a8e84c839a037bed24d2a, type: 3}
     hotspot: {x: 0, y: 0}
+  maxNavMeshProjDist: 1
+  raycastRadius: 1
+  clickFeedback: {fileID: 0}
+--- !u!114 &2486467834527864560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 16
+--- !u!114 &6738237660962754351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1177968e121098c488bfebbbf8fe56b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1

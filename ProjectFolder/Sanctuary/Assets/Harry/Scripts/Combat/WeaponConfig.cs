@@ -2,11 +2,14 @@ using Sanctuary.Harry.Core;
 using Sanctuary.Harry.Attributes;
 using System;
 using UnityEngine;
+using GameDevTV.Inventories;
+using Sanctuary.Harry.Stats;
+using System.Collections.Generic;
 
 namespace Sanctuary.Harry.Combat
 {
     [CreateAssetMenu(fileName = "Weapon", menuName = "Sanctuary/Weapons/Make New Weapon", order = 0)]
-    public class WeaponConfig : ScriptableObject
+    public class WeaponConfig : EquipableItem, IModifierProvider
     {
         [SerializeField] float wepRange = 0, atkSpd = 0, dmg = 0, percentageBonus = 0;
         [SerializeField] AnimatorOverrideController animatorOverride = null;
@@ -89,6 +92,22 @@ namespace Sanctuary.Harry.Combat
 
             previousWeapon.name = "DESTROYING";
             Destroy(previousWeapon.gameObject);
+        }
+
+        public IEnumerable<float> GetAdditiveMods(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return dmg;
+            }
+        }
+
+        public IEnumerable<float> GetPercentageMods(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return percentageBonus;
+            }
         }
     }
 }

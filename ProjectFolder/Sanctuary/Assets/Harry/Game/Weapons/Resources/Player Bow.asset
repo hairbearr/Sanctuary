@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
   m_Name: Player Bow
   m_EditorClassIdentifier: 
+  itemID: 1312f7de-5665-4132-8792-ef03df48dd9d
+  displayName: 
+  description: 
+  icon: {fileID: 21300000, guid: 0833dbad7c3e55d4b9b8e934286711c1, type: 3}
+  pickup: {fileID: 3278478836509587212, guid: 35a811bf68e24e04cace4fb93a337026, type: 3}
+  stackable: 0
+  allowedEquipLocation: 7
   wepRange: 12
   atkSpd: 1.2
   dmg: 10

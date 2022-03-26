@@ -569,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224338124537362198, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -327.98004
+      value: -327.98022
       objectReference: {fileID: 0}
     - target: {fileID: 224928911778522548, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1693024143934773398, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1702661474151556356, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1270,6 +1270,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2800000, guid: 6d0916f30d4a8e84c839a037bed24d2a, type: 3}
     - target: {fileID: 6635628790623132120, guid: 3869dbeaefe694347bcbddfa5cd3b8b9, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f5205180bb03b8499992ef02c960136, type: 2}
+    - target: {fileID: 6635628790623132120, guid: 3869dbeaefe694347bcbddfa5cd3b8b9, type: 3}
       propertyPath: defaultWeaponName
       value: Player Two Handed Hammer
       objectReference: {fileID: 0}
@@ -1305,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509554150115022819, guid: ba01542a73b8b434a85a90ea6eec4a66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.323854
+      value: 13.176438
       objectReference: {fileID: 0}
     - target: {fileID: 7509554150115022819, guid: ba01542a73b8b434a85a90ea6eec4a66, type: 3}
       propertyPath: m_LocalPosition.z
