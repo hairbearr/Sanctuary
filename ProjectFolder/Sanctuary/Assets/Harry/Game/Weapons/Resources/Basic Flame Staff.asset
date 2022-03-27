@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Player Fire Staff
+  m_Name: Basic Flame Staff
   m_EditorClassIdentifier: 
   itemID: bf4a1a05-393d-48de-b888-b470838f1a4f
-  displayName: 
-  description: 
+  displayName: Basic Flame Staff
+  description: 'Attack Speed: 1.2
+
+    Damage: 10'
   icon: {fileID: 21300000, guid: 615dad06ec8ffda4d8eccbc7c6d37be0, type: 3}
   pickup: {fileID: 3515356612854199070, guid: 8cf5a2e55109d58488a555c01795077a, type: 3}
   stackable: 0

@@ -9,11 +9,13 @@ namespace Sanctuary.Harry.Cinematics
 {
     public class CinematicControlRemover : MonoBehaviour
     {
-        GameObject player;
+        GameObject player, inventoryCanvas, hud;
+        
 
         private void Awake()
         {
-            
+            hud = GameObject.FindWithTag("HUD");
+            inventoryCanvas = GameObject.FindWithTag("InventoryCanvas");
             player = GameObject.FindWithTag("Player");
         }
 
@@ -33,11 +35,15 @@ namespace Sanctuary.Harry.Cinematics
         {
             player.GetComponent<ActionScheduler>().CancelCurrentAction();
             player.GetComponent<PlayerController>().SetEnable(false);
+            inventoryCanvas.SetActive(false);
+            hud.SetActive(false);
         }
 
         void EnableControl(PlayableDirector director)
         {
             player.GetComponent<PlayerController>().SetEnable(true);
+            inventoryCanvas.SetActive(true);
+            hud.SetActive(false);
         }
     }
 }

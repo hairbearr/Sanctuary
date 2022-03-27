@@ -12,6 +12,8 @@ TagManager:
   - Tree
   - Terrain
   - Collide
+  - HUD
+  - InventoryCanvas
   layers:
   - Default
   - TransparentFX
