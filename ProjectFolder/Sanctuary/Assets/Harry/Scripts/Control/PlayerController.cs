@@ -110,11 +110,11 @@ namespace Sanctuary.Harry.Control
             bool hasHit = RaycastNavMesh(out target);
             if (hasHit) 
             {
-                if (!GetComponent<Move>().CanMoveTo(target)) return false;
+                if (!GetComponent<MovementController>().CanMoveTo(target)) return false;
 
                 if (Input.GetMouseButton(0))
                 {
-                    GetComponent<Move>().StartMoveAction(target, 1f);
+                    GetComponent<MovementController>().StartMoveAction(target, 1f);
                 }
                 if (Input.GetMouseButtonDown(0)) { Instantiate(clickFeedback, target, Quaternion.identity); }
                 SetCursor(CursorType.Movement);

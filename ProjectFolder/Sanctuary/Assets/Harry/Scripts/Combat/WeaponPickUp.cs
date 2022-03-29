@@ -22,7 +22,7 @@ namespace Sanctuary.Harry.Combat
 
         private void Pickup(GameObject subject)
         {
-            if (weapon != null) { subject.GetComponent<Fight>().EquipWeapon(weapon); }
+            if (weapon != null) { subject.GetComponent<CombatController>().EquipWeapon(weapon); }
             if (healthToRestore > 0) { subject.GetComponent<Health>().Heal(healthToRestore); }
             StartCoroutine(HideForSeconds(respawnTime));
         }

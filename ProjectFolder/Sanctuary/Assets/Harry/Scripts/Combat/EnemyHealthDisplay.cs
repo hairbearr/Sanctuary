@@ -7,11 +7,11 @@ namespace Sanctuary.Harry.Combat
 {
     public class EnemyHealthDisplay : MonoBehaviour
     {
-        Fight fight;
+        CombatController fight;
 
         private void Awake()
         {
-            fight = GameObject.FindWithTag("Player").GetComponent<Fight>();
+            fight = GameObject.FindWithTag("Player").GetComponent<CombatController>();
         }
 
         private void Update()

@@ -12,7 +12,7 @@ using GameDevTV.Inventories;
 
 namespace Sanctuary.Harry.Combat
 {
-    public class Fight : MonoBehaviour, IAction, ISaveable
+    public class CombatController : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
@@ -55,10 +55,10 @@ namespace Sanctuary.Harry.Combat
 
             if(tgt.IsDead()) return;
 
-            if (!GetIsInRange(tgt.transform)) { GetComponent<Move>().MoveTo(tgt.transform.position, 1f); }
+            if (!GetIsInRange(tgt.transform)) { GetComponent<MovementController>().MoveTo(tgt.transform.position, 1f); }
             else
             {
-                GetComponent<Move>().Cancel();
+                GetComponent<MovementController>().Cancel();
                 AtkBehaviour();
             }
         }
@@ -101,7 +101,7 @@ namespace Sanctuary.Harry.Combat
         public bool CanAtk(GameObject fightTgt)
         {
             if(fightTgt == null) { return false; }
-            if (!GetComponent<Move>().CanMoveTo(fightTgt.transform.position) && !GetIsInRange(fightTgt.transform)) { return false; }
+            if (!GetComponent<MovementController>().CanMoveTo(fightTgt.transform.position) && !GetIsInRange(fightTgt.transform)) { return false; }
 
             Health trgtToTst = fightTgt.GetComponent<Health>();
             return trgtToTst != null && !trgtToTst.IsDead();
@@ -123,7 +123,7 @@ namespace Sanctuary.Harry.Combat
         {
             StopAttack();
             tgt = null;
-            GetComponent<Move>().Cancel();
+            GetComponent<MovementController>().Cancel();
         }
 
         private void StopAttack()

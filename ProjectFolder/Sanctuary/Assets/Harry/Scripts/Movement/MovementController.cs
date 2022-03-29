@@ -8,7 +8,7 @@ using GameDevTV.Saving;
 
 namespace Sanctuary.Harry.Movement
 {
-    public class Move : MonoBehaviour, IAction, ISaveable
+    public class MovementController : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform target;
         [SerializeField] float maxSpeed = 6f, maxNavPathLength = 40f;

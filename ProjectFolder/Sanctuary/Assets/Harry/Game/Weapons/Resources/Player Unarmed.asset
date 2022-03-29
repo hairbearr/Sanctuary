@@ -23,7 +23,7 @@ MonoBehaviour:
   atkSpd: 1
   dmg: 1
   percentageBonus: 0
-  animatorOverride: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: b56e3245ad5573d45a4eab031125e2fa, type: 2}
   equippedPrefab: {fileID: 9185325784756719858, guid: 510b0799e43da8641868287ad5cb33ba, type: 3}
   isRightHanded: 1
   projectile: {fileID: 0}

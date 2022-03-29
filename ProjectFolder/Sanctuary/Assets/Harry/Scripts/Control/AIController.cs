@@ -17,10 +17,10 @@ namespace Sanctuary.Harry.Control
         [SerializeField] PatrolPath patrolPath = null;
         [SerializeField] bool hasShout = false;
 
-        Fight fight;
+        CombatController fight;
         Health health;
         GameObject player;
-        Move move;
+        MovementController move;
 
         float timeSinceLastSawPlayer = Mathf.Infinity, timeSinceArrivedAtWaypoint = Mathf.Infinity, timeSinceLastAggroed = Mathf.Infinity;
         LazyValue<Vector3> startPos;
@@ -30,10 +30,10 @@ namespace Sanctuary.Harry.Control
 
         private void Awake()
         {
-            fight = GetComponent<Fight>();
+            fight = GetComponent<CombatController>();
             health = GetComponent<Health>();
             player = GameObject.FindGameObjectWithTag("Player");
-            move = GetComponent<Move>();
+            move = GetComponent<MovementController>();
             startPos = new LazyValue<Vector3>(GetStartPos);
         }
 

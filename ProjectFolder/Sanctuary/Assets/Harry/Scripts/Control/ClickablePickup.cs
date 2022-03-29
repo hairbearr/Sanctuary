@@ -26,7 +26,7 @@ namespace Sanctuary.Harry.Control
         {
             if (Input.GetMouseButtonDown(0))
             {
-                callingController.GetComponent<Move>().StartMoveAction(transform.position, 1f);
+                callingController.GetComponent<MovementController>().StartMoveAction(transform.position, 1f);
             }
             return true;
         }

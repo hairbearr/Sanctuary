@@ -7,6 +7,6 @@ namespace GameDevTV.Inventories
     /// </summary>
     public enum EquipLocation
     {
-        Head, Shoulder, Chest, Legs, Feet, Hands, Waist, MainHand, OffHand
+        Head, Shoulder, Chest, Legs, Feet, Hands, Waist, MainHand, Libram, Quiver, Talisman
     }
 }
