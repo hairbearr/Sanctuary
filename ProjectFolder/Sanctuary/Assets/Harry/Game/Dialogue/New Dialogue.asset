@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: 
+  - uniqueID: a
     text: Wubba wubba wubba wubba
-    children: []
-  - uniqueID: 
-    text: woo woo woo
-    children: []
-  - uniqueID: 
-    text: wubba wubba wubba and a doodly doo
-    children: []
-  - uniqueID: 
-    text: ad
-    children: []
+    children:
+    - b
+    - c
+    - e4af0bb7-f28e-461c-af91-736c04cd79d1
+    - fd749244-faa7-4ad4-aa2f-f1ad5aa708ab
+    - 5246e6d9-0588-4ea0-86f8-a58cbb0838c3
+    - f3c5ebc7-f47b-4200-b5e4-aab93894e012
+    rect:
+      serializedVersion: 2
+      x: 6
+      y: 3
+      width: 250
+      height: 200
