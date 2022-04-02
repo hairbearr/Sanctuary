@@ -569,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224338124537362198, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -327.98022
+      value: -327.9799
       objectReference: {fileID: 0}
     - target: {fileID: 224928911778522548, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1693024143934773398, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1702661474151556356, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1277,6 +1277,10 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Player Two Handed Hammer
       objectReference: {fileID: 0}
+    - target: {fileID: 8006319299836942060, guid: 3869dbeaefe694347bcbddfa5cd3b8b9, type: 3}
+      propertyPath: inventorySize
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 8716878954127522287, guid: 3869dbeaefe694347bcbddfa5cd3b8b9, type: 3}
       propertyPath: inventorySize
       value: 24
@@ -1309,7 +1313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509554150115022819, guid: ba01542a73b8b434a85a90ea6eec4a66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.176438
+      value: 12.323852
       objectReference: {fileID: 0}
     - target: {fileID: 7509554150115022819, guid: ba01542a73b8b434a85a90ea6eec4a66, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1485,7 +1489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8226308290801901460, guid: d65fd33e12f9d72478d97f151dc8b035, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.323854
+      value: 12.323852
       objectReference: {fileID: 0}
     - target: {fileID: 8226308290801901460, guid: d65fd33e12f9d72478d97f151dc8b035, type: 3}
       propertyPath: m_LocalPosition.z
