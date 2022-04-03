@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1848851281754863200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 2c569667-46df-4f48-a931-c3d8d18dc498
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,18 +34,5 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: a
-    text: Wubba wubba wubba wubba
-    children:
-    - b
-    - c
-    - e4af0bb7-f28e-461c-af91-736c04cd79d1
-    - fd749244-faa7-4ad4-aa2f-f1ad5aa708ab
-    - 5246e6d9-0588-4ea0-86f8-a58cbb0838c3
-    - f3c5ebc7-f47b-4200-b5e4-aab93894e012
-    rect:
-      serializedVersion: 2
-      x: 6
-      y: 3
-      width: 250
-      height: 200
+  - {fileID: -1848851281754863200}
+  newNodeOffset: {x: 250, y: 0}

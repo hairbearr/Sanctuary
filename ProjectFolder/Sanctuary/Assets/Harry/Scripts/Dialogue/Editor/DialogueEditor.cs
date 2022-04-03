@@ -10,9 +10,13 @@ namespace Sanctuary.Harry.Dialogue.Editor
     public class DialogueEditor : EditorWindow
     {
         Dialogue selectedDialogue = null;
-        [NonSerialized] GUIStyle nodeStyle = null;
-        [NonSerialized] DialogueNode draggingNode = null, creatingNode = null;
-        [NonSerialized] Vector2 draggingOffset;
+        [NonSerialized] GUIStyle npcOneNodeStyle = null, playerNodeStyle = null, npcTwoNodeStyle = null, npcThreeNodeStyle = null;
+        [NonSerialized] DialogueNode draggingNode = null, creatingNode = null, deletingNode = null, linkingParentNode = null;
+        [NonSerialized] Vector2 draggingOffset, draggingCanvasOffset;
+        Vector2 scrollPosition;
+        [NonSerialized] bool draggingCanvas = false;
+
+        const float canvasSize = 4000, backgroundSize = 50;
         
 
         [MenuItem("Window/Dialogue Editor")]
@@ -30,11 +34,29 @@ namespace Sanctuary.Harry.Dialogue.Editor
         {
             Selection.selectionChanged += OnSelectionChanged;
 
-            nodeStyle = new GUIStyle();
-            nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
-            nodeStyle.normal.textColor = Color.white;
-            nodeStyle.padding = new RectOffset(10, 10, 10, 10);
-            nodeStyle.border = new RectOffset(12, 12, 12, 12);
+            npcOneNodeStyle = new GUIStyle();
+            npcOneNodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+            npcOneNodeStyle.normal.textColor = Color.white;
+            npcOneNodeStyle.padding = new RectOffset(10, 10, 10, 10);
+            npcOneNodeStyle.border = new RectOffset(12, 12, 12, 12);
+
+            playerNodeStyle = new GUIStyle();
+            playerNodeStyle.normal.background = EditorGUIUtility.Load("node1") as Texture2D;
+            playerNodeStyle.normal.textColor = Color.white;
+            playerNodeStyle.padding = new RectOffset(10, 10, 10, 10);
+            playerNodeStyle.border = new RectOffset(12, 12, 12, 12);
+
+            npcTwoNodeStyle = new GUIStyle();
+            npcTwoNodeStyle.normal.background = EditorGUIUtility.Load("node2") as Texture2D;
+            npcTwoNodeStyle.normal.textColor = Color.white;
+            npcTwoNodeStyle.padding = new RectOffset(10, 10, 10, 10);
+            npcTwoNodeStyle.border = new RectOffset(12, 12, 12, 12);
+
+            npcThreeNodeStyle = new GUIStyle();
+            npcThreeNodeStyle.normal.background = EditorGUIUtility.Load("node3") as Texture2D;
+            npcThreeNodeStyle.normal.textColor = Color.white;
+            npcThreeNodeStyle.padding = new RectOffset(10, 10, 10, 10);
+            npcThreeNodeStyle.border = new RectOffset(12, 12, 12, 12);
         }
 
         private void OnSelectionChanged()
@@ -49,6 +71,16 @@ namespace Sanctuary.Harry.Dialogue.Editor
             else
             {
                 ProcessEvents();
+                scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+                
+
+
+                Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
+                Texture2D backgroundText = Resources.Load("background") as Texture2D;
+                Rect texCoords = new Rect(0, 0, canvasSize/backgroundSize, canvasSize / backgroundSize);
+
+                GUI.DrawTextureWithTexCoords(canvas, backgroundText, texCoords);
+
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
                 {
                     DrawConnections(node);
@@ -57,7 +89,11 @@ namespace Sanctuary.Harry.Dialogue.Editor
                 {
                     DrawNode(node);
                 }
-                if(creatingNode != null) { Undo.RecordObject(selectedDialogue, "Added Dialogue Node"); selectedDialogue.CreateNode(creatingNode); creatingNode = null; }
+                if(creatingNode != null) { selectedDialogue.CreateNode(creatingNode); creatingNode = null; }
+
+                EditorGUILayout.EndScrollView();
+
+                if (deletingNode != null) { selectedDialogue.DeleteNode(deletingNode); deletingNode = null; }
             }
 
             
@@ -66,56 +102,127 @@ namespace Sanctuary.Harry.Dialogue.Editor
 
         private void ProcessEvents()
         {
-            if(Event.current.type == EventType.MouseDown && draggingNode==null)
-            {
-                draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+            if (Event.current.type == EventType.MouseDown && draggingNode == null)
+            { //mouse down
+                draggingNode = GetNodeAtPoint(Event.current.mousePosition + scrollPosition);
                 if (draggingNode != null)
                 {
-                    draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                    draggingOffset = draggingNode.GetRect().position - Event.current.mousePosition;
+                    Selection.activeObject = draggingNode;
+                }
+                else
+                {
+                    draggingCanvas = true;
+                    draggingCanvasOffset = Event.current.mousePosition + scrollPosition;
+                    Selection.activeObject = selectedDialogue;
                 }
             }
-            else if (Event.current.type == EventType.MouseDrag && draggingNode != null )
-            {
+            else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
+            {//mouse drag
                 Undo.RecordObject(selectedDialogue, "Move Dialogue Node");
-                draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
+                draggingNode.SetPosition(Event.current.mousePosition + draggingOffset);
+
                 GUI.changed = true;
             }
-            else if(Event.current.type == EventType.MouseUp && draggingNode != null)
+            else if (Event.current.type == EventType.MouseDrag && draggingCanvas)
             {
+                scrollPosition = draggingCanvasOffset - Event.current.mousePosition;
+
+                GUI.changed = true;
+            }
+
+            else if (Event.current.type == EventType.MouseUp && draggingNode != null)
+            {//mouse up
                 draggingNode = null;
             }
-            
+            else if (Event.current.type == EventType.MouseUp && draggingCanvas)
+            {
+                draggingCanvas = false;
+            }
+
+
         }
 
         private void DrawNode(DialogueNode node)
         {
-            GUILayout.BeginArea(node.rect, nodeStyle);
-            EditorGUI.BeginChangeCheck();
-
-            
-            string newText = EditorGUILayout.TextField(node.text);
-
-            if (EditorGUI.EndChangeCheck())
+            GUIStyle style = npcOneNodeStyle;
+            if (node.IsPlayerSpeaking())
             {
-                Undo.RecordObject(selectedDialogue, "Update Dialogue Text");
-
-                node.text = newText;
+                style = playerNodeStyle;
+            }
+            if (node.IsNPCOneSpeaking())
+            {
+                style = npcOneNodeStyle;
+            }
+            if (node.IsNPCTwoSpeaking())
+            {
+                style = npcTwoNodeStyle;
+            }
+            if (node.IsNPCThreeSpeaking())
+            {
+                style = npcThreeNodeStyle;
             }
 
-            if (GUILayout.Button("+"))
-            {
-                creatingNode = node;
-            }
+            GUILayout.BeginArea(node.GetRect(), style);
+
+            node.SetText(EditorGUILayout.TextField(node.GetText()));
+
+            GUILayout.BeginHorizontal();
+
+            if (GUILayout.Button("x")) { deletingNode = node; }
+           
+            DrawLinkButtons(node);
+
+            if (GUILayout.Button("+")) { creatingNode = node; }
+
+            GUILayout.EndHorizontal();
+
+
 
             GUILayout.EndArea();
         }
 
+        private void DrawLinkButtons(DialogueNode node)
+        {
+            if (linkingParentNode == null)
+            {
+                if (GUILayout.Button("Link"))
+                {
+                    linkingParentNode = node;
+                }
+            }
+            else if (linkingParentNode == node)
+            {
+                if (GUILayout.Button("Cancel"))
+                {
+                    linkingParentNode = null;
+                }
+            }
+            else if (linkingParentNode.GetChildren().Contains(node.name))
+            {
+                if (GUILayout.Button("Unlink"))
+                {
+                    linkingParentNode.RemoveChild(node.name);
+                    linkingParentNode = null;
+                }
+            }
+            else
+            {
+                if (GUILayout.Button("Child"))
+                {
+                    linkingParentNode.AddChild(node.name);
+                    linkingParentNode = null
+                        ;
+                }
+            }
+        }
+
         private void DrawConnections(DialogueNode node)
         {
-            Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+            Vector3 startPosition = new Vector2(node.GetRect().xMax, node.GetRect().center.y);
             foreach (DialogueNode childNode in selectedDialogue.GetAllChildren(node))
             {
-                Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+                Vector3 endPosition = new Vector2(childNode.GetRect().xMin, childNode.GetRect().center.y);
                 Vector3 controlPointOffset = endPosition - startPosition;
                 controlPointOffset.y = 0;
                 controlPointOffset.x *= 0.8f;
@@ -129,7 +236,7 @@ namespace Sanctuary.Harry.Dialogue.Editor
             DialogueNode foundNode = null;
             foreach (DialogueNode node in selectedDialogue.GetAllNodes())
             {
-                if (node.rect.Contains(point)) { foundNode = node; }
+                if (node.GetRect().Contains(point)) { foundNode = node; }
             }
             return foundNode;
         }
