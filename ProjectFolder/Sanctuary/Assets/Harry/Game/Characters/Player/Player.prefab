@@ -69384,7 +69384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 16
+  inventorySize: 24
 --- !u!114 &6738237660962754351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69398,3 +69398,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scatterDistance: 1
+  dropLibrary: {fileID: 0}
