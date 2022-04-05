@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using System.Linq;
 
 namespace Sanctuary.Harry.Dialogue
 {
@@ -13,15 +14,29 @@ namespace Sanctuary.Harry.Dialogue
         [SerializeField] Vector2 newNodeOffset = new Vector2(250, 0);
         [NonSerialized] Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
+        private void Awake()
+        {
+            OnValidate();
+        }
+
         private void OnValidate()
         {
-            nodeLookup.Clear();
+            //nodeLookup.Clear();
 
             foreach (DialogueNode node in GetAllNodes())
-            {
+            {   
                 nodeLookup[node.name] = node;
             }
+
+            //nodeLookup.Clear();
+
+            //foreach (DialogueNode node in GetAllNodes())
+            //{
+            //    nodeLookup[node.name] = node;
+            //}
         }
+
+        
 
         public IEnumerable<DialogueNode> GetAllNodes()
         {
@@ -31,6 +46,28 @@ namespace Sanctuary.Harry.Dialogue
         public DialogueNode GetRootNode()
         {
             return nodes[0];
+        }
+
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(currentNode))
+            {
+                if (node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(currentNode))
+            {
+                if (!node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
         }
 
         public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
@@ -46,7 +83,7 @@ namespace Sanctuary.Harry.Dialogue
         {
             DialogueNode newNode = MakeNode(parent);
             Undo.RegisterCreatedObjectUndo(newNode, "Created Dialogue Node");
-            Undo.RecordObject(this, "Added Dialogue Node");
+            if (AssetDatabase.GetAssetPath(this)!="") { Undo.RecordObject(this, "Added Dialogue Node"); }
             AddNode(newNode);
         }
 

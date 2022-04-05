@@ -35,6 +35,7 @@ namespace Sanctuary.Harry.Control
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                other.GetComponent<MovementController>().Cancel();
                 pickup.PickupItem();
             }
         }

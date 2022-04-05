@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4425119251876128023, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: playerName
+      value: Arkhrynn Everbright
+      objectReference: {fileID: 0}
     - target: {fileID: 4480778779971933448, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
       propertyPath: m_IsActive
       value: 0

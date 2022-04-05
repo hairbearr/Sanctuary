@@ -69355,10 +69355,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorMappings:
   - type: 0
-    texture: {fileID: 2800000, guid: 0f45821c9378469498c0044ff9068ea2, type: 3}
+    texture: {fileID: 2800000, guid: d0bd63dc4e8d4a845a0f198c39644e18, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 1
-    texture: {fileID: 2800000, guid: 0f45821c9378469498c0044ff9068ea2, type: 3}
+    texture: {fileID: 2800000, guid: 42ec8a0e710138343a271d732299cfb6, type: 3}
     hotspot: {x: 0, y: 0}
   - type: 2
     texture: {fileID: 2800000, guid: ce683041f000c7c48b73e8fbda566384, type: 3}
@@ -69368,6 +69368,9 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   - type: 4
     texture: {fileID: 2800000, guid: 6d0916f30d4a8e84c839a037bed24d2a, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 6
+    texture: {fileID: 2800000, guid: 442311c923fee7a4c97faa6fdeb43d7d, type: 3}
     hotspot: {x: 0, y: 0}
   maxNavMeshProjDist: 1
   raycastRadius: 1
@@ -69385,6 +69388,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 24
+--- !u!114 &4425119251876128023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b590b083f536342acf291fee1f14f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testDialogue: {fileID: 0}
 --- !u!114 &6738237660962754351
 MonoBehaviour:
   m_ObjectHideFlags: 0

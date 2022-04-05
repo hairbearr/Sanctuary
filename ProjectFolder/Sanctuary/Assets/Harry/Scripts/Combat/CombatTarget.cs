@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Sanctuary.Harry.Combat
 {
     [RequireComponent(typeof(Health))]
-    public class FightTarget : MonoBehaviour, IRaycastable
+    public class CombatTarget : MonoBehaviour, IRaycastable
     {
 
         public CursorType GetCursorType()
@@ -17,12 +17,12 @@ namespace Sanctuary.Harry.Combat
 
         public bool HandleRaycast(PlayerController callingController)
         {
-                if (!callingController.GetComponent<CombatController>().CanAtk(gameObject)) { return false; }
+            if (!enabled) { return false; }
+            if (!callingController.GetComponent<CombatController>().CanAtk(gameObject)) { return false; }
 
-                if (Input.GetMouseButtonDown(1)) { callingController.GetComponent<CombatController>().Attack(gameObject); }
+            if (Input.GetMouseButtonDown(1)) { callingController.GetComponent<CombatController>().Attack(gameObject); }
 
-                return true;
-            
+            return true;
            
         }
 
