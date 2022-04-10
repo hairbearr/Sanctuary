@@ -8,13 +8,13 @@ using UnityEngine;
 
 namespace Sanctuary.Harry.Dialogue
 {
-    public class PlayerConversant : MonoBehaviour
+    public class PlayerConversant : MonoBehaviour, IAction
     {
         [SerializeField] string playerName;
 
         Dialogue currentDialogue;
         DialogueNode currentNode = null;
-        AIConversant currentConversant = null;
+        AIConversant currentConversant = null, targetConversant;
         bool isChoosing = false;
         
 
@@ -22,13 +22,44 @@ namespace Sanctuary.Harry.Dialogue
         public event Action onConversationUpdated;
 
 
-        public void StartDialogue(AIConversant newConversant, Dialogue newDialogue)
+        public void StartDialogueAction(AIConversant newConversant, Dialogue newDialogue)
         {
-            currentConversant = newConversant;
+            //Debug.Log($"StartDialogueAction {newConversant}/{newDialogue}");
+            if (currentConversant != null && currentConversant == newConversant) return;
+            if (currentDialogue != null) Quit();
+            if(newConversant == null) { return; }
+
+            GetComponent<ActionScheduler>().StartAction(this);
+
+            
             currentDialogue = newDialogue;
+            targetConversant = newConversant;
+            
+        }
+
+        private void Update()
+        {
+           if (targetConversant)
+            {
+                if(Vector3.Distance(targetConversant.transform.position, transform.position) > 3)
+                {
+                    GetComponent<MovementController>().MoveTo(targetConversant.transform.position, 1); ;
+                }
+                else
+                {
+                   GetComponent<MovementController>().Cancel();
+                    StartDialogue();
+                }
+            }    
+        }
+
+        private void StartDialogue()
+        {
+            currentConversant = targetConversant;
+            targetConversant = null;
             currentNode = currentDialogue.GetRootNode();
-            TriggerEnterAction();
-            onConversationUpdated();
+            onConversationUpdated?.Invoke();
+            
         }
 
         public void Quit()
@@ -135,6 +166,11 @@ namespace Sanctuary.Harry.Dialogue
             {
                 trigger.Trigger(action);
             }
+        }
+
+        public void Cancel()
+        {
+            Quit();
         }
     }
 }
