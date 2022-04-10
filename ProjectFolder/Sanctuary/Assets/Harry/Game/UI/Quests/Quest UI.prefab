@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 1021281734519869779}
   - component: {fileID: 2038039808397311054}
   - component: {fileID: 711770290143484053}
+  - component: {fileID: 5864966622770679907}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -271,7 +272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000016906, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0.000016906, y: -0.00018310547}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2038039808397311054
@@ -314,6 +315,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &5864966622770679907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678879149465572237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8378dc88e1ee3964f8ae9e2fbab9f908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempQuests:
+  - {fileID: 11400000, guid: f0f5286610a42964a8d75776d8407dbb, type: 2}
+  - {fileID: 11400000, guid: eecc307fdb8d5fe4192041b5a17e484d, type: 2}
+  questPrefab: {fileID: 4612809823114960009, guid: a579a87f75b8ff546845bd24f4fb1bdc, type: 3}
 --- !u!1 &3473495032227022744
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,8 +760,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3773410022747497476}
   m_HandleRect: {fileID: 3970989530896050307}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.45483363
+  m_Value: 1.0000005
+  m_Size: 0.4548336
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -758,6 +775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5236397207783333966}
+  - component: {fileID: 2108299054185331099}
   m_Layer: 5
   m_Name: Quest UI
   m_TagString: Untagged
@@ -787,6 +805,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2108299054185331099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6004748855095889224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b6a7fac6e2d604a8e529f6dddf65b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleKey: 108
+  uiContainer: {fileID: 8555232073922643126}
 --- !u!1 &6872223571153134336
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1241.5, y: -1773.9}
+  m_AnchoredPosition: {x: 1187.4, y: -1736.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6062777067736127544
@@ -907,7 +939,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3027908874700077574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108299054185331099}
+        m_TargetAssemblyTypeName: GameDevTV.UI.ShowHideUI, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8555232073922643126
 GameObject:
   m_ObjectHideFlags: 0
