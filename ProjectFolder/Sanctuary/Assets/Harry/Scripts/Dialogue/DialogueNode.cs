@@ -1,3 +1,4 @@
+using Sanctuary.Harry.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ public class DialogueNode : ScriptableObject
     [SerializeField] private Rect rect = new Rect(0,0,200,100);
     [SerializeField] private string onEnterAction;
     [SerializeField] private string onExitAction;
+    [SerializeField] Condition condition;
+
 
     public Rect GetRect()
     {
@@ -75,6 +78,11 @@ public class DialogueNode : ScriptableObject
         return onExitAction;
     }
 
+    public bool CheckConditon(IEnumerable<IPredicateEvaluator> evaluators)
+    {
+        return condition.Check(evaluators);
+    }
+
 #if UNITY_EDITOR
     public void SetPosition(Vector2 newPosition)
     {
@@ -101,5 +109,7 @@ public class DialogueNode : ScriptableObject
         children.Remove(childID);
         EditorUtility.SetDirty(this);
     }
+
+    
 #endif
 }

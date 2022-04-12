@@ -12,7 +12,7 @@ using GameDevTV.Inventories;
 
 namespace Sanctuary.Harry.Combat
 {
-    public class CombatController : MonoBehaviour, IAction, ISaveable
+    public class CombatController : MonoBehaviour, IAction
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
@@ -157,7 +157,7 @@ namespace Sanctuary.Harry.Combat
             return weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
-        public object CaptureState()
+        /*public object CaptureState()
         {
             return currentWeaponConfig.name;
         }
@@ -167,7 +167,7 @@ namespace Sanctuary.Harry.Combat
             string weaponName = (string)state;
             WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
             EquipWeapon(weapon);
-        }
+        }*/
 
         public Health GetTarget()
         {

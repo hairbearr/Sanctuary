@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
   m_Name: Enemy Bow
   m_EditorClassIdentifier: 
+  itemID: c6f63fe5-56e0-496b-acf8-88d6b311821b
+  displayName: Bow
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 7
   wepRange: 12
   atkSpd: 1.2
   dmg: 8

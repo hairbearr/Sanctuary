@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9022751334214154148, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Name
-      value: NPC (1)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -133,18 +133,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9022751334214154148, guid: d04f9abdf02729f468416295549249c1, type: 3}
   m_PrefabInstance: {fileID: 7476213001318247417}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7977547795400424640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1943189532572589149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 390459af5676e7a4ba4956bccad647d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &70089585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,3 +154,58 @@ MonoBehaviour:
   patSpeedFract: 0.2
   patrolPath: {fileID: 0}
   hasShout: 0
+--- !u!114 &7977547795400424640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943189532572589149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390459af5676e7a4ba4956bccad647d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversantName: 
+  dialogue: {fileID: 0}
+--- !u!114 &6038142255403573401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943189532572589149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7837797875638430418}
+        m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7837797875638430418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943189532572589149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e29b39b7c709ea42b371e23113ba438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 0}

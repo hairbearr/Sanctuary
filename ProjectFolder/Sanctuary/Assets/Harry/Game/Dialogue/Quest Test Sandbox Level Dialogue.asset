@@ -1,0 +1,342 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8904031670116098543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: ed4949e0-4213-4099-8e67-4bc3380eabab
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Can you help me?
+  children:
+  - 63af1014-0d71-497f-a4e3-1aff40463740
+  - 546d0942-4b81-438f-b817-e1272f8f6a8e
+  - 81f1c432-2ad4-4c06-9e6c-e9e6f77bb444
+  - f70d67e7-e841-4555-82e7-c92d0111913b
+  rect:
+    serializedVersion: 2
+    x: 29
+    y: 69
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7743134594304695236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 33a685ec-c68d-4d70-841d-4c8af5eb19f3
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: I seem to have forgotten a whetstone. Can you please bring meone to sharpen
+    my sword?
+  children:
+  - 5f241ba8-cafa-4c21-b8ee-800e4853daf5
+  rect:
+    serializedVersion: 2
+    x: 519
+    y: 185
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3736161048447898685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: e5b80e9d-5389-4f95-a86b-bf23f9ad2ddb
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Oh yeah! I'm so forgetful! Sorry!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 508
+    y: 325
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3656717485047260621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 81f1c432-2ad4-4c06-9e6c-e9e6f77bb444
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: I'm already helping you!
+  children:
+  - e5b80e9d-5389-4f95-a86b-bf23f9ad2ddb
+  rect:
+    serializedVersion: 2
+    x: 276
+    y: 325
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sandbox Quest
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sandbox Quest
+        negate: 1
+--- !u!114 &-3548744255872758916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 546d0942-4b81-438f-b817-e1272f8f6a8e
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: Sure, how can I help?
+  children:
+  - 33a685ec-c68d-4d70-841d-4c8af5eb19f3
+  rect:
+    serializedVersion: 2
+    x: 281
+    y: 185
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sandbox Quest
+        negate: 1
+--- !u!114 &-1290337742911937374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 40207cd2-f20c-4b32-a6d6-018e3ca9a51d
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Thank you so much!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 526
+    y: 452
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: TestObjective
+  condition:
+    and: []
+--- !u!114 &-869769810011055583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 5f241ba8-cafa-4c21-b8ee-800e4853daf5
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: I think I can do that... for a price
+  children:
+  - 9e696fef-4a16-46bf-8f95-d88983276ace
+  rect:
+    serializedVersion: 2
+    x: 766
+    y: 185
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea4ddaec30ffb54ba323f82520f4a0d, type: 3}
+  m_Name: Quest Test Sandbox Level Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -8904031670116098543}
+  - {fileID: 5646834576285727638}
+  - {fileID: -3548744255872758916}
+  - {fileID: -7743134594304695236}
+  - {fileID: -869769810011055583}
+  - {fileID: 1984732701315359007}
+  - {fileID: 6790066616536239094}
+  - {fileID: -3656717485047260621}
+  - {fileID: -3736161048447898685}
+  - {fileID: 7140623725927371477}
+  - {fileID: -1290337742911937374}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1984732701315359007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 9e696fef-4a16-46bf-8f95-d88983276ace
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Why thank you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1016
+    y: 185
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &5646834576285727638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 63af1014-0d71-497f-a4e3-1aff40463740
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: No, leave me alone
+  children:
+  - da5c86f3-34c1-44a0-ae40-c76de53e56fe
+  rect:
+    serializedVersion: 2
+    x: 265
+    y: 37
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6790066616536239094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: da5c86f3-34c1-44a0-ae40-c76de53e56fe
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: You don't have to be rude...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 515
+    y: 37
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7140623725927371477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: f70d67e7-e841-4555-82e7-c92d0111913b
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: I have the whetstone!
+  children:
+  - 40207cd2-f20c-4b32-a6d6-018e3ca9a51d
+  rect:
+    serializedVersion: 2
+    x: 276
+    y: 452
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sandbox Quest
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sandbox Quest
+        negate: 0
+      - predicate: HasInventoryItem
+        parameters:
+        - 93d2fb43-0f87-49f5-9cf6-f3b34d02682b
+        negate: 0

@@ -1,4 +1,5 @@
 using GameDevTV.Core.UI.Tooltips;
+using Sanctuary.Harry.Quests;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,8 @@ namespace Sanctuary.Harry.UI.Quests
 
         public override void UpdateTooltip(GameObject tooltip)
         {
-            throw new System.NotImplementedException();
+            QuestStatus status = GetComponent<QuestItemUI>().GetQuestStatus();
+            tooltip.GetComponent<QuestTooltipUI>().Setup(status);
         }
     }
 }

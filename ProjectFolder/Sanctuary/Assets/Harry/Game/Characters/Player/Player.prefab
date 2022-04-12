@@ -69400,7 +69400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b590b083f536342acf291fee1f14f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 0}
+  playerName: 
 --- !u!114 &6738237660962754351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69415,3 +69415,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scatterDistance: 1
   dropLibrary: {fileID: 0}
+--- !u!114 &7699858773560925939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db552b6b31cd7d448955e4676f54c7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: f0f5286610a42964a8d75776d8407dbb, type: 2}
+    completedObjectives:
+    - a
+    - b
+  - quest: {fileID: 11400000, guid: eecc307fdb8d5fe4192041b5a17e484d, type: 2}
+    completedObjectives:
+    - 2

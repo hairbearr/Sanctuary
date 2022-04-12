@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Unarmed
   m_EditorClassIdentifier: 
   itemID: 1b27a64d-befd-4c1d-98d0-3a1ea277735b
-  displayName: 
+  displayName: Unarmed
   description: 
   icon: {fileID: 0}
   pickup: {fileID: 0}

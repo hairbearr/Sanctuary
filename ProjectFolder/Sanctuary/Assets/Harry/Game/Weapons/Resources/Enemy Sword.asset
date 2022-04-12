@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
   m_Name: Enemy Sword
   m_EditorClassIdentifier: 
+  itemID: 09480059-14a9-46b3-baaa-d05189141872
+  displayName: Sword
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 7
   wepRange: 2
   atkSpd: 1
   dmg: 5
