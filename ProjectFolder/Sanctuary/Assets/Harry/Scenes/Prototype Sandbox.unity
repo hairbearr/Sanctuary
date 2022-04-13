@@ -1351,11 +1351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: TestObjective
+  action: ObjectiveOne
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 38117486}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestCompletion, Assembly-CSharp
         m_MethodName: CompleteObjective
         m_Mode: 1
@@ -1367,20 +1367,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &38117486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38117469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7631d1a40dd944a9424f158614e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 6eaf7e3087df8114faafbbed8b19495a, type: 2}
-  objective: 1
 --- !u!1001 &123605283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3811,11 +3797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: TestObjective
+  action: CompleteObjective
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 136211831}
+      - m_Target: {fileID: 136211843}
         m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestCompletion, Assembly-CSharp
         m_MethodName: CompleteObjective
         m_Mode: 1
@@ -3827,7 +3813,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &136211831
+--- !u!114 &136211843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3840,7 +3826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 6eaf7e3087df8114faafbbed8b19495a, type: 2}
-  objective: 1
+  objective: ObjectiveOne
 --- !u!1001 &181882937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19020,7 +19006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2587684778607813307, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -327.98013
+      value: -327.98004
       objectReference: {fileID: 0}
     - target: {fileID: 2588255225961574425, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchorMax.x

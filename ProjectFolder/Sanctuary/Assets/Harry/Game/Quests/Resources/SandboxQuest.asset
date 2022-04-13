@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 900511a7d8dba55408fd4f42d16267f2, type: 3}
-  m_Name: Sandbox Quest
+  m_Name: SandboxQuest
   m_EditorClassIdentifier: 
   objectives:
-  - reference: 1
+  - reference: ObjectiveOne
     description: Return the Whetstone to the Forgetful Soldier
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: c2a555d11c06fbb4fb903d393c62aef4, type: 2}
-  - number: 2
+  - number: 1
     item: {fileID: 11400000, guid: 067cf2b4208a5724e861cbf3feb07ff1, type: 2}
   - number: 1
     item: {fileID: 11400000, guid: d17e13c5799c3b94ea165521a9a99449, type: 2}

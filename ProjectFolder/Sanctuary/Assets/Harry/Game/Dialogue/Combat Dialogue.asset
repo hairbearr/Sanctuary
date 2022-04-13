@@ -48,7 +48,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: 
+  onExitAction: ObjectiveOne
   condition:
     and: []
 --- !u!114 &-4080941066957845712

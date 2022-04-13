@@ -22,7 +22,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 29
-    y: 69
+    y: 68
     width: 200
     height: 100
   onEnterAction: 
@@ -73,8 +73,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 508
-    y: 325
+    x: 527
+    y: 344
     width: 200
     height: 100
   onEnterAction: 
@@ -99,8 +99,8 @@ MonoBehaviour:
   - e5b80e9d-5389-4f95-a86b-bf23f9ad2ddb
   rect:
     serializedVersion: 2
-    x: 276
-    y: 325
+    x: 277
+    y: 344
     width: 200
     height: 100
   onEnterAction: 
@@ -110,12 +110,12 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Sandbox Quest
+        - SandboxQuest
         negate: 0
     - or:
       - predicate: CompletedQuest
         parameters:
-        - Sandbox Quest
+        - SandboxQuest
         negate: 1
 --- !u!114 &-3548744255872758916
 MonoBehaviour:
@@ -146,7 +146,11 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Sandbox Quest
+        - SandboxQuest
+        negate: 1
+      - predicate: CompletedQuest
+        parameters:
+        - SandboxQuest
         negate: 1
 --- !u!114 &-1290337742911937374
 MonoBehaviour:
@@ -165,12 +169,12 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 526
-    y: 452
+    x: 529
+    y: 514
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: TestObjective
+  onExitAction: CompleteObjective
   condition:
     and: []
 --- !u!114 &-869769810011055583
@@ -191,7 +195,7 @@ MonoBehaviour:
   - 9e696fef-4a16-46bf-8f95-d88983276ace
   rect:
     serializedVersion: 2
-    x: 766
+    x: 767
     y: 185
     width: 200
     height: 100
@@ -267,8 +271,8 @@ MonoBehaviour:
   - da5c86f3-34c1-44a0-ae40-c76de53e56fe
   rect:
     serializedVersion: 2
-    x: 265
-    y: 37
+    x: 284
+    y: 38
     width: 200
     height: 100
   onEnterAction: 
@@ -293,7 +297,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 515
-    y: 37
+    y: 39
     width: 200
     height: 100
   onEnterAction: 
@@ -319,7 +323,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 276
-    y: 452
+    y: 512
     width: 200
     height: 100
   onEnterAction: 
@@ -329,14 +333,15 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Sandbox Quest
+        - SandboxQuest
         negate: 0
     - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Sandbox Quest
-        negate: 0
       - predicate: HasInventoryItem
         parameters:
         - 93d2fb43-0f87-49f5-9cf6-f3b34d02682b
         negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - SandboxQuest
+        negate: 1

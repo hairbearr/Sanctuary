@@ -71,7 +71,7 @@ namespace Sanctuary.Harry.Quests
                     for (int i = 0; i < reward.number; i++)
                     {
                         bool isGiven = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, 1);
-                        if (isGiven) break;
+                        if (!isGiven) break;
 
                         given++;
                     }
@@ -92,7 +92,7 @@ namespace Sanctuary.Harry.Quests
                 else
                 {
                     bool isGiven = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
-                    if (isGiven)
+                    if (!isGiven)
                     {
                         for (int i = 0; i < reward.number; i++)
                         {
@@ -130,13 +130,15 @@ namespace Sanctuary.Harry.Quests
 
         public bool? Evaluate(string predicate, string[] parameters)
         {
-            if (predicate != "HasQuest") return null;
+            
 
             switch (predicate)
             {
                 case "HasQuest":
+                    Debug.Log($"HasQuest {parameters[0]} = {HasQuest(Quest.GetByName(parameters[0]))}");
                     return HasQuest(Quest.GetByName(parameters[0]));
                 case "CompletedQuest":
+                    Debug.Log($"CompletedQuest {parameters[0]} = {GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete()}");
                     return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
             }
 

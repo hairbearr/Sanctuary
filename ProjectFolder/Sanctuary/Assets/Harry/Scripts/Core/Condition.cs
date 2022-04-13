@@ -43,13 +43,28 @@ namespace Sanctuary.Harry.Core
 
             public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
             {
+                Debug.Log($"Testing Predicate {predicate}({parameters[0]})");
+
                 foreach (var evaluator in evaluators)
                 {
+
+                    Debug.Log($"{evaluator} is evaluating {predicate}");
+
                     bool? result = evaluator.Evaluate(predicate, parameters);
 
-                    if (result == null) { continue; }
+                    if (result == null)
+                    {
 
-                    if (result == negate) return false;
+                        Debug.Log($"{evaluator} cannot handle {predicate}");
+                        continue;
+                    
+                    }
+
+                    if (result == negate)
+                    {
+                        Debug.Log($"result = {result}, but expecting {!negate} returning false");
+                        return false;
+                    }
                 }
                 return true;
             }

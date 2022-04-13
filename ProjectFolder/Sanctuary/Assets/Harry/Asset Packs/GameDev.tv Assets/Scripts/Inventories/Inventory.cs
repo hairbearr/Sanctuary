@@ -260,6 +260,7 @@ namespace GameDevTV.Inventories
             switch (predicate)
             {
                 case "HasInventoryItem":
+                    Debug.Log($"HasInventoryItem {parameters[0]} = {HasItem(InventoryItem.GetFromID(parameters[0]))}");
                     return HasItem(InventoryItem.GetFromID(parameters[0]));
             }
             return null;
