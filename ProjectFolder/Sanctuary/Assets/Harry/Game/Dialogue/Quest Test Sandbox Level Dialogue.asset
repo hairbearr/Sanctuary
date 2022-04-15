@@ -174,10 +174,6 @@ MonoBehaviour:
         parameters:
         - SandboxQuest
         negate: 1
-      - predicate: CompletedQuest
-        parameters:
-        - SandboxQuest
-        negate: 0
 --- !u!114 &-1290337742911937374
 MonoBehaviour:
   m_ObjectHideFlags: 0

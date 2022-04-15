@@ -69185,7 +69185,7 @@ PrefabInstance:
     - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: fb12da04a7772ad47aab467c7495f4f8, type: 2}
+      objectReference: {fileID: 11400000, guid: 6f5205180bb03b8499992ef02c960136, type: 2}
     - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: leftHandTrans
       value: 
@@ -69304,6 +69304,20 @@ CapsuleCollider:
   m_Height: 2.0204337
   m_Direction: 1
   m_Center: {x: 0, y: 0.89800584, z: 0}
+--- !u!114 &-9012779630965913001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1177968e121098c488bfebbbf8fe56b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 2
+  dropLibrary: {fileID: 0}
 --- !u!114 &-5862840245074385567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69372,9 +69386,12 @@ MonoBehaviour:
   - type: 6
     texture: {fileID: 2800000, guid: 442311c923fee7a4c97faa6fdeb43d7d, type: 3}
     hotspot: {x: 0, y: 0}
+  - type: 7
+    texture: {fileID: 2800000, guid: 3c91d4a027422ac4a8f2152a853d036a, type: 3}
+    hotspot: {x: 0, y: 0}
   maxNavMeshProjDist: 1
   raycastRadius: 1
-  clickFeedback: {fileID: 0}
+  clickFeedback: {fileID: 6726554418894711733, guid: 096e3ed87e7cd3c46ac664b4b8349620, type: 3}
 --- !u!114 &2486467834527864560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69388,6 +69405,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 24
+--- !u!114 &3727887607942078611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046179940813090931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908e6a6b3ed1194cadb3bb09d96ecb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4425119251876128023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69427,11 +69456,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db552b6b31cd7d448955e4676f54c7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statuses:
-  - quest: {fileID: 11400000, guid: f0f5286610a42964a8d75776d8407dbb, type: 2}
-    completedObjectives:
-    - a
-    - b
-  - quest: {fileID: 11400000, guid: eecc307fdb8d5fe4192041b5a17e484d, type: 2}
-    completedObjectives:
-    - 2

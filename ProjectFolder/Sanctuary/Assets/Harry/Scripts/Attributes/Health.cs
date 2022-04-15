@@ -11,6 +11,7 @@ namespace Sanctuary.Harry.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
+
         LazyValue<float> healthPts;
 
         [SerializeField] UnityEvent<float> takeDamage;
@@ -22,6 +23,8 @@ namespace Sanctuary.Harry.Attributes
         {
             healthPts = new LazyValue<float>(GetInitialHealth);
         }
+
+        
 
         private void Start()
         {
