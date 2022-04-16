@@ -41,6 +41,11 @@ namespace   Sanctuary.Harry.Shops
 
         }
 
+        public int GetQuantityInTransaction()
+        {
+            return quantityInTransaction;
+        }
+
         public InventoryItem GetInventoryItem()
         {
             return item;

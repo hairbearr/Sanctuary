@@ -11,7 +11,7 @@ namespace Sanctuary.Harry.UI.Shops
     public class RowUI : MonoBehaviour
     {
         [SerializeField] Image iconField;
-        [SerializeField] TextMeshProUGUI nameField, availabilityField, priceField;
+        [SerializeField] TextMeshProUGUI nameField, availabilityField, priceField, quantityField;
 
         Shop currentShop = null;
         ShopItem item = null;
@@ -25,6 +25,7 @@ namespace Sanctuary.Harry.UI.Shops
             nameField.text = item.GetName();
             availabilityField.text = $"{item.GetAvailability()}";
             priceField.text = $"{item.GetPrice():N0}";
+            quantityField.text = $"{item.GetQuantityInTransaction()}";
         }
 
         public void Add()

@@ -23,6 +23,8 @@ namespace   Sanctuary.Harry.Shops
             
         }
 
+        Dictionary<InventoryItem, int> transaction = new Dictionary<InventoryItem, int>();
+
         public event Action onChange;
 
         public IEnumerable<ShopItem> GetFilteredItems()
@@ -30,7 +32,9 @@ namespace   Sanctuary.Harry.Shops
              foreach (StockItemConfig config in stockConfig)
              {
                  float price = config.item.GetPrice() * (1 - config.buingDiscountPercentage/100);
-                 yield return new ShopItem(config.item, config.initialStock, price, 0);
+                 int quantityInTransaction = 0;
+                 transaction.TryGetValue(config.item, out quantityInTransaction);
+                 yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction);
              }
         }
         public void SelectFilter(ItemCategory category) {}
@@ -48,7 +52,16 @@ namespace   Sanctuary.Harry.Shops
 
         public void AddToTransaction(InventoryItem item, int quantity)
         {
-            print($"added to transaction: {item.GetDisplayName()} x {quantity}");
+            if(!transaction.ContainsKey(item))
+            {
+                transaction[item] = 0;
+            }
+
+            transaction[item] += quantity;
+
+            if(transaction[item] <=0) { transaction.Remove(item); }
+
+            if(onChange!= null) { onChange(); }
         }
 
         public CursorType GetCursorType()
