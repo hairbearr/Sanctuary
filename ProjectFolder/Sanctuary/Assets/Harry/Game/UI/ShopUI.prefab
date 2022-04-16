@@ -694,6 +694,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb40d4a06a7ea624fbe1e63548ee2719, type: 3}
+--- !u!114 &8008762404493726114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8254057815023885547, guid: cb40d4a06a7ea624fbe1e63548ee2719, type: 3}
+  m_PrefabInstance: {fileID: 2137128586376842569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2821829578772866891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1020,6 +1031,34 @@ PrefabInstance:
     - target: {fileID: 2925257554689489706, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
       propertyPath: m_Name
       value: Quit Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5786991618361126644}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Sanctuary.Harry.UI.Shops.ShopUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615202719272787904, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7390384800699431856, guid: cc2c8cab439e1014ba09c9c6457f8372, type: 3}
       propertyPath: m_Pivot.x
@@ -1460,6 +1499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0106abf489265f4d840145f65cc274a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopName: {fileID: 8008762404493726114}
+  listRoot: {fileID: 903079226960975417}
+  rowPrefab: {fileID: 8015465623987816004, guid: 57f2ad33c64bbff41895493b6c82617f, type: 3}
 --- !u!224 &7953166654984739733 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3101899602666819115, guid: c14aac92090bdf34f8a2e293cb86f318, type: 3}

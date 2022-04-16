@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Sanctuary.Harry.Shops;
 using UnityEngine;
+using TMPro;
+using System;
 
 namespace Sanctuary.Harry.UI.Shops
 {
@@ -9,6 +11,9 @@ namespace Sanctuary.Harry.UI.Shops
     {
         Shopper shopper = null;
         Shop currentShop = null;
+        [SerializeField] TextMeshProUGUI shopName;
+        [SerializeField] Transform listRoot;
+        [SerializeField] RowUI rowPrefab;
 
 
         // Start is called before the first frame update
@@ -27,6 +32,31 @@ namespace Sanctuary.Harry.UI.Shops
         {
             currentShop = shopper.GetActiveShop();
             gameObject.SetActive(currentShop != null);
+
+            if(currentShop == null) return;
+
+            shopName.text = currentShop.GetShopName();
+
+            RefreshUI();
+        }
+
+        private void RefreshUI()
+        {
+            foreach (Transform child in listRoot)
+            {
+                Destroy(child.gameObject);
+            }
+
+            foreach (ShopItem item in currentShop.GetFilteredItems())
+            {
+                RowUI row = Instantiate<RowUI>(rowPrefab, listRoot);
+                row.Setup(currentShop, item);
+            }
+        }
+
+        public void Close()
+        {
+            shopper.SetActiveShop(null);
         }
     }
 }

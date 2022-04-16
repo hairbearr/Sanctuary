@@ -63,6 +63,7 @@ PrefabInstance:
     - {fileID: 6038142255403573401, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
     - {fileID: 7837797875638430418, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
     - {fileID: 7977547795400424640, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+    - {fileID: 430303885124810218, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
 --- !u!1 &8335756702010429315 stripped
 GameObject:
@@ -95,3 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d342864ad03db26459ef1d2ff5ef1400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopName: 
