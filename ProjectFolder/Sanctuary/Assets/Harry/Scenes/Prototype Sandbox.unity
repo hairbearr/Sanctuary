@@ -4071,12 +4071,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 81229d8792556b84e80eb9e9d469962c, type: 2}
+      objectReference: {fileID: 11400000, guid: 72bf1241a34ee234cb0bdbdac19e242f, type: 2}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[1].item
       value: 
@@ -4088,7 +4088,7 @@ PrefabInstance:
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[3].item
       value: 
-      objectReference: {fileID: 11400000, guid: ee8ebe684aeb0df4f8d37e5fa7840eff, type: 2}
+      objectReference: {fileID: 11400000, guid: 341a9e2f3ec1ef649baf5e9d6f955bc0, type: 2}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[4].item
       value: 
@@ -4111,7 +4111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[3].initialStock
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[4].initialStock
@@ -4135,7 +4135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[3].levelToUnlock
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.data[4].levelToUnlock
@@ -17926,7 +17926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2587684778607813307, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -300.00098
+      value: -300.001
       objectReference: {fileID: 0}
     - target: {fileID: 2588255225961574425, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchorMax.x
@@ -24017,7 +24017,7 @@ GameObject:
   - component: {fileID: 2141534383}
   - component: {fileID: 2141534385}
   - component: {fileID: 2141534384}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: SandboxTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

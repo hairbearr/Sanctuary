@@ -8,24 +8,28 @@ using Sanctuary.Harry.Attributes;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using GameDevTV.Inventories;
 
 namespace Sanctuary.Harry.Control
 {
     public class PlayerController : MonoBehaviour
     {
         Health health;
+        ActionStore actionStore;
 
         [System.Serializable] struct CursorMapping { public CursorType type; public Texture2D texture; public Vector2 hotspot; }
 
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjDist = 1f, raycastRadius =1f;
         [SerializeField] ParticleSystem clickFeedback;
+        [SerializeField] int numberOfAbilities = 6;
 
         bool isDraggingUI = false;
 
         private void Awake()
         {
             health = GetComponent<Health>();
+            actionStore = GetComponent<ActionStore>();
         }
 
         private void Update()
@@ -37,6 +41,8 @@ namespace Sanctuary.Harry.Control
                 SetCursor(CursorType.None);
                 return;
             }
+
+            UseAbilities();
 
             if (HandleComponent()) return;
             
@@ -104,6 +110,17 @@ namespace Sanctuary.Harry.Control
             return false;
         }
 
+        private void UseAbilities()
+        {
+            for (int i = 0; i < numberOfAbilities; i++)
+            {
+                if(Input.GetKeyDown(KeyCode.Alpha1 + i))
+                {
+                    actionStore.Use(i, gameObject);
+                }
+            }
+        }
+
         private bool HandleMovement()
         {
             Vector3 target;
@@ -147,7 +164,7 @@ namespace Sanctuary.Harry.Control
 
         
 
-        private static Ray GetMouseRay()
+        public static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Sanctuary.Harry.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "Sanctuary/Weapons/Make New Weapon", order = 0)]
+    [CreateAssetMenu(fileName = "New Weapon", menuName = "Sanctuary/Weapons/Make New Weapon", order = 0)]
     public class WeaponConfig : EquipableItem, IModifierProvider
     {
         [SerializeField] float wepRange = 0, atkSpd = 0, dmg = 0, percentageBonus = 0;

@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Sanctuary.Harry.Quests
 {
-    [CreateAssetMenu(fileName = "Quest", menuName = "Sanctuary/Quest", order = 0)]
+    [CreateAssetMenu(fileName = "New Quest", menuName = "Sanctuary/Quests/Make New Quest", order = 0)]
     public class Quest : ScriptableObject
     {
         [SerializeField] List<Objective> objectives = new List<Objective>();

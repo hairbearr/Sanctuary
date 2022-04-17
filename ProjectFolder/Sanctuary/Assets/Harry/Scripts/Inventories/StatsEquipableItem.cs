@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Sanctuary.Harry.Inventories
 {
-    [CreateAssetMenu(menuName = ("Sanctuary/Inventory/Equipable Item"))]
+    [CreateAssetMenu(fileName = "New Armor", menuName = ("Sanctuary/Armor/Make New Armor"))]
     public class StatsEquipableItem : EquipableItem, IModifierProvider
     {
         [SerializeField] Modifier[] additiveModifiers;

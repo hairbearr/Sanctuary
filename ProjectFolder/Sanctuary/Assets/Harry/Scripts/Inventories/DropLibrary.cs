@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Sanctuary.Harry.Inventories
 {
-    [CreateAssetMenu(menuName =("Sanctuary/Inventory/Drop Library"))]
+    [CreateAssetMenu(fileName = "New Drop Library", menuName =("Sanctuary/Drop Library/Make New Drop Library"))]
     public class DropLibrary : ScriptableObject
     {
         // Drop Chance
