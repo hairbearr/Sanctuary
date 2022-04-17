@@ -21,6 +21,7 @@ MonoBehaviour:
   pickup: {fileID: 3515356612854199070, guid: 8cf5a2e55109d58488a555c01795077a, type: 3}
   stackable: 0
   price: 20
+  category: 2
   allowedEquipLocation: 7
   wepRange: 20
   atkSpd: 1.2

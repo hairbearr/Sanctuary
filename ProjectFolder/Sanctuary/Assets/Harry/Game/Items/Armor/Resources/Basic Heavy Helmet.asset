@@ -9,18 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
-  m_Name: Heavy Helmet of Health
+  m_Script: {fileID: 11500000, guid: f20eb1792e8048a46bf5c7c520a3ea3b, type: 3}
+  m_Name: Basic Heavy Helmet
   m_EditorClassIdentifier: 
-  itemID: b876f01e-16be-4969-91bc-544e046456ab
-  displayName: Heavy Helmet of Health
-  description: +20 Health
+  itemID: ddf61cee-8d04-4b63-9549-0ff533ff619c
+  displayName: Basic Heavy Helmet
+  description: 
   icon: {fileID: 21300000, guid: 6df1a5b9ce36a3a4f8db3a68af7ce30b, type: 3}
   pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
   stackable: 0
-  price: 150
+  price: 0
+  category: 1
   allowedEquipLocation: 0
-  additiveModifiers:
-  - stat: 0
-    value: 20
-  percentageModifiers: []

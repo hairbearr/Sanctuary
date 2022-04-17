@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Enemy Bow
+  m_Name: Basic Bow
   m_EditorClassIdentifier: 
-  itemID: c6f63fe5-56e0-496b-acf8-88d6b311821b
-  displayName: Bow
-  description: 
-  icon: {fileID: 0}
-  pickup: {fileID: 0}
+  itemID: 1312f7de-5665-4132-8792-ef03df48dd9d
+  displayName: Basic Bow
+  description: 'Attack Speed: 1.2
+
+    Damage: 10'
+  icon: {fileID: 21300000, guid: 0833dbad7c3e55d4b9b8e934286711c1, type: 3}
+  pickup: {fileID: 3278478836509587212, guid: 35a811bf68e24e04cace4fb93a337026, type: 3}
   stackable: 0
+  price: 20
+  category: 2
   allowedEquipLocation: 7
   wepRange: 12
   atkSpd: 1.2
-  dmg: 8
+  dmg: 10
   percentageBonus: 0
-  animatorOverride: {fileID: 22100000, guid: 19c454b247bc32c41bcb9b1bec7fcdea, type: 2}
-  equippedPrefab: {fileID: 5200966411988371136, guid: f9751cb651cb6bb40af55cb21bc0e9d5, type: 3}
+  animatorOverride: {fileID: 22100000, guid: c30b751681a5cee4381c6d4353bb29cd, type: 2}
+  equippedPrefab: {fileID: 6834592482120869180, guid: d804189f104ba4642b6fe5bf0a8c5994, type: 3}
   isRightHanded: 0
   projectile: {fileID: 6709371153497413621, guid: c69131506ab3d70429319b1aac16ad89, type: 3}

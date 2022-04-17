@@ -9,13 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20eb1792e8048a46bf5c7c520a3ea3b, type: 3}
-  m_Name: Basic Heavy Helmet
+  m_Script: {fileID: 11500000, guid: be8358f0fcfcb22418d7b5d788e02cc4, type: 3}
+  m_Name: Shiny Whetstone
   m_EditorClassIdentifier: 
-  itemID: ddf61cee-8d04-4b63-9549-0ff533ff619c
-  displayName: Basic Heavy Helmet
-  description: 
-  icon: {fileID: 21300000, guid: 6df1a5b9ce36a3a4f8db3a68af7ce30b, type: 3}
+  itemID: cbdf842b-18ff-4b62-8dd1-b4877783757d
+  displayName: Shiny Whetstone
+  description: This must be the forgetful soldier's whetstone.
+  icon: {fileID: 21300000, guid: 0bbe93de42ec2f849992d3d346c7d2bc, type: 3}
   pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
-  stackable: 0
-  allowedEquipLocation: 0
+  stackable: 1
+  price: 10
+  category: 4
+  consumable: 0

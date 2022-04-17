@@ -398,7 +398,7 @@ MonoBehaviour:
     - or:
       - predicate: HasInventoryItem
         parameters:
-        - 93d2fb43-0f87-49f5-9cf6-f3b34d02682b
+        - cbdf842b-18ff-4b62-8dd1-b4877783757d
         negate: 0
     - or:
       - predicate: CompletedQuest

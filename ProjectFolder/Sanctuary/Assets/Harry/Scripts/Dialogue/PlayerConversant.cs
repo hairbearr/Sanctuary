@@ -64,7 +64,6 @@ namespace Sanctuary.Harry.Dialogue
 
         public void Quit()
         {
-            
             currentDialogue = null;
             TriggerExitAction();
             currentConversant = null;

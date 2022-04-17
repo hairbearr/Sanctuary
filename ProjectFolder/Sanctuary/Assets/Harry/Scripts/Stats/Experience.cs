@@ -13,6 +13,14 @@ namespace Sanctuary.Harry.Stats
         //Actions are functions that return void and take no Arguments
         public event Action onExperienceGained;
 
+        private void Update()
+        {
+            if(Input.GetKey(KeyCode.E))
+            {
+                GainXP(Time.deltaTime * 1000);
+            }
+        }
+
         public float GetXP()
         {
             return xpPoints;

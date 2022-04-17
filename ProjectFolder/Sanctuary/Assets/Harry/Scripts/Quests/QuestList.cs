@@ -135,10 +135,10 @@ namespace Sanctuary.Harry.Quests
             switch (predicate)
             {
                 case "HasQuest":
-                    Debug.Log($"HasQuest {parameters[0]} = {HasQuest(Quest.GetByName(parameters[0]))}");
+                    //Debug.Log($"HasQuest {parameters[0]} = {HasQuest(Quest.GetByName(parameters[0]))}");
                     return HasQuest(Quest.GetByName(parameters[0]));
                 case "CompletedQuest":
-                    Debug.Log($"CompletedQuest {parameters[0]} = {GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete()}");
+                    //Debug.Log($"CompletedQuest {parameters[0]} = {GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete()}");
                     return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
             }
 

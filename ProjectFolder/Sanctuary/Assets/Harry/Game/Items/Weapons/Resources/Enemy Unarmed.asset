@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Player Unarmed
+  m_Name: Enemy Unarmed
   m_EditorClassIdentifier: 
-  itemID: 1b27a64d-befd-4c1d-98d0-3a1ea277735b
+  itemID: 3f3fb622-be2b-42f7-b263-b348842a3588
   displayName: Unarmed
   description: 
   icon: {fileID: 0}
   pickup: {fileID: 0}
   stackable: 0
+  price: 0
+  category: 2
   allowedEquipLocation: 7
   wepRange: 1
   atkSpd: 1
-  dmg: 1
+  dmg: 0
   percentageBonus: 0
-  animatorOverride: {fileID: 22100000, guid: b56e3245ad5573d45a4eab031125e2fa, type: 2}
-  equippedPrefab: {fileID: 9185325784756719858, guid: 510b0799e43da8641868287ad5cb33ba, type: 3}
+  animatorOverride: {fileID: 0}
+  equippedPrefab: {fileID: 0}
   isRightHanded: 1
   projectile: {fileID: 0}
