@@ -68,6 +68,7 @@ namespace GameDevTV.UI.Inventories
 
         void UpdateIcon()
         {
+            print("update Icon");
             icon.SetItem(GetItem(), GetNumber());
         }
     }

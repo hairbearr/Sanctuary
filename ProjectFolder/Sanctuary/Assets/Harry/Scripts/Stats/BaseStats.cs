@@ -85,7 +85,6 @@ namespace Sanctuary.Harry.Stats
             float XPToLevelUp;
             if(GetLevel() <= 1){ XPToLevelUp = 0;}
             else { XPToLevelUp = progression.GetStat(Stat.XPToLevelUp, characterClass, GetLevel()-1);}
-            print(XPToLevelUp);
             return XPToLevelUp;
         }
 
