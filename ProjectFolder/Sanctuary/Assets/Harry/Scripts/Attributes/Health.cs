@@ -13,18 +13,55 @@ namespace Sanctuary.Harry.Attributes
     {
 
         LazyValue<float> healthPts;
+        LazyValue<float> shieldPts;
 
-        [SerializeField] UnityEvent<float> takeDamage;
+        [SerializeField] UnityEvent<float> takeDamage, takeHeal;
         [SerializeField] UnityEvent onDie;
 
+        internal object GetShieldPoints()
+        {
+            return shieldPts.value;
+        }
+
         bool isDead = false;
+        bool inCombat = false;
+        bool invulnerable = false;
+        bool shielded = false;
+        float increasedDamageModifier = 1f;
 
         private void Awake()
         {
             healthPts = new LazyValue<float>(GetInitialHealth);
+            shieldPts = new LazyValue<float>(GetInitialShieldPoints);
         }
 
-        
+        private void Update()
+        {
+
+            if(inCombat == false && isDead == false)
+            {
+                if(healthPts.value < GetMaxHealthPts())
+                {
+                    healthPts.value += GetRegenRate() * Time.deltaTime;
+                }
+
+                if(healthPts.value > GetMaxHealthPts())
+                {
+                    healthPts.value = GetMaxHealthPts(); 
+                }
+            }
+
+            if(shieldPts.value > 0) {shielded = true;}
+            if(shieldPts.value <=0 )
+            { 
+                shielded = false;
+            }
+        }
+
+        internal void Heal(object healthChange)
+        {
+            throw new NotImplementedException();
+        }
 
         private void Start()
         {
@@ -33,12 +70,12 @@ namespace Sanctuary.Harry.Attributes
 
         private void OnEnable()
         {
-            GetComponent<BaseStats>().onLevelUp += RegenHealth;
+            GetComponent<BaseStats>().onLevelUp += RestoreFullHealth;
         }
 
         private void OnDisable()
         {
-            GetComponent<BaseStats>().onLevelUp -= RegenHealth;
+            GetComponent<BaseStats>().onLevelUp -= RestoreFullHealth;
         }
 
         private void DeathBehaviour()
@@ -48,6 +85,26 @@ namespace Sanctuary.Harry.Attributes
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        private void RestoreFullHealth()
+        {
+            healthPts.value = GetComponent<BaseStats>().GetStat(Stat.Health);
+        }
+
+        public bool GetShielded()
+        {
+            return shielded;
+        }
+
+        private float GetInitialHealth()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
+        }
+
+        private float GetInitialShieldPoints()
+        {
+            return 0f;
         }
 
         private void AwardXP(GameObject instigator)
@@ -65,6 +122,13 @@ namespace Sanctuary.Harry.Attributes
 
         public void TakeDamage(GameObject instigator, float dmgTaken)
         {
+            dmgTaken = dmgTaken * increasedDamageModifier;
+
+            if(invulnerable == true) { return; }
+
+            if(healthPts.value <= 0) { return; }
+
+            if(shielded == true ) { shieldPts.value -= dmgTaken; return; }
             
             healthPts.value = Mathf.Max(healthPts.value - dmgTaken, 0);
 
@@ -81,6 +145,8 @@ namespace Sanctuary.Harry.Attributes
         public void Heal(float healthToRestore)
         {
             healthPts.value = Mathf.Min(healthPts.value + healthToRestore, GetMaxHealthPts());
+            takeHeal.Invoke(healthToRestore);
+
         }
 
         public float GetHealthPts()
@@ -113,14 +179,34 @@ namespace Sanctuary.Harry.Attributes
             if (healthPts.value <= 0) { DeathBehaviour(); }
         }
 
-        private void RegenHealth()
+        public void SetInCombat(bool state)
         {
-            healthPts.value = GetComponent<BaseStats>().GetStat(Stat.Health);
+            inCombat = state;
         }
 
-        private float GetInitialHealth()
+        public float GetRegenRate()
         {
-            return GetComponent<BaseStats>().GetStat(Stat.Health);
+            return GetComponent<BaseStats>().GetStat(Stat.HealthRegenRate);
+        }
+
+        public void SetInvulnerability(bool state)
+        {
+            invulnerable = state;
+        }
+
+        public void SetShielded(bool state)
+        {
+            shielded = state;
+        }
+        
+        public void SetShieldPoints(float pointsToShield)
+        {
+            shieldPts.value = pointsToShield;
+        }
+
+        public void SetDamageTakenModifier(float damageMod)
+        {
+            increasedDamageModifier = damageMod;
         }
     }
 }

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93af545c3499944db04dfc1f2bccd39, type: 3}
+  m_Name: Base Holy Mark
+  m_EditorClassIdentifier: 
+  itemID: 9fbda6b0-ef8a-469f-9538-0ebafb6bf212
+  displayName: Holy Mark
+  description: Bask the enemy in Holy Light, dealing a little bit of damage, and
+    increasing your damage against that enemy.
+  icon: {fileID: 21300000, guid: dbb2594f5eb3b674e98123f3c09f5c68, type: 3}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 0
+  consumable: 0
+  targetingStrategy: {fileID: 11400000, guid: dbae691784b17144db8da99a45f58999, type: 2}
+  filterStrategies:
+  - {fileID: 11400000, guid: 93c2e381f359f2f44963a03399fb0f4e, type: 2}
+  effectStrategies:
+  - {fileID: 11400000, guid: d31597ebde1172c4985a458a6dacf726, type: 2}
+  - {fileID: 11400000, guid: f6feb6c454f13e747bc303971d3c2e5d, type: 2}
+  - {fileID: 11400000, guid: 32102b289abedd54998e5313cb2cfd17, type: 2}
+  cooldownTime: 15
+  playerResourceCost: 20

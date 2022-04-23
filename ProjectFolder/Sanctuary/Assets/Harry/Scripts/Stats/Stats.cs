@@ -9,7 +9,13 @@
         Stamina,
         Intellect,
         Agility,
-        Strength
+        Strength,
+        PlayerResources,
+        PlayerResourcesRegenRate,
+        HealthRegenRate,
+        TotalTraitPoints,
+        BuyingDiscountPercentage,
+        AttackSpeedPercentage
     }
     
 }

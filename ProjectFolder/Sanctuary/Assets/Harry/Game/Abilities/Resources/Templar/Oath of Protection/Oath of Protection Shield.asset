@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c1354d6bfe41f458b90e239dfabca5, type: 3}
+  m_Name: Oath of Protection Shield
+  m_EditorClassIdentifier: 
+  invulnerableEffect: 0
+  buffTimeOut: 60
+  damageToReduce: 30
+  damageShield: 1
+  prefabToSpawn: {fileID: 2633644979474270961, guid: c79990eac1e3eb14d91982c1ff00949b, type: 3}

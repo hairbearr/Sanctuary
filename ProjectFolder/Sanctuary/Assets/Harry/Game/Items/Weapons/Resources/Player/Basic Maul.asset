@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: Basic Maul
   description: 'Attack Speed: 1.5
 
-    Damage: 15'
+    Damage: 12'
   icon: {fileID: 21300000, guid: 3efbdb0430a39f249812c3257d82114b, type: 3}
   pickup: {fileID: 3319648146472737115, guid: 2efadf4eea9449d45aecbc5df4b788be, type: 3}
   stackable: 0

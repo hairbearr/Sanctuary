@@ -22,11 +22,29 @@ namespace GameDevTV.UI
             {
                 Toggle();
             }
+
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                Close();
+            }
         }
 
         public void Toggle()
         {
             uiContainer.SetActive(!uiContainer.activeSelf);
         }
+
+        public void Open()
+        {
+            if(uiContainer.activeSelf == true){ return; }
+            uiContainer.SetActive(true);
+        }
+
+        public void Close()
+        {
+            if(uiContainer.activeSelf == false){ return; }
+            uiContainer.SetActive(false);
+        }
+
     }
 }

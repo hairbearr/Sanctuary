@@ -1,3 +1,4 @@
+using GameDevTV.UI;
 using GameDevTV.Utils;
 using System;
 using System.Collections;
@@ -14,6 +15,7 @@ namespace Sanctuary.Harry.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpParticleFX = null;
         [SerializeField] bool shouldUseModifiers = false;
+        [SerializeField] GameObject traitUI = null;
 
         public event Action onLevelUp;
 
@@ -72,6 +74,21 @@ namespace Sanctuary.Harry.Stats
             return currentLevel.value;
         }
 
+        public float GetXPToLevelUp()
+        {
+            float XPToLevelUp = progression.GetStat(Stat.XPToLevelUp, characterClass, GetLevel());
+            return XPToLevelUp;
+        }
+
+        public float GetPreviousLevelXPToLevelUp()
+        {
+            float XPToLevelUp;
+            if(GetLevel() <= 1){ XPToLevelUp = 0;}
+            else { XPToLevelUp = progression.GetStat(Stat.XPToLevelUp, characterClass, GetLevel()-1);}
+            print(XPToLevelUp);
+            return XPToLevelUp;
+        }
+
         private int CalculateLevel()
         {
             Experience experience = GetComponent<Experience>();
@@ -95,6 +112,7 @@ namespace Sanctuary.Harry.Stats
         private void LevelUpEffect()
         {
             Instantiate(levelUpParticleFX, transform);
+            traitUI.GetComponent<ShowHideUI>().Open();
         }
 
         private float GetBaseStat(Stat stat)

@@ -16,6 +16,7 @@ namespace Sanctuary.Harry.Combat
         [SerializeField] UnityEvent onHit;
 
         Health tgt = null;
+        Vector3 targetPoint;
         float dmg = 0f;
         bool isHoming = true;
         GameObject instigator = null;
@@ -27,16 +28,25 @@ namespace Sanctuary.Harry.Combat
 
         void Update()
         {
-            if (tgt == null) return;
-
-            if (isHoming && !tgt.IsDead()) { transform.LookAt(GetAimLocation()); }
+            if (tgt != null && isHoming && !tgt.IsDead()) { transform.LookAt(GetAimLocation()); }
 
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
         public void SetTarget(Health target, GameObject instigator,  float damage)
         {
+            SetTarget(instigator, damage, target);
+        }
+
+        public void SetTarget(Vector3 targetPoint, GameObject instigator, float damage)
+        {
+            SetTarget(instigator, damage, null, targetPoint);
+        }
+
+        public void SetTarget(GameObject instigator, float damage, Health target = null, Vector3 targetPoint = default)
+        {
             this.tgt = target;
+            this.targetPoint = targetPoint;
             this.dmg = damage;
             this.instigator = instigator;
 
@@ -45,6 +55,11 @@ namespace Sanctuary.Harry.Combat
 
         private Vector3 GetAimLocation()
         {
+            if(tgt == null)
+            {
+                return targetPoint;
+            }
+
             CapsuleCollider tgtCapsule = tgt.GetComponent<CapsuleCollider>();
             if(tgtCapsule == null)
             {
@@ -55,9 +70,15 @@ namespace Sanctuary.Harry.Combat
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<Health>() != tgt) return;
-            if (tgt.IsDead()) { return; }
-            tgt.TakeDamage(instigator, dmg);
+
+            Health health = other.GetComponent<Health>();
+            if (tgt != null && health != tgt) return;
+
+            if (health == null || health.IsDead()) return;
+
+            if(other.gameObject == instigator) return;
+
+            health.TakeDamage(instigator, dmg);
 
             speed = 0;
 

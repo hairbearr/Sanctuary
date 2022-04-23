@@ -16,6 +16,7 @@ namespace Sanctuary.Harry.Combat
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
+        [SerializeField] float maxSpeedBoostPercentage = 80f;
 
         Health tgt;
         Equipment equipment;
@@ -37,18 +38,10 @@ namespace Sanctuary.Harry.Combat
             }
         }
 
-        private Weapons SetupDefaultWeapon()
-        {
-            return AttachWeapon(defaultWeapon);
-        }
-
-        private void Start()
-        {
-            currentWeapon.ForceInit();
-        }
-
         private void Update()
         {
+            GetComponent<Health>().SetInCombat( tgt != null );
+
             timeSinceLastAtk += Time.deltaTime;
 
             if (tgt == null)  return;
@@ -59,21 +52,43 @@ namespace Sanctuary.Harry.Combat
             else
             {
                 GetComponent<MovementController>().Cancel();
+                
                 AtkBehaviour();
             }
+
+            
+        }
+
+        private Weapons SetupDefaultWeapon()
+        {
+            return AttachWeapon(defaultWeapon);
+        }
+
+        private void Start()
+        {
+            currentWeapon.ForceInit();
         }
 
         private void AtkBehaviour()
         {
             transform.LookAt(tgt.transform); //rotate towards enemy after you start attacking
+            
+            //
 
-            if(timeSinceLastAtk > currentWeaponConfig.GetAttackSpeed())
-            {
+            if(timeSinceLastAtk > currentWeaponConfig.GetAttackSpeed() && tgt.IsDead() == false)
+            {   
                 // This will trigger the Hit Event
                 TriggerAtk();
                 timeSinceLastAtk = 0;
             }
 
+        }
+
+        public float GetSpeedPercentageModifier()
+        {
+            BaseStats baseStats = GetComponent<BaseStats>();
+            float speedBoost = baseStats.GetStat(Stat.AttackSpeedPercentage);
+            return (1 - Mathf.Min(speedBoost, maxSpeedBoostPercentage) / 100);
         }
 
         private void TriggerAtk()
@@ -86,6 +101,7 @@ namespace Sanctuary.Harry.Combat
         {
             if (tgt == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            tgt.SetInCombat(true);
 
             if(currentWeapon.value != null) { currentWeapon.value.OnHit(); }
 
@@ -172,6 +188,12 @@ namespace Sanctuary.Harry.Combat
         public Health GetTarget()
         {
             return tgt;
+        }
+
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if(isRightHand){ return rightHandTrans; }
+            else { return leftHandTrans; }
         }
 
         

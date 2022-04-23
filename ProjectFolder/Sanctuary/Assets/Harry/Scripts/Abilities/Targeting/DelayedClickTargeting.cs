@@ -18,12 +18,12 @@ namespace Sanctuary.Harry.Abilities.Targeting
         Transform targetingPrefabInstance = null;
 
 
-        public override void StartTargeting(GameObject user, Action<IEnumerable<GameObject>> finished)
+        public override void StartTargeting(AbilityData data, Action finished)
         {
-            PlayerController playerController = user.GetComponent<PlayerController>();
-            playerController.StartCoroutine(Targeting(user, playerController, finished));
+            PlayerController playerController = data.GetUser().GetComponent<PlayerController>();
+            playerController.StartCoroutine(Targeting(data, playerController, finished));
         }
-        private IEnumerator Targeting(GameObject user, PlayerController playerController, Action<IEnumerable<GameObject>> finished)
+        private IEnumerator Targeting(AbilityData data, PlayerController playerController, Action finished)
         {
             playerController.enabled = false;
             if(targetingPrefabInstance == null) { targetingPrefabInstance = Instantiate(targetingPrefab); }
@@ -31,7 +31,7 @@ namespace Sanctuary.Harry.Abilities.Targeting
 
             targetingPrefabInstance.localScale = new Vector3 (areaAffectRadius*2, 1, areaAffectRadius*2);
 
-            while (true)
+            while (!data.IsCancelled())
             {
                 Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
 
@@ -42,16 +42,20 @@ namespace Sanctuary.Harry.Abilities.Targeting
 
                     if(Input.GetMouseButtonDown(0))
                     {
+
                         // Use the whole mouse click, so you don't move immediately after you use the ability
                         yield return new WaitWhile(() => Input.GetMouseButton(0));
-                        playerController.enabled = true;
-                        targetingPrefabInstance.gameObject.SetActive(false);
-                        finished(GetGameObjectsInRadius(raycastHit.point));
-                        yield break;
+                        data.SetTargetedPoint(raycastHit.point);
+                        data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
+                        break;
                     }
                 }
                 yield return null;
             }
+            targetingPrefabInstance.gameObject.SetActive(false);
+            playerController.enabled = true;
+            finished();
+
         }
 
         private IEnumerable<GameObject> GetGameObjectsInRadius(Vector3 point)

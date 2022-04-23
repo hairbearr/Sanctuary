@@ -14,6 +14,7 @@ namespace   Sanctuary.Harry.Shops
     {
         [SerializeField] string shopName;
         [Range(0,100)][SerializeField] float sellingPercentage = 80f;
+        [SerializeField] float maximumDiscount = 80f;
         [SerializeField] StockItemConfig[] stockConfig;
         [System.Serializable]
         class StockItemConfig
@@ -273,7 +274,7 @@ namespace   Sanctuary.Harry.Shops
                 {
                     if(!prices.ContainsKey(config.item))
                     {
-                        prices[config.item] = config.item.GetPrice();
+                        prices[config.item] = config.item.GetPrice() * GetInherentDiscount();
                     }
                     prices[config.item] *= (1 - config.buyingDiscountPercentage / 100);
                 }
@@ -284,6 +285,13 @@ namespace   Sanctuary.Harry.Shops
                 
             }
             return prices;
+        }
+
+        private float GetInherentDiscount()
+        {
+            BaseStats baseStats = currentShopper.GetComponent<BaseStats>();
+            float discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
+            return (1 - Mathf.Min(discount, maximumDiscount) / 100);
         }
 
         private void SellItem(Inventory shopperInventory, Purse shopperPurse, InventoryItem item, float price)

@@ -43,7 +43,7 @@ namespace Sanctuary.Harry.Cinematics
         {
             player.GetComponent<PlayerController>().SetEnable(true);
             inventoryCanvas.SetActive(true);
-            hud.SetActive(false);
+            hud.SetActive(true);
         }
     }
 }

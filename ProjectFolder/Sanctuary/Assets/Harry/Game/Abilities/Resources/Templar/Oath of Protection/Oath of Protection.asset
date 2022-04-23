@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93af545c3499944db04dfc1f2bccd39, type: 3}
+  m_Name: Oath of Protection
+  m_EditorClassIdentifier: 
+  itemID: 77f8299b-5bee-4265-80e1-874ae26ab577
+  displayName: Oath of Protection
+  description: Shroud yourself in a holy shield, protecting you for X damage
+  icon: {fileID: 21300000, guid: 68bac698991dc654684837bb063360c0, type: 3}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 0
+  consumable: 0
+  targetingStrategy: {fileID: 11400000, guid: 83dbaf91278b9d94e838c965ccae5971, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 9ad9c8fab2259f144879aa714aaf48d2, type: 2}
+  - {fileID: 11400000, guid: a1e4abefe929c03448c37ee0ccc6cb70, type: 2}
+  cooldownTime: 15
+  playerResourceCost: 20

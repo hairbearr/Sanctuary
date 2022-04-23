@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 8930450665182805606}
   - component: {fileID: 4791211083875654397}
   - component: {fileID: 5544921126373478300}
+  - component: {fileID: -2986983824812824125}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -446,6 +447,7 @@ MonoBehaviour:
   rightHandTrans: {fileID: 0}
   leftHandTrans: {fileID: 0}
   defaultWeapon: {fileID: 0}
+  maxSpeedBoostPercentage: 80
 --- !u!114 &5658651252894188245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,6 +477,21 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4064664227025460689}
         m_TargetAssemblyTypeName: Sanctuary.Harry.DamageText.DamageTextSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  takeHeal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 260224988001790367}
+        m_TargetAssemblyTypeName: Sanctuary.Harry.DamageText.HealTextSpawner, Assembly-CSharp
         m_MethodName: Spawn
         m_Mode: 0
         m_Arguments:
@@ -546,6 +563,21 @@ MonoBehaviour:
   progression: {fileID: 11400000, guid: 5d196e5b9f03d004ba9eb0535fae4c31, type: 2}
   levelUpParticleFX: {fileID: 0}
   shouldUseModifiers: 0
+  traitUI: {fileID: 0}
+--- !u!114 &-2986983824812824125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9022751334214154148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92926e0d60087c04fb73ce92ca88b323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionItems:
+  - {fileID: 0}
 --- !u!1001 &1161359016565664460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +635,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef71f591b13e7a4c8ade30889051a5c, type: 3}
+--- !u!114 &260224988001790367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1405537462797796179, guid: fef71f591b13e7a4c8ade30889051a5c, type: 3}
+  m_PrefabInstance: {fileID: 1161359016565664460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e3109d4e7098949b9cd55695ecbaae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2411921713614695063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3559294899123241051, guid: fef71f591b13e7a4c8ade30889051a5c, type: 3}

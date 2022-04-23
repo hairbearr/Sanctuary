@@ -15,11 +15,15 @@ namespace Sanctuary.Harry.Stats
         {
             BuildLookup();
 
+            if(!lookupTable[characterClass].ContainsKey(stat)) { return 0;}
+
             float[] levels = lookupTable[characterClass][stat];
+
+            if(levels.Length == 0){ return 0; }
 
             if(levels.Length < level)
             {
-                return 0;
+                return levels[levels.Length -1];
             }
 
             return levels[level - 1];

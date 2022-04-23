@@ -5,7 +5,7 @@ namespace Sanctuary.Harry.Core
 {
     public class ActionScheduler : MonoBehaviour
     {
-        IAction currentAction = null;
+        IAction currentAction = null, previousAction=null;
 
         public void StartAction(IAction action)
         {
@@ -20,7 +20,14 @@ namespace Sanctuary.Harry.Core
 
         public void CancelCurrentAction()
         {
+            previousAction = currentAction;
             StartAction(null);
+        }
+
+        public void ResumePreviousAction()
+        {
+            StartAction(previousAction);
+            previousAction = null;
         }
     }
 }
