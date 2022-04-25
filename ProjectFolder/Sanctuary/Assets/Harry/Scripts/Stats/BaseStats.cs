@@ -1,5 +1,6 @@
 using GameDevTV.UI;
 using GameDevTV.Utils;
+using Sanctuary.Harry.Attributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Sanctuary.Harry.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpParticleFX = null;
         [SerializeField] bool shouldUseModifiers = false;
-        [SerializeField] GameObject traitButtonHighlight = null;
+        [SerializeField] ShowHideUI traitWindow = null;
 
         public event Action onLevelUp;
 
@@ -31,7 +32,7 @@ namespace Sanctuary.Harry.Stats
 
         private void Start()
         {
-            currentLevel.ForceInit();
+            currentLevel.ForceInitialization();
         }
 
         private void OnEnable()
@@ -111,7 +112,15 @@ namespace Sanctuary.Harry.Stats
         private void LevelUpEffect()
         {
             Instantiate(levelUpParticleFX, transform);
-            traitButtonHighlight.SetActive(true);
+            
+
+            ShowTraitWindow();
+        }
+
+        private IEnumerator ShowTraitWindow()
+        {
+            while(GetComponent<Health>().GetInCombat()) yield return null;
+            traitWindow.Open();
         }
 
         private float GetBaseStat(Stat stat)

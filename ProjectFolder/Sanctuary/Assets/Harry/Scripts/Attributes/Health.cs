@@ -12,18 +12,18 @@ namespace Sanctuary.Harry.Attributes
     public class Health : MonoBehaviour, ISaveable
     {
 
-        LazyValue<float> healthPts;
-        LazyValue<float> shieldPts;
+        LazyValue<float> healthPoints;
+        LazyValue<float> shieldPoints;
 
         [SerializeField] UnityEvent<float> takeDamage, takeHeal;
-        [SerializeField] UnityEvent onDie;
+        public UnityEvent onDie;
 
         internal object GetShieldPoints()
         {
-            return shieldPts.value;
+            return shieldPoints.value;
         }
 
-        bool isDead = false;
+        bool wasDeadLastFrame = false;
         bool inCombat = false;
         bool invulnerable = false;
         bool shielded = false;
@@ -31,41 +31,36 @@ namespace Sanctuary.Harry.Attributes
 
         private void Awake()
         {
-            healthPts = new LazyValue<float>(GetInitialHealth);
-            shieldPts = new LazyValue<float>(GetInitialShieldPoints);
+            healthPoints = new LazyValue<float>(GetInitialHealth);
+            shieldPoints = new LazyValue<float>(GetInitialShieldPoints);
         }
 
         private void Update()
         {
 
-            if(inCombat == false && isDead == false)
+            if(inCombat == false && wasDeadLastFrame == false)
             {
-                if(healthPts.value < GetMaxHealthPts())
+                if(healthPoints.value < GetMaxHealthPoints())
                 {
-                    healthPts.value += GetRegenRate() * Time.deltaTime;
+                    healthPoints.value += GetRegenRate() * Time.deltaTime;
                 }
 
-                if(healthPts.value > GetMaxHealthPts())
+                if(healthPoints.value > GetMaxHealthPoints())
                 {
-                    healthPts.value = GetMaxHealthPts(); 
+                    healthPoints.value = GetMaxHealthPoints(); 
                 }
             }
 
-            if(shieldPts.value > 0) {shielded = true;}
-            if(shieldPts.value <=0 )
+            if(shieldPoints.value > 0) {shielded = true;}
+            if(shieldPoints.value <=0 )
             { 
                 shielded = false;
             }
         }
 
-        internal void Heal(object healthChange)
-        {
-            throw new NotImplementedException();
-        }
-
         private void Start()
         {
-            healthPts.ForceInit();
+            healthPoints.ForceInitialization();
         }
 
         private void OnEnable()
@@ -78,18 +73,25 @@ namespace Sanctuary.Harry.Attributes
             GetComponent<BaseStats>().onLevelUp -= RestoreFullHealth;
         }
 
-        private void DeathBehaviour()
+        private void UpdateState()
         {
-            if (isDead) return;
+            Animator animator = GetComponent<Animator>();
+            if(!wasDeadLastFrame && IsDead())
+            {
+                animator.SetTrigger("die");
+                GetComponent<ActionScheduler>().CancelCurrentAction();
+            }
 
-            isDead = true;
-            GetComponent<Animator>().SetTrigger("die");
-            GetComponent<ActionScheduler>().CancelCurrentAction();
+            if(wasDeadLastFrame && !IsDead())
+            {
+                animator.Rebind();
+            }
+            wasDeadLastFrame = IsDead();
         }
 
         private void RestoreFullHealth()
         {
-            healthPts.value = GetComponent<BaseStats>().GetStat(Stat.Health);
+            healthPoints.value = GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public bool GetShielded()
@@ -117,44 +119,49 @@ namespace Sanctuary.Harry.Attributes
 
         public bool IsDead()
         {
-            return isDead;
+            return healthPoints.value <= 0;
         }
 
-        public void TakeDamage(GameObject instigator, float dmgTaken)
+        public void TakeDamage(GameObject instigator, float damageTaken)
         {
-            dmgTaken = dmgTaken * increasedDamageModifier;
+            damageTaken = damageTaken * increasedDamageModifier;
 
             if(invulnerable == true) { return; }
 
-            if(healthPts.value <= 0) { return; }
+            if(healthPoints.value <= 0) { return; }
 
-            if(shielded == true ) { shieldPts.value -= dmgTaken; return; }
+            if(shielded == true ) { shieldPoints.value -= damageTaken; return; }
             
-            healthPts.value = Mathf.Max(healthPts.value - dmgTaken, 0);
+            healthPoints.value = Mathf.Max(healthPoints.value - damageTaken, 0);
 
-            takeDamage.Invoke(dmgTaken);
-
-            if (healthPts.value == 0)
+            if (IsDead())
             {
                 onDie.Invoke();
-                DeathBehaviour();
                 AwardXP(instigator);
             }
+            else
+            {
+                takeDamage.Invoke(damageTaken);
+            }
+
+            UpdateState();
         }
 
         public void Heal(float healthToRestore)
         {
-            healthPts.value = Mathf.Min(healthPts.value + healthToRestore, GetMaxHealthPts());
+            healthPoints.value = Mathf.Min(healthPoints.value + healthToRestore, GetMaxHealthPoints());
             takeHeal.Invoke(healthToRestore);
 
+            UpdateState();
+
         }
 
-        public float GetHealthPts()
+        public float GetHealthPoints()
         {
-            return healthPts.value;
+            return healthPoints.value;
         }
 
-        public float GetMaxHealthPts()
+        public float GetMaxHealthPoints()
         {
             return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
@@ -166,22 +173,28 @@ namespace Sanctuary.Harry.Attributes
 
         public float GetFraction()
         {
-            return healthPts.value / GetComponent<BaseStats>().GetStat(Stat.Health);
+            return healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public object CaptureState()
         {
-            return healthPts.value;
+            return healthPoints.value;
         }
         public void RestoreState(object state)
         {
-            healthPts.value = (float)state;
-            if (healthPts.value <= 0) { DeathBehaviour(); }
+            healthPoints.value = (float)state;
+
+            UpdateState();
         }
 
         public void SetInCombat(bool state)
         {
             inCombat = state;
+        }
+
+        public bool GetInCombat()
+        {
+            return inCombat;
         }
 
         public float GetRegenRate()
@@ -201,7 +214,7 @@ namespace Sanctuary.Harry.Attributes
         
         public void SetShieldPoints(float pointsToShield)
         {
-            shieldPts.value = pointsToShield;
+            shieldPoints.value = pointsToShield;
         }
 
         public void SetDamageTakenModifier(float damageMod)

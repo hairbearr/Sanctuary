@@ -18,6 +18,7 @@ namespace Sanctuary.Harry.UI
 
         private void OnEnable()
         {
+            if(playerController == null) return;
             Time.timeScale = 0;
             playerController.SetEnable(false);
         }

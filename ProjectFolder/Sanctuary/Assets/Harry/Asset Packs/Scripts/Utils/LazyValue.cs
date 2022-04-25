@@ -35,7 +35,7 @@
             get
             {
                 // Ensure we init before returning a value.
-                ForceInit();
+                ForceInitialization();
                 return _value;
             }
             set
@@ -49,7 +49,7 @@
         /// <summary>
         /// Force the initialisation of the value via the delegate.
         /// </summary>
-        public void ForceInit()
+        public void ForceInitialization()
         {
             if (!_initialized)
             {

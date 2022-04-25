@@ -23,7 +23,7 @@ namespace Sanctuary.Harry.Combat
             }
 
             Health health = fight.GetTarget();
-            GetComponent<TMP_Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPts(), health.GetMaxHealthPts());
+            GetComponent<TMP_Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
         }
     }
 }

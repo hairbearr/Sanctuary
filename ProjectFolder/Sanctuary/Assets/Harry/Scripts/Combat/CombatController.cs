@@ -64,7 +64,7 @@ namespace Sanctuary.Harry.Combat
 
         private void Start()
         {
-            currentWeapon.ForceInit();
+            currentWeapon.ForceInitialization();
             
 
         }

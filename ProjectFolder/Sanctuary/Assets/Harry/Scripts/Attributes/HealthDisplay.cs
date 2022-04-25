@@ -18,7 +18,7 @@ namespace Sanctuary.Harry.Attributes
 
         private void Update()
         {
-            foreground.fillAmount = health.GetHealthPts() / health.GetMaxHealthPts();
+            foreground.fillAmount = health.GetHealthPoints() / health.GetMaxHealthPoints();
         }
     }
 }

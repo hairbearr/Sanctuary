@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameDevTV.Utils;
+using UnityEngine.AI;
 
 namespace Sanctuary.Harry.Control
 {
@@ -23,7 +24,7 @@ namespace Sanctuary.Harry.Control
         MovementController move;
 
         float timeSinceLastSawPlayer = Mathf.Infinity, timeSinceArrivedAtWaypoint = Mathf.Infinity, timeSinceLastAggroed = Mathf.Infinity;
-        LazyValue<Vector3> startPos;
+        LazyValue<Vector3> startPosition;
         int currentWaypointIndex = 0;
         
         
@@ -34,7 +35,8 @@ namespace Sanctuary.Harry.Control
             health = GetComponent<Health>();
             player = GameObject.FindGameObjectWithTag("Player");
             move = GetComponent<MovementController>();
-            startPos = new LazyValue<Vector3>(GetStartPos);
+            startPosition = new LazyValue<Vector3>(GetStartPos);
+            startPosition.ForceInitialization();
         }
 
         private Vector3 GetStartPos()
@@ -42,9 +44,14 @@ namespace Sanctuary.Harry.Control
             return transform.position;
         }
 
-        private void Start()
+        public void Reset()
         {
-            startPos.ForceInit();
+            NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.Warp(startPosition.value);
+            timeSinceLastSawPlayer = Mathf.Infinity;
+            timeSinceArrivedAtWaypoint = Mathf.Infinity;
+            timeSinceLastAggroed = Mathf.Infinity;
+            currentWaypointIndex = 0;
         }
 
         private void Update()
@@ -91,7 +98,7 @@ namespace Sanctuary.Harry.Control
 
         private void PatrolState()
         {
-            Vector3 nextPos = startPos.value;
+            Vector3 nextPos = startPosition.value;
 
             if(patrolPath != null)
             {
