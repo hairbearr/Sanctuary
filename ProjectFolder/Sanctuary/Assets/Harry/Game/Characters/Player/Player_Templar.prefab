@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: levelUpParticleFX
       value: 
       objectReference: {fileID: 8312237647054361189, guid: ae3d448c7f42d7a429bd9fdb4340d296, type: 3}
+    - target: {fileID: 4557647180391073867, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
+      propertyPath: traitButtonHighlight
+      value: 
+      objectReference: {fileID: 886541398287861222, guid: d1d4c58e1eb761f41867eea5644d2885, type: 3}
     - target: {fileID: 4713469965635306010, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
       propertyPath: m_IsActive
       value: 0

@@ -23,10 +23,10 @@ namespace GameDevTV.UI
                 Toggle();
             }
 
-            if(Input.GetKeyDown(KeyCode.Escape))
-            {
-                Close();
-            }
+            // if(Input.GetKeyDown(KeyCode.Escape))
+            // {
+            //     Close();
+            // }
         }
 
         public void Toggle()

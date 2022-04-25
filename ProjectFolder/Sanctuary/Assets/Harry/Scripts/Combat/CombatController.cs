@@ -21,7 +21,7 @@ namespace Sanctuary.Harry.Combat
         Health tgt;
         Equipment equipment;
         float timeSinceLastAtk = Mathf.Infinity;
-        WeaponConfig currentWeaponConfig;
+        [SerializeField] WeaponConfig currentWeaponConfig;
         LazyValue<Weapons> currentWeapon;
 
 
@@ -55,8 +55,6 @@ namespace Sanctuary.Harry.Combat
                 
                 AtkBehaviour();
             }
-
-            
         }
 
         private Weapons SetupDefaultWeapon()
@@ -67,6 +65,8 @@ namespace Sanctuary.Harry.Combat
         private void Start()
         {
             currentWeapon.ForceInit();
+            
+
         }
 
         private void AtkBehaviour()
@@ -173,18 +173,6 @@ namespace Sanctuary.Harry.Combat
             return weapon.Spawn(rightHandTrans, leftHandTrans, animator);
         }
 
-        /*public object CaptureState()
-        {
-            return currentWeaponConfig.name;
-        }
-
-        public void RestoreState(object state)
-        {
-            string weaponName = (string)state;
-            WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
-            EquipWeapon(weapon);
-        }*/
-
         public Health GetTarget()
         {
             return tgt;
@@ -195,7 +183,5 @@ namespace Sanctuary.Harry.Combat
             if(isRightHand){ return rightHandTrans; }
             else { return leftHandTrans; }
         }
-
-        
     }
 }

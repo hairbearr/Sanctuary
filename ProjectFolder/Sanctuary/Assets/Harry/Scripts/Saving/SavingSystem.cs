@@ -52,11 +52,26 @@ namespace GameDevTV.Saving
             File.Delete(GetPathFromSaveFile(saveFile));
         }
 
-        
-
         public void Load(string saveFile)
         {
             RestoreState(LoadFile(saveFile));
+        }
+
+        public bool SaveFileExists(string saveFileName)
+        {
+            string path = GetPathFromSaveFile(saveFileName);
+            return File.Exists(path);
+        }
+
+        public IEnumerable<string> ListSaves()
+        {
+            foreach(string path in Directory.EnumerateFiles(Application.persistentDataPath))
+            {
+                if(Path.GetExtension(path) == ".sav")
+                {
+                    yield return Path.GetFileNameWithoutExtension(path);
+                }
+            }
         }
 
         // PRIVATE

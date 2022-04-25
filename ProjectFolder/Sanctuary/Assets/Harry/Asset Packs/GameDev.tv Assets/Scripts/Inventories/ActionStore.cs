@@ -21,6 +21,14 @@ namespace GameDevTV.Inventories
             public int number;
         }
 
+
+
+
+        void Start()
+        {
+            storeUpdated?.Invoke();
+        }
+
         // PUBLIC
 
         /// <summary>

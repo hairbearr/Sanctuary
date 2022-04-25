@@ -18,8 +18,6 @@ namespace Sanctuary.Harry.Attributes
 
         private void Update()
         {
-            //GetComponent<TMP_Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPts(), health.GetMaxHealthPts());
-
             foreground.fillAmount = health.GetHealthPts() / health.GetMaxHealthPts();
         }
     }

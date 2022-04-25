@@ -15,7 +15,7 @@ namespace Sanctuary.Harry.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpParticleFX = null;
         [SerializeField] bool shouldUseModifiers = false;
-        [SerializeField] GameObject traitUI = null;
+        [SerializeField] GameObject traitButtonHighlight = null;
 
         public event Action onLevelUp;
 
@@ -111,7 +111,7 @@ namespace Sanctuary.Harry.Stats
         private void LevelUpEffect()
         {
             Instantiate(levelUpParticleFX, transform);
-            traitUI.GetComponent<ShowHideUI>().Open();
+            traitButtonHighlight.SetActive(true);
         }
 
         private float GetBaseStat(Stat stat)
