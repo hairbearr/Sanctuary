@@ -57,7 +57,12 @@ namespace Sanctuary.Harry.UI
 
         public void MailingList()
         {
-            Application.OpenURL("https://forms.gle/Jbg4Gk3KnCPNk8mR7");
+            Application.OpenURL("https://mailchi.mp/db240f6d31e9/sanctuary");
+        }
+
+        public void FeedbackForm()
+        {
+            Application.OpenURL("https://forms.gle/ZzqYc7vN3nLgFZmYA");
         }
     }
 }
