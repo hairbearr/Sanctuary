@@ -18,12 +18,14 @@ namespace Sanctuary.Harry.Combat
         [SerializeField] WeaponConfig defaultWeapon = null;
         [SerializeField] float maxSpeedBoostPercentage = 80f;
 
-        Health tgt;
+        Health target;
         Equipment equipment;
         float timeSinceLastAtk = Mathf.Infinity;
         [SerializeField] WeaponConfig currentWeaponConfig;
         LazyValue<Weapons> currentWeapon;
 
+
+        
 
         private void Awake()
         {
@@ -38,17 +40,22 @@ namespace Sanctuary.Harry.Combat
             }
         }
 
+        public bool GetInCombat()
+        {
+            return target != null;
+        }
+
         private void Update()
         {
-            GetComponent<Health>().SetInCombat( tgt != null );
+            GetComponent<Health>().SetInCombat( target != null );
 
             timeSinceLastAtk += Time.deltaTime;
 
-            if (tgt == null)  return;
+            if (target == null)  return;
 
-            if(tgt.IsDead()) return;
+            if(target.IsDead()) return;
 
-            if (!GetIsInRange(tgt.transform)) { GetComponent<MovementController>().MoveTo(tgt.transform.position, 1f); }
+            if (!GetIsInRange(target.transform)) { GetComponent<MovementController>().MoveTo(target.transform.position, 1f); }
             else
             {
                 GetComponent<MovementController>().Cancel();
@@ -71,11 +78,11 @@ namespace Sanctuary.Harry.Combat
 
         private void AtkBehaviour()
         {
-            transform.LookAt(tgt.transform); //rotate towards enemy after you start attacking
+            transform.LookAt(target.transform); //rotate towards enemy after you start attacking
             
             //
 
-            if(timeSinceLastAtk > currentWeaponConfig.GetAttackSpeed() && tgt.IsDead() == false)
+            if(timeSinceLastAtk > currentWeaponConfig.GetAttackSpeed() && target.IsDead() == false)
             {   
                 // This will trigger the Hit Event
                 TriggerAtk();
@@ -99,14 +106,14 @@ namespace Sanctuary.Harry.Combat
 
         void Hit() //Animation Event
         {
-            if (tgt == null) return;
+            if (target == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
-            tgt.SetInCombat(true);
+            target.SetInCombat(true);
 
             if(currentWeapon.value != null) { currentWeapon.value.OnHit(); }
 
-            if (currentWeaponConfig.HasProjectile()) { currentWeaponConfig.LaunchProjectile(rightHandTrans, leftHandTrans, tgt, gameObject, damage); }
-            else {  tgt.TakeDamage(gameObject, damage); }            
+            if (currentWeaponConfig.HasProjectile()) { currentWeaponConfig.LaunchProjectile(rightHandTrans, leftHandTrans, target, gameObject, damage); }
+            else {  target.TakeDamage(gameObject, damage); }            
         }
 
         void Shoot()
@@ -114,31 +121,31 @@ namespace Sanctuary.Harry.Combat
             Hit();
         }
 
-        public bool CanAtk(GameObject fightTgt)
+        public bool CanAtk(GameObject combatControllerTarget)
         {
-            if(fightTgt == null) { return false; }
-            if (!GetComponent<MovementController>().CanMoveTo(fightTgt.transform.position) && !GetIsInRange(fightTgt.transform)) { return false; }
+            if(combatControllerTarget == null) { return false; }
+            if (!GetComponent<MovementController>().CanMoveTo(combatControllerTarget.transform.position) && !GetIsInRange(combatControllerTarget.transform)) { return false; }
 
-            Health trgtToTst = fightTgt.GetComponent<Health>();
+            Health trgtToTst = combatControllerTarget.GetComponent<Health>();
             return trgtToTst != null && !trgtToTst.IsDead();
         }
 
-        public void Attack(GameObject fightTgt)
+        public void Attack(GameObject combatControllerTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            tgt = fightTgt.GetComponent<Health>();
+            target = combatControllerTarget.GetComponent<Health>();
         }
 
 
-        private bool GetIsInRange(Transform tgtTransform)
+        private bool GetIsInRange(Transform targetTransform)
         {
-            return Vector3.Distance(transform.position, tgt.transform.position) < currentWeaponConfig.GetWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.GetWeaponRange();
         }
 
         public void Cancel()
         {
             StopAttack();
-            tgt = null;
+            target = null;
             GetComponent<MovementController>().Cancel();
         }
 
@@ -175,7 +182,7 @@ namespace Sanctuary.Harry.Combat
 
         public Health GetTarget()
         {
-            return tgt;
+            return target;
         }
 
         public Transform GetHandTransform(bool isRightHand)

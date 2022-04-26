@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invulnerableEffect: 0
   buffTimeOut: 60
-  damageToReduce: 30
+  damageToReduce: 160
   damageShield: 1
   prefabToSpawn: {fileID: 2633644979474270961, guid: c79990eac1e3eb14d91982c1ff00949b, type: 3}

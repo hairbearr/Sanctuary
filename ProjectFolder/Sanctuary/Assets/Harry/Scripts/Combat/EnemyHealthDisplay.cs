@@ -2,12 +2,16 @@ using UnityEngine;
 using TMPro;
 using System;
 using Sanctuary.Harry.Attributes;
+using UnityEngine.UI;
 
 namespace Sanctuary.Harry.Combat
 {
     public class EnemyHealthDisplay : MonoBehaviour
     {
         CombatController fight;
+        [SerializeField] GameObject targetRoot = null;
+        [SerializeField] Image foreground = null;
+        [SerializeField] TMP_Text enemyName, healthText;
 
         private void Awake()
         {
@@ -18,12 +22,16 @@ namespace Sanctuary.Harry.Combat
         {
             if(fight.GetTarget() == null)
             {
-                GetComponent <TMP_Text>().text = "N/A";
+                targetRoot.SetActive(false);
                 return;
             }
+            else{targetRoot.SetActive(true);}
 
             Health health = fight.GetTarget();
-            GetComponent<TMP_Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
+            
+            enemyName.text = fight.GetTarget().name;
+            healthText.text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
+            foreground.fillAmount = health.GetHealthPoints() / health.GetMaxHealthPoints();
         }
     }
 }
