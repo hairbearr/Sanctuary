@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228dd581a0464754c91ea18c0aa55e3d, type: 3}
   m_Name: Holy Mark Damage Effect
   m_EditorClassIdentifier: 
-  healthChange: -30
+  healthChange: -12

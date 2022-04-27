@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChange: 0
-  coneDamage: 100
+  coneDamage: 25
   floorObject: 0
   canHeal: 0
 --- !u!1001 &7541875673978815129

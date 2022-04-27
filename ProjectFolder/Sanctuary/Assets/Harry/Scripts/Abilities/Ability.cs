@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Inventories;
 using Sanctuary.Harry.Attributes;
+using Sanctuary.Harry.Combat;
 using Sanctuary.Harry.Core;
 using UnityEngine;
 
@@ -62,7 +63,8 @@ namespace Sanctuary.Harry.Abilities
 
         private void EffectFinished()
         {
-            
+            if(effectUser == null){ return; }
+            effectUser.GetComponent<CombatController>().TargetNewTargetInRange();
         }
     }
     

@@ -50,9 +50,9 @@ namespace Sanctuary.Harry.Combat
 
             if (target == null)  return;
 
-            if(target.IsDead()) 
+            if(target.IsDead())
             {
-                target = FindNewTargetInRange();
+                TargetNewTargetInRange();
                 if(target == null) return;
             }
 
@@ -69,7 +69,13 @@ namespace Sanctuary.Harry.Combat
             #endif
         }
 
-        
+        public void TargetNewTargetInRange()
+        {
+            //target = null;
+            target = FindNewTargetInRange();
+            if(target == null) return;
+        }
+
 
         private Weapons SetupDefaultWeapon()
         {
@@ -98,7 +104,7 @@ namespace Sanctuary.Harry.Combat
 
         }
 
-        private Health FindNewTargetInRange()
+        public Health FindNewTargetInRange()
         {
             Health best = null;
             float bestDistance = Mathf.Infinity;

@@ -22,9 +22,6 @@ namespace Sanctuary.Harry.Abilities.Effects
 
         private IEnumerator Effect(AbilityData data, Action finished)
         {
-            
-
-
             foreach (var target in data.GetTargets())
             {
                 Transform instance = null;
