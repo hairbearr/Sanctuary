@@ -99,7 +99,7 @@ namespace GameDevTV.Inventories
                 }
             }
 
-            equipmentUpdated();
+            equipmentUpdated?.Invoke();
         }
     }
 }

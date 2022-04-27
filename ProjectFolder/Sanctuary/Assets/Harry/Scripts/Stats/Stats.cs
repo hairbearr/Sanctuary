@@ -15,7 +15,8 @@
         HealthRegenRate,
         TotalTraitPoints,
         BuyingDiscountPercentage,
-        AttackSpeedPercentage
+        AttackSpeedPercentage,
+        Defence
     }
     
 }

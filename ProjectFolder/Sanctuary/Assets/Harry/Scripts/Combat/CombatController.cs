@@ -16,16 +16,13 @@ namespace Sanctuary.Harry.Combat
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
-        [SerializeField] float maxSpeedBoostPercentage = 80f;
+        [SerializeField] float maxSpeedBoostPercentage = 80f, autoAttackRange = 4f;
 
         Health target;
         Equipment equipment;
         float timeSinceLastAtk = Mathf.Infinity;
         [SerializeField] WeaponConfig currentWeaponConfig;
         LazyValue<Weapons> currentWeapon;
-
-
-        
 
         private void Awake()
         {
@@ -53,16 +50,26 @@ namespace Sanctuary.Harry.Combat
 
             if (target == null)  return;
 
-            if(target.IsDead()) return;
+            if(target.IsDead()) 
+            {
+                target = FindNewTargetInRange();
+                if(target == null) return;
+            }
 
             if (!GetIsInRange(target.transform)) { GetComponent<MovementController>().MoveTo(target.transform.position, 1f); }
             else
             {
                 GetComponent<MovementController>().Cancel();
                 
-                AtkBehaviour();
+                AttackBehaviour();
             }
+
+            #if UNITY_EDITOR
+            if(Input.GetKey(KeyCode.Pause)){ Time.timeScale = 5;}
+            #endif
         }
+
+        
 
         private Weapons SetupDefaultWeapon()
         {
@@ -76,7 +83,7 @@ namespace Sanctuary.Harry.Combat
 
         }
 
-        private void AtkBehaviour()
+        private void AttackBehaviour()
         {
             transform.LookAt(target.transform); //rotate towards enemy after you start attacking
             
@@ -89,6 +96,36 @@ namespace Sanctuary.Harry.Combat
                 timeSinceLastAtk = 0;
             }
 
+        }
+
+        private Health FindNewTargetInRange()
+        {
+            Health best = null;
+            float bestDistance = Mathf.Infinity;
+            foreach (var candidate in FindAllTargetsInRange())
+            {
+                float candidateDistance = Vector3.Distance(transform.position, candidate.transform.position);
+                if(candidateDistance<bestDistance)
+                {
+                    best = candidate;
+                    bestDistance = candidateDistance;
+                }
+            }
+            return best;
+        }
+
+        private IEnumerable<Health> FindAllTargetsInRange()
+        {
+            RaycastHit[] raycastHits = Physics.SphereCastAll(transform.position, autoAttackRange, Vector3.up);
+
+            foreach (var hit in raycastHits)
+            {
+                Health health = hit.transform.GetComponent<Health>();
+                if(health == null) continue;
+                if(health.IsDead()) continue;
+                if(health.gameObject == gameObject) continue;
+                yield return health;
+            }
         }
 
         public float GetSpeedPercentageModifier()
@@ -108,6 +145,15 @@ namespace Sanctuary.Harry.Combat
         {
             if (target == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+
+            BaseStats targetBaseStats = target.GetComponent<BaseStats>();
+
+            if(targetBaseStats != null)
+            {
+                float defence = targetBaseStats.GetStat(Stat.Defence);
+                damage /= 1 + defence / damage;
+            }
+
             target.SetInCombat(true);
 
             if(currentWeapon.value != null) { currentWeapon.value.OnHit(); }
