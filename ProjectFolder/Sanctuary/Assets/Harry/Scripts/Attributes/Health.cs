@@ -17,6 +17,7 @@ namespace Sanctuary.Harry.Attributes
 
         [SerializeField] UnityEvent<float> takeDamage, takeHeal;
         public UnityEvent onDie;
+        public event Action<GameObject> OnHitTaken;
 
         internal object GetShieldPoints()
         {

@@ -17,8 +17,6 @@ namespace Sanctuary.Harry.Dialogue
         AIConversant currentConversant = null, targetConversant;
         bool isChoosing = false;
         
-
-
         public event Action onConversationUpdated;
 
 

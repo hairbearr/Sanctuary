@@ -242,5 +242,6 @@ namespace Sanctuary.Harry.Combat
             if(isRightHand){ return rightHandTrans; }
             else { return leftHandTrans; }
         }
+
     }
 }
