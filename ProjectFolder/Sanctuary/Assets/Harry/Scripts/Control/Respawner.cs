@@ -13,7 +13,7 @@ namespace Sanctuary.Harry.Control
     public class Respawner : MonoBehaviour
     {
         [SerializeField] Transform respawnLocation;
-        [SerializeField] float respawnDelay = 3, fadeTime = 0.2f, healthRegenPercentage = 20;
+        [SerializeField] float respawnDelay = 3, fadeTime = 0.3f, healthRegenPercentage = 50;
         [SerializeField] ShowHideUI deathMenu;
 
         // Start is called before the first frame update

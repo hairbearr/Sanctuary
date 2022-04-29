@@ -46,6 +46,8 @@ namespace Sanctuary.Harry.Combat
         {
             GetComponent<Health>().SetInCombat( target != null );
 
+            if(GetComponent<Health>().IsDead()){ target = null; }
+
             timeSinceLastAtk += Time.deltaTime;
 
             if (target == null)  return;
