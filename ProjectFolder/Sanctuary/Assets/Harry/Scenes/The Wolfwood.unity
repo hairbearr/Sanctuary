@@ -1790,7 +1790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -3054,7 +3054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: patrolPath
@@ -4401,7 +4401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -7034,7 +7034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_1
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: patrolPath
@@ -7264,6 +7264,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f96089e9b7430ad4c8b8b7e04740d038, type: 3}
+--- !u!1001 &222941405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 103.145676
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.109314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: uniqueIdentifier
+      value: e4a5ef33-f813-4f74-86cd-b3f56a063644
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!4 &222941406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 222941405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &227018571
 GameObject:
   m_ObjectHideFlags: 0
@@ -8541,6 +8607,72 @@ Transform:
   m_Father: {fileID: 629276806}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &239619998
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 114.21712
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.612457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 6d80f3a9-a6d9-4353-a7a0-b8ec5cd6b989
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!4 &239619999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 239619998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &266104645 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 130724, guid: d66c89601ce96d4419ce36a4dce3c401, type: 3}
@@ -9923,7 +10055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -10168,6 +10300,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &338793564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 6921926538278348072, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 888eb42c-65d0-4091-a8d3-7f22cda09c91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106969322, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Archer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+--- !u!4 &338793565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+  m_PrefabInstance: {fileID: 338793564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &339243473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11273,7 +11471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11317,7 +11515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_5
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -12688,7 +12886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -13216,6 +13414,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
+--- !u!1001 &421616463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 6921926538278348072, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 4b12e12c-d668-4269-bbc9-940c1a4cfaef
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 112.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106969322, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Archer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+--- !u!4 &421616464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+  m_PrefabInstance: {fileID: 421616463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &428132422
 GameObject:
   m_ObjectHideFlags: 0
@@ -13391,15 +13655,15 @@ Transform:
   - {fileID: 981279813}
   - {fileID: 1852724403}
   - {fileID: 506079843}
-  - {fileID: 1134373289}
   - {fileID: 621759018}
   - {fileID: 339243474}
-  - {fileID: 601522678}
   - {fileID: 699211015}
-  - {fileID: 1472566412}
   - {fileID: 1876495990}
   - {fileID: 1862869543}
   - {fileID: 1052546805}
+  - {fileID: 1134373289}
+  - {fileID: 601522678}
+  - {fileID: 1472566412}
   m_Father: {fileID: 1711200106}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15002,7 +15266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -16392,7 +16656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_2
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -19019,7 +19283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -19119,7 +19383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20428,7 +20692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20472,7 +20736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_6
+      value: Kyr's Hand Lietenant
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -20520,7 +20784,7 @@ Transform:
   - {fileID: 1217284921}
   - {fileID: 199976185}
   m_Father: {fileID: 915496611}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &610640067
 PrefabInstance:
@@ -21789,7 +22053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21833,7 +22097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_4
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -23051,7 +23315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -24697,7 +24961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24741,7 +25005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_7
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -26277,7 +26541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -26339,7 +26603,7 @@ Transform:
   - {fileID: 1056654300}
   - {fileID: 1397334315}
   m_Father: {fileID: 915496611}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &910486662 stripped
 MonoBehaviour:
@@ -26443,10 +26707,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 72089183}
-  - {fileID: 1711200106}
-  - {fileID: 902321544}
   - {fileID: 606845387}
+  - {fileID: 1711200106}
   - {fileID: 1348191549}
+  - {fileID: 902321544}
   - {fileID: 70731665}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -27723,7 +27987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -29059,7 +29323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: patrolPath
@@ -30233,7 +30497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -31603,7 +31867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31647,7 +31911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_8 (1)
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -34264,7 +34528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34308,7 +34572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_3
+      value: Kyr's Hand Lietenant
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -34408,6 +34672,72 @@ Transform:
   m_Father: {fileID: 91062289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1189986207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 116.39576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.02947
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.18772
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 63a9e09c-c313-4e4f-b8f9-37c4813e8ee7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!4 &1189986208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 1189986207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1212499642
 GameObject:
   m_ObjectHideFlags: 0
@@ -34698,7 +35028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: uniqueIdentifier
@@ -35261,7 +35591,7 @@ Transform:
   m_Children:
   - {fileID: 1622526448}
   m_Father: {fileID: 915496611}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360999458 stripped
 GameObject:
@@ -35356,6 +35686,72 @@ Transform:
   m_Father: {fileID: 1711200106}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1375359615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 6921926538278348072, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: uniqueIdentifier
+      value: bdf7387a-721d-4c1d-ba4a-9c3b79b777a3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 97.31147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.139343
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.526844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410544114106969322, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Archer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+--- !u!4 &1375359616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
+  m_PrefabInstance: {fileID: 1375359615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1387269600
 GameObject:
   m_ObjectHideFlags: 0
@@ -36767,7 +37163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -37254,7 +37650,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4635330495910828453, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: startingLevel
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5560312348930300163, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -38350,7 +38746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalScale.x
@@ -38406,7 +38802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Tough Enemy_1
+      value: Kyr's Hand Captain
       objectReference: {fileID: 0}
     - target: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: aggroRange
@@ -41152,7 +41548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -42502,7 +42898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -43965,7 +44361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45304,7 +45700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -45604,7 +46000,7 @@ Transform:
   - {fileID: 1370374011}
   - {fileID: 439204148}
   m_Father: {fileID: 915496611}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1712687815
 GameObject:
@@ -46963,7 +47359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -48345,7 +48741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -50016,7 +50412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -51676,7 +52072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_1
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8299518277265614507, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: patrolPath
@@ -52896,7 +53292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52940,7 +53336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_10
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -53005,6 +53401,14 @@ Transform:
   - {fileID: 1580531768}
   - {fileID: 294851378}
   - {fileID: 1249279280}
+  - {fileID: 222941406}
+  - {fileID: 2099394281}
+  - {fileID: 1984136120}
+  - {fileID: 239619999}
+  - {fileID: 1189986208}
+  - {fileID: 421616464}
+  - {fileID: 338793565}
+  - {fileID: 1375359616}
   - {fileID: 572831251}
   - {fileID: 1642959527}
   - {fileID: 1951180866}
@@ -55289,7 +55693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55333,7 +55737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Enemy_9
+      value: Kyr's Hand Swordsman
       objectReference: {fileID: 0}
     - target: {fileID: 8503594938610721176, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: healthPts
@@ -56742,7 +57146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_Name
-      value: Kyr's Hand Swordsman
+      value: Kyr's Hand Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_IsActive
@@ -56894,7 +57298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7410544114106726940, guid: 89a8faa7056dd4740881c9909b182124, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57232,6 +57636,72 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.014, y: 0.23300001, z: -0.12100001}
   m_TimeToStationary: 0.5
+--- !u!1001 &1984136119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 96.59147
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 38.166843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 83a18468-6129-4337-a42b-1c00ea051191
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!4 &1984136120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 1984136119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1984765652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57495,6 +57965,10 @@ PrefabInstance:
       propertyPath: abilitiesToPreload.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 5c9d5a307da64c7469eb58ab05a35b4e, type: 2}
+    - target: {fileID: 665544451000025284, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: abilitiesToPreload.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d4a8c0d91ca0e341b9342ddde36f42b, type: 2}
     - target: {fileID: 1388203031239829147, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: traitUI
       value: 
@@ -59494,6 +59968,72 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.016, y: 0.216, z: -0.208}
   m_TimeToStationary: 0.5
+--- !u!1001 &2099394280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1864015038}
+    m_Modifications:
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 108.52489
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.029472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.799683
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183256493630693789, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: m_Name
+      value: Kyr's Hand Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595350186226559071, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: uniqueIdentifier
+      value: d4367fa3-dae0-4c95-81e6-87d6d64e3107
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+--- !u!4 &2099394281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+  m_PrefabInstance: {fileID: 2099394280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099736916
 GameObject:
   m_ObjectHideFlags: 0

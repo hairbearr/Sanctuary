@@ -11,6 +11,7 @@ namespace Sanctuary.Harry.Attributes
     {
         PlayerResources playerResources;
         [SerializeField] Image foreground = null;
+        [SerializeField] TMP_Text playerResourcesText = null;
 
         private void Awake()
         {
@@ -19,8 +20,7 @@ namespace Sanctuary.Harry.Attributes
 
         private void Update()
         {
-            //GetComponent<TMP_Text>().text = String.Format("{0:0}/{1:0}", playerResources.GetResources(), playerResources.GetMaxResources());
-
+            playerResourcesText.text = String.Format("{0:0}/{1:0}", playerResources.GetResources(), playerResources.GetMaxResources());
             foreground.fillAmount = playerResources.GetResources() / playerResources.GetMaxResources();
         }
     }

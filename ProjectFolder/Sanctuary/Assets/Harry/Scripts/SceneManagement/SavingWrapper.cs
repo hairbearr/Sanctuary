@@ -15,6 +15,14 @@ namespace Sanctuary.Harry.SceneManagement
         [SerializeField] int firstLevelBuildIndex = 1;
         [SerializeField] int menuLevelBuildIndex = 0;
 
+        [SerializeField] float autoSaveInterval = 30f;
+        public float timer = 0;
+
+        void Start()
+        {
+            InvokeRepeating("Save", 30f, 30f);
+        }
+
         public void ContinueGame()
         {
             if(!PlayerPrefs.HasKey(currentSaveKey)) return;
@@ -47,8 +55,6 @@ namespace Sanctuary.Harry.SceneManagement
             SetCurrentSave(saveFile);
             StartCoroutine(LoadFirstScene());
         }
-
-        
 
         private string GetCurrentSave()
         {
@@ -85,24 +91,6 @@ namespace Sanctuary.Harry.SceneManagement
 
             yield return GetComponent<SavingSystem>().LoadLastScene(GetCurrentSave());
             yield return fader.FadeIn(fadeInTime);
-        }
-
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                Load();
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                Save();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Delete))
-            {
-                Delete();
-            }
         }
 
         public void Save()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Oath of Protection Shield
   m_EditorClassIdentifier: 
   invulnerableEffect: 0
-  buffTimeOut: 60
-  damageToReduce: 25
+  buffTimeOut: 30
+  damageToReduce: 20
   damageShield: 1
   prefabToSpawn: {fileID: 2633644979474270961, guid: c79990eac1e3eb14d91982c1ff00949b, type: 3}

@@ -20,11 +20,11 @@ MonoBehaviour:
   stackable: 1
   price: 10
   category: 3
-  consumable: 1
+  consumable: 0
   targetingStrategy: {fileID: 11400000, guid: 83dbaf91278b9d94e838c965ccae5971, type: 2}
   filterStrategies: []
   effectStrategies:
   - {fileID: 11400000, guid: ff2137870d710674d9fdb59c66a538e6, type: 2}
   - {fileID: 11400000, guid: c60ad527518aaaa4e8450b266879a7df, type: 2}
-  cooldownTime: 2
+  cooldownTime: 30
   playerResourceCost: 0

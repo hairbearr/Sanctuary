@@ -9,6 +9,7 @@ namespace Sanctuary.Harry.Attributes
     {
         Health health;
         [SerializeField] Image foreground = null;
+        [SerializeField] TMP_Text healthText = null;
 
 
         private void Awake()
@@ -18,6 +19,7 @@ namespace Sanctuary.Harry.Attributes
 
         private void Update()
         {
+            healthText.text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
             foreground.fillAmount = health.GetHealthPoints() / health.GetMaxHealthPoints();
         }
     }
