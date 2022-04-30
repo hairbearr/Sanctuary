@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 5c3f6383-6fee-4bd4-a410-16cdae6f761f
   displayName: Basic Health Potion
-  description: 
+  description: Drink this potion to restore 80 health points.
   icon: {fileID: 21300000, guid: 4b6c41a97b9016842be04e2895a33408, type: 3}
   pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
   stackable: 1

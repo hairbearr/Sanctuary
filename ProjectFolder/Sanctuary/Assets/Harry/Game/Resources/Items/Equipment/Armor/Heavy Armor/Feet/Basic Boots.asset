@@ -10,24 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
-  m_Name: New Armor
+  m_Name: Basic Boots
   m_EditorClassIdentifier: 
-  itemID: 97aad375-d2e8-45f5-967a-a995a49b9768
-  displayName: Basic Cuirass of Health
-  description: '+ 2 Strength
-
-    + 20 Armor
-
-    + 25 Health'
-  icon: {fileID: 21300000, guid: 8af9f9b6ad21e0a469b3bcca035ac269, type: 3}
-  pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
+  itemID: 13f3a369-5d7a-498b-9d55-4ba96e8fa220
+  displayName: Basic Boots
+  description: +8 Armor
+  icon: {fileID: 21300000, guid: 14ad61c71c4b6324b80eb08419898a35, type: 3}
+  pickup: {fileID: 0}
   stackable: 0
-  price: 25
+  price: 0
   category: 1
-  allowedEquipLocation: 0
+  allowedEquipLocation: 4
   additiveModifiers:
   - stat: 14
-    value: 20
-  - stat: 0
-    value: 25
+    value: 8
   percentageModifiers: []

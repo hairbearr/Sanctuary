@@ -9,19 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20eb1792e8048a46bf5c7c520a3ea3b, type: 3}
-  m_Name: Basic Cuirass
+  m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
+  m_Name: Strong Cuirass of Health
   m_EditorClassIdentifier: 
-  itemID: deec5d1c-a381-467a-9791-009bb3195d37
-  displayName: Basic Cuirass
+  itemID: 97aad375-d2e8-45f5-967a-a995a49b9768
+  displayName: Strong Cuirass of Health
   description: '+ 2 Strength
 
-    + 25 Health
+    + 20 Armor
 
-    + 20 Armor'
+    + 25 Health'
   icon: {fileID: 21300000, guid: 8af9f9b6ad21e0a469b3bcca035ac269, type: 3}
-  pickup: {fileID: 0}
+  pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
   stackable: 0
-  price: 0
+  price: 25
   category: 1
   allowedEquipLocation: 0
+  additiveModifiers:
+  - stat: 14
+    value: 20
+  - stat: 0
+    value: 25
+  percentageModifiers: []
