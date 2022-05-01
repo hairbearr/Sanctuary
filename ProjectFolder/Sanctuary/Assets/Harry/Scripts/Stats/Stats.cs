@@ -5,7 +5,7 @@
         Health,
         XPReward,
         XPToLevelUp,
-        Damage,
+        Attack,
         Stamina,
         Intellect,
         Agility,

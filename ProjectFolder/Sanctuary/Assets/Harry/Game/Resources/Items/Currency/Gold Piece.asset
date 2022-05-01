@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b439e0d368e6bf499aae40363ba4b6a, type: 3}
+  m_Name: Gold Piece
+  m_EditorClassIdentifier: 
+  itemID: 922f8807-b5d2-49aa-bfb4-b9bd632cb717
+  displayName: Gold Piece
+  description: 
+  icon: {fileID: 21300000, guid: f27eddf08552af843a39cf1c2352a8ee, type: 3}
+  pickup: {fileID: 5218304201097905235, guid: a01e96b9de7f50740925b27be5820c17, type: 3}
+  stackable: 1
+  price: 1
+  category: 0

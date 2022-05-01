@@ -9,10 +9,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -20,7 +24,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5468759226038719645}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6245174745675301250}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -28,11 +40,23 @@ PrefabInstance:
       value: RandomDrop
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RandomDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Sanctuary.Harry.Inventories.RandomDropper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Sanctuary.Harry.Inventories.RandomDropper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1465015736953772233, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -310,6 +334,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dca72b8cbf4d894697b9ff88cddc8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6245174745675301250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8183256493630693789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1177968e121098c488bfebbbf8fe56b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 2
+  dropLibrary: {fileID: 11400000, guid: 9844f32e84e614f4c97cf41dbeb9161a, type: 2}
 --- !u!114 &8299518277265614507
 MonoBehaviour:
   m_ObjectHideFlags: 0

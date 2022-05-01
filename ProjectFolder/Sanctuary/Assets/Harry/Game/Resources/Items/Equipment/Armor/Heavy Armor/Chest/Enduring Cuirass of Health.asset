@@ -19,8 +19,8 @@ MonoBehaviour:
     +3 Stamina
 
     +25 Health'
-  icon: {fileID: 0}
-  pickup: {fileID: 0}
+  icon: {fileID: 21300000, guid: 8af9f9b6ad21e0a469b3bcca035ac269, type: 3}
+  pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
   stackable: 0
   price: 0
   category: 1

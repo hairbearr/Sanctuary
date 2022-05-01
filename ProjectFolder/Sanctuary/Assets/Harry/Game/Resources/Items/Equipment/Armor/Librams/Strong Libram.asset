@@ -18,10 +18,10 @@ MonoBehaviour:
 
     +3 Strength'
   icon: {fileID: 21300000, guid: 791b4c3387afda7449dbda8e3c28de39, type: 3}
-  pickup: {fileID: 0}
+  pickup: {fileID: 7000421216390038809, guid: f880a9869fe92624e9877d7094957ee1, type: 3}
   stackable: 0
   price: 0
-  category: 2
+  category: 1
   allowedEquipLocation: 8
   additiveModifiers:
   - stat: 3

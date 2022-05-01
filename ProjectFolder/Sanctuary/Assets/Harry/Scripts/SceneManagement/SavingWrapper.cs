@@ -20,7 +20,7 @@ namespace Sanctuary.Harry.SceneManagement
 
         void Start()
         {
-            InvokeRepeating("Save", 30f, 30f);
+            InvokeRepeating("Save", 30f, autoSaveInterval);
         }
 
         public void ContinueGame()

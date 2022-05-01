@@ -2,11 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Saving;
+using GameDevTV.Utils;
 using UnityEngine;
 
 namespace Sanctuary.Harry.Stats
 {
-    public class TraitStore : MonoBehaviour , IModifierProvider, ISaveable
+    public class TraitStore : MonoBehaviour , IModifierProvider, ISaveable, IPredicateEvaluator
     {
 
         [SerializeField] TraitBonus[] bonusConfig;
@@ -108,7 +109,7 @@ namespace Sanctuary.Harry.Stats
             return (int)GetComponent<BaseStats>().GetStat(Stat.TotalTraitPoints);
         }
 
-        public IEnumerable<float> GetAdditiveMods(Stat stat)
+        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
         {
             if(!additiveBonusCache.ContainsKey(stat)) yield break;
 
@@ -119,7 +120,7 @@ namespace Sanctuary.Harry.Stats
             }
         }
 
-        public IEnumerable<float> GetPercentageMods(Stat stat)
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
         {
             if(!percentageBonusCache.ContainsKey(stat)) yield break;
 
@@ -138,6 +139,18 @@ namespace Sanctuary.Harry.Stats
         public void RestoreState(object state)
         {
             assignedPoints = new Dictionary<Trait, int>((IDictionary<Trait, int>)state);
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            if(predicate == "MinimumTrait")
+            {
+                if(Enum.TryParse<Trait>(parameters[0], out Trait trait))
+                {
+                    return  GetPoints(trait) >= Int32.Parse(parameters[1]);
+                } 
+            }
+            return null;
         }
     }
 }

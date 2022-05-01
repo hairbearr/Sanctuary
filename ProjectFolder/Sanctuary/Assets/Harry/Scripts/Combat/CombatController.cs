@@ -152,7 +152,7 @@ namespace Sanctuary.Harry.Combat
         void Hit() //Animation Event
         {
             if (target == null) return;
-            float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            float damage = GetComponent<BaseStats>().GetStat(Stat.Attack);
 
             BaseStats targetBaseStats = target.GetComponent<BaseStats>();
 

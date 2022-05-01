@@ -12,13 +12,13 @@ namespace Sanctuary.Harry.Inventories
         [SerializeField] Modifier[] additiveModifiers;
         [SerializeField] Modifier[] percentageModifiers;
 
-        [System.Serializable] struct Modifier
+        [System.Serializable] public struct Modifier
         {
             public Stat stat;
             public float value;
         }
 
-        public IEnumerable<float> GetAdditiveMods(Stat stat)
+        public virtual IEnumerable<float> GetAdditiveModifiers(Stat stat)
         {
             foreach(var modifier in additiveModifiers)
             {
@@ -29,7 +29,7 @@ namespace Sanctuary.Harry.Inventories
             }
         }
 
-        public IEnumerable<float> GetPercentageMods(Stat stat)
+        public virtual IEnumerable<float> GetPercentageModifiers(Stat stat)
         {
             foreach (var modifier in percentageModifiers)
             {

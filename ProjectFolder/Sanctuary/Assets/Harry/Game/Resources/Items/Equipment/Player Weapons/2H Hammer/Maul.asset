@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a6f1170dac2a3945ac5234559cca7c9, type: 3}
-  m_Name: Basic Maul
+  m_Name: Maul
   m_EditorClassIdentifier: 
   itemID: 6db5130c-43bb-4825-aad0-4e90d3ad6c4e
   displayName: Maul
@@ -23,17 +23,13 @@ MonoBehaviour:
   price: 20
   category: 2
   allowedEquipLocation: 7
-  wepRange: 2
-  atkSpd: 1.5
-  dmg: 8
+  additiveModifiers: []
+  percentageModifiers: []
+  weaponRange: 1.2
+  attackSpeed: 1.5
+  damage: 8
   percentageBonus: 0
   animatorOverride: {fileID: 22100000, guid: d69a82482baa7094084ca51992f234d2, type: 2}
   equippedPrefab: {fileID: 1856128108455295943, guid: 26b3f3d25a87efc42a96e33782b8a8fd, type: 3}
   isRightHanded: 1
   projectile: {fileID: 0}
-  additiveModifiers:
-  - stat: 15
-    value: 1.5
-  - stat: 3
-    value: 8
-  percentageModifiers: []

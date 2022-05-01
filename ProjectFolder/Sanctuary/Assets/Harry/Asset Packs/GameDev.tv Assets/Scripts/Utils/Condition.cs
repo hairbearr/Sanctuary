@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Sanctuary.Harry.Core
+namespace GameDevTV.Utils
 {
     [System.Serializable]
     public class Condition

@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4417844ce4278440a80c74bc10e69de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  number: 1
+  item: {fileID: 11400000, guid: f2ed8e562728b394d811f59f8daa383c, type: 2}
+  number: 100
 --- !u!114 &2085779588078937116
 MonoBehaviour:
   m_ObjectHideFlags: 0

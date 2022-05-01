@@ -136,7 +136,7 @@ namespace Sanctuary.Harry.Stats
 
             foreach (IModifierProvider provider in GetComponents<IModifierProvider>())
             {
-                foreach (float modifier in provider.GetAdditiveMods(stat))
+                foreach (float modifier in provider.GetAdditiveModifiers(stat))
                 {
                     total += modifier;
                 }
@@ -152,7 +152,7 @@ namespace Sanctuary.Harry.Stats
 
             foreach (IModifierProvider provider in GetComponents<IModifierProvider>())
             {
-                foreach (float modifier in provider.GetPercentageMods(stat))
+                foreach (float modifier in provider.GetPercentageModifiers(stat))
                 {
                     total += modifier;
                 }

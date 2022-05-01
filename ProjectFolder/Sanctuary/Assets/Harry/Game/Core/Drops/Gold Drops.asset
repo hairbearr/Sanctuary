@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cea0f1565e7e241abbea4f3f6a455d, type: 3}
+  m_Name: Gold Drops
+  m_EditorClassIdentifier: 
+  potentialDrops:
+  - item: {fileID: 11400000, guid: f2ed8e562728b394d811f59f8daa383c, type: 2}
+    relativeChance:
+    - 8
+    minNumber: 100000001300000016000000
+    maxNumber: 14000000170000001a000000
+  dropChancePercentage:
+  - 100
+  minDrops: 01000000
+  maxDrops: 01000000

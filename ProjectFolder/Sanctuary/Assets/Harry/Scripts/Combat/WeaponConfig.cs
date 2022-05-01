@@ -5,24 +5,18 @@ using UnityEngine;
 using GameDevTV.Inventories;
 using Sanctuary.Harry.Stats;
 using System.Collections.Generic;
+using Sanctuary.Harry.Inventories;
 
 namespace Sanctuary.Harry.Combat
 {
     [CreateAssetMenu(fileName = "New Weapon", menuName = "Sanctuary/Weapons/Make New Weapon", order = 0)]
-    public class WeaponConfig : EquipableItem, IModifierProvider
+    public class WeaponConfig : StatsEquipableItem
     {
-        [SerializeField] float wepRange = 0, atkSpd = 0, dmg = 0, percentageBonus = 0;
+        [SerializeField] float weaponRange = 0, attackSpeed = 0, damage = 0, percentageBonus = 0;
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] Weapons equippedPrefab = null;
         [SerializeField] bool isRightHanded = true;
         [SerializeField] Projectile projectile = null;
-        [SerializeField] Modifier[] additiveModifiers, percentageModifiers;
-
-        [System.Serializable] struct Modifier
-        {
-            public Stat stat;
-            public float value;
-        }
 
         const string weaponName = "Weapon";
 
@@ -67,7 +61,7 @@ namespace Sanctuary.Harry.Combat
 
         public float GetWeaponRange()
         {
-            return wepRange;
+            return weaponRange;
         }
 
         public float GetPercentageBonus()
@@ -77,12 +71,12 @@ namespace Sanctuary.Harry.Combat
 
         public float GetWeaponDamage()
         {
-            return dmg;
+            return damage;
         }
 
         public float GetAttackSpeed()
         {
-            return ((float)Stat.AttackSpeed);
+            return attackSpeed;
         }
 
         public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDmg)
@@ -101,25 +95,31 @@ namespace Sanctuary.Harry.Combat
             Destroy(previousWeapon.gameObject);
         }
 
-        public IEnumerable<float> GetAdditiveMods(Stat stat)
+        public override IEnumerable<float> GetAdditiveModifiers(Stat stat)
         {
-            foreach(var modifier in additiveModifiers)
+            foreach (float mod in base.GetAdditiveModifiers(stat))
             {
-                if(modifier.stat == stat)
-                {
-                    yield return modifier.value;
-                }
+                yield return mod;
+            }
+            if(stat == Stat.Attack)
+            {
+                yield return damage;
+            }
+            if(stat == Stat.AttackSpeed)
+            {
+                yield return attackSpeed;
             }
         }
 
-        public IEnumerable<float> GetPercentageMods(Stat stat)
+        public override IEnumerable<float> GetPercentageModifiers(Stat stat)
         {
-            foreach (var modifier in percentageModifiers)
+            foreach (float mod in base.GetPercentageModifiers(stat))
             {
-                if (modifier.stat == stat)
-                {
-                    yield return modifier.value;
-                }
+                yield return mod;
+            }
+            if(stat == Stat.Attack)
+            {
+                yield return percentageBonus;
             }
         }
     }

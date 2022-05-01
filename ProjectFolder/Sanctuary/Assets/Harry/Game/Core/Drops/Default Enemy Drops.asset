@@ -13,19 +13,357 @@ MonoBehaviour:
   m_Name: Default Enemy Drops
   m_EditorClassIdentifier: 
   potentialDrops:
-  - item: {fileID: 11400000, guid: ee8ebe684aeb0df4f8d37e5fa7840eff, type: 2}
+  - item: {fileID: 11400000, guid: d48029d8b2fddd14eb62798f7ff8b36a, type: 2}
     relativeChance:
-    - 10
-    minNumber: 0100000002000000
-    maxNumber: 0200000005000000
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 4960f1a7cdf0daf43b068497bf4d761c, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: b54a1bd2cf82d5c4c865f3a87f0e38cb, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: b36d5fcbaa6ee3d47be3749cc8e10e87, type: 2}
+    relativeChance:
+    - 20
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 522690fc4e99deb438f8fb28b373d3fc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 65ad6a9cb2df5964eb7963210aca12c5, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: b1cea22eda51f824586ef99b5387d3fd, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: fbbb83af019e277479986c7ab553316c, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: e80b683675da9214b971ed2d5efb6dd6, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 9e7d6d5e1b0297e46abb7a1730cd036e, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 5913c1be54ac76546a1e0c372432bec8, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 017c53bf0f7ce74439127dec7d21ff9a, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: dc39619edc77cfd49a35b6dd6d98a5f1, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 282ee4fbfa72b7342bfaae5b4af1159b, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 0e4bfe01c3328dc43b86b90b3d417377, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 546264b0d4ebf6f42b5b3d58707bc701, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 93356ca53a1428c4f873e3c80dc333b6, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: c86cb71eb4e965c4bae7be5087886d9a, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 20c45d9ad2d13674880c76bd3ac3297a, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: bf84ac353f4920b46b1456ed09db3cb3, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 49eee5880c1ff4340b134af79fb4a563, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: d06d6d2f915cec347acb480183bfd482, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 40e85f1da3e9a1248b65670be3deacc2, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 1de78ca73e6e5f3448f94b8f07d028a2, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 791ef4a005ac7fd429808846e36a5f1b, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: e2847787ca6c38544b4370963418fb9b, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 56fa17a04c380b24aaaf937633ad59d4, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: ced641624e235bb4b95f28e7c46b9978, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: aaf1b22c43cbbc54bab726c5ff8e2fce, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: edc987086a05a3542adec225d01349a9, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 79159deb85cf01b4ba6107344800743e, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: c33bf7b14af72de41bd7007d42d4df27, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 0569ed639aad9534d9216ea4b1e64acd, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: a7579243b6df74e4ab08b4c99579caf9, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: ecf7ac44b7bcec345ada5f84fb4cb82f, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 036c89282f39c564aaefe62fbeab868d, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 5d852dca03fc6994a95959bba4da87f0, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 974b6375ea26e9342a0dae7bc4d96303, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 95b5ec09bd31de746b10be3b69796823, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: dd18da7bd9f0c7b4d97aafa41c536611, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: bfe30f7abdf68854c800cb7fa543c2ba, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: efb2cf2ff77b71c499e11b6aa59dbd8f, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 47574ee6778088643baad280ecc3dde9, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: a4276d56fb9afd04e8cc2100215545b9, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 1635237bfdcf3f84c9e843b54ce387d6, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: e5bf0d6a4caf5f846beca457f31b6a1c, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: e5bf0d6a4caf5f846beca457f31b6a1c, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 656730271305e564bbe2462c9c817337, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 969a087a4a0030b4b988f8909a29a9e7, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 993dbb4d8efa62148bc764e6b9524011, type: 2}
+    relativeChance:
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 559136fa451ac73418f08e5c41df953d, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: ce350a92a2ac8f441942dd790f05817a, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 9f34cd606eeb9e44798429fe422863aa, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: d67f8553e175e124f954c7dff6c850ff, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 09937856bc9eff142a9d2ebfd1730fa4, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da5a0b8decb4a764f8c390d3e34202dc, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
   - item: {fileID: 11400000, guid: c2a555d11c06fbb4fb903d393c62aef4, type: 2}
     relativeChance:
-    - 1
-    - 10
-    minNumber: 0100000002000000
-    maxNumber: 0200000003000000
+    - 5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: da487388bfaee4f4e876cc6f9c76fb48, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 39abdda696b9bd94ea86917155241c80, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 723fd6f6caa26c54e86944938180d75c, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 19fe8ea7a7e67e64b8bfb2fc79756c32, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 30cde9e26956eee4b9e5ba0bc9f70b70, type: 2}
+    relativeChance:
+    - 2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: f834e7c6ebea4a24497b0bf7313dda47, type: 2}
+    relativeChance:
+    - 3
+    minNumber: 01000000
+    maxNumber: 01000000
   dropChancePercentage:
-  - 50
   - 90
-  minDrops: 0100000003000000
-  maxDrops: 0300000005000000
+  minDrops: 00000000
+  maxDrops: 03000000

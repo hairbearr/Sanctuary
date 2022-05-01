@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Saving;
@@ -28,6 +29,19 @@ namespace Sanctuary.Harry.Attributes
         public float GetResources()
         {
             return playerResources.value;
+        }
+
+        public void Degenerate(float v)
+        {
+            if(playerResources.value<=0){ return; }
+            playerResources.value -= v;
+        }
+
+        public void Regenerate(float playerResourceChange)
+        {
+            
+            playerResources.value += playerResourceChange;
+            if(playerResources.value > GetMaxResources()){playerResources.value = GetMaxResources();}
         }
 
         public float GetMaxResources()
