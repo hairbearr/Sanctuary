@@ -10,16 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
-  m_Name: Strong Boots
+  m_Name: Enduring Helmet of Health
   m_EditorClassIdentifier: 
-  itemID: 822c7c7f-4ac5-4864-b5e0-88f3eabce4f9
-  displayName: 
-  description: 
-  icon: {fileID: 0}
+  itemID: e5ac83b4-0f23-4138-a218-b7ea9f34ef32
+  displayName: Enduring Helmet of Health
+  description: '+10 Armor
+
+    +2 Stamina
+
+    +20 Health'
+  icon: {fileID: 21300000, guid: 6df1a5b9ce36a3a4f8db3a68af7ce30b, type: 3}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
-  category: 0
-  allowedEquipLocation: 7
-  additiveModifiers: []
+  category: 1
+  allowedEquipLocation: 0
+  additiveModifiers:
+  - stat: 14
+    value: 10
+  - stat: 4
+    value: 2
+  - stat: 0
+    value: 20
   percentageModifiers: []

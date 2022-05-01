@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Strong Cuirass
   m_EditorClassIdentifier: 
   itemID: d2ccd5b6-92a8-4ddf-8fd0-e8e4c884e511
-  displayName: 
-  description: 
+  displayName: Strong Cuirass
+  description: '+15 Armor
+
+    +3 Strength'
   icon: {fileID: 0}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
-  category: 0
-  allowedEquipLocation: 7
-  additiveModifiers: []
+  category: 1
+  allowedEquipLocation: 2
+  additiveModifiers:
+  - stat: 14
+    value: 15
+  - stat: 7
+    value: 2
   percentageModifiers: []

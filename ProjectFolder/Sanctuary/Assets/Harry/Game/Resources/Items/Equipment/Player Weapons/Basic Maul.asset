@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Basic Maul
   m_EditorClassIdentifier: 
   itemID: 6db5130c-43bb-4825-aad0-4e90d3ad6c4e
-  displayName: Basic Maul
-  description: 'Attack Speed: 1.5
+  displayName: Maul
+  description: '1.5 Attack Speed
 
-    Damage: 12'
+    +8 Damage'
   icon: {fileID: 21300000, guid: 3efbdb0430a39f249812c3257d82114b, type: 3}
   pickup: {fileID: 3319648146472737115, guid: 2efadf4eea9449d45aecbc5df4b788be, type: 3}
   stackable: 0
@@ -31,3 +31,9 @@ MonoBehaviour:
   equippedPrefab: {fileID: 1856128108455295943, guid: 26b3f3d25a87efc42a96e33782b8a8fd, type: 3}
   isRightHanded: 1
   projectile: {fileID: 0}
+  additiveModifiers:
+  - stat: 15
+    value: 1.5
+  - stat: 3
+    value: 8
+  percentageModifiers: []

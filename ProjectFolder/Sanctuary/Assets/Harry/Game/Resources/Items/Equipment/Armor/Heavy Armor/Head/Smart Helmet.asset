@@ -10,18 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
-  m_Name: Basic Boots
+  m_Name: Smart Helmet
   m_EditorClassIdentifier: 
-  itemID: 13f3a369-5d7a-498b-9d55-4ba96e8fa220
-  displayName: Basic Boots
-  description: +8 Armor
-  icon: {fileID: 21300000, guid: 14ad61c71c4b6324b80eb08419898a35, type: 3}
+  itemID: d7ac005f-db3f-40fe-a9c4-ed1de7f9b2ec
+  displayName: Smart Helmet
+  description: '+10 Armor
+
+    +2 Intellect'
+  icon: {fileID: 21300000, guid: 6df1a5b9ce36a3a4f8db3a68af7ce30b, type: 3}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
   category: 1
-  allowedEquipLocation: 4
+  allowedEquipLocation: 0
   additiveModifiers:
   - stat: 14
-    value: 8
+    value: 10
+  - stat: 5
+    value: 2
   percentageModifiers: []

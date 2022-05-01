@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Smart Cuirass
   m_EditorClassIdentifier: 
   itemID: 5d7f167a-d583-456a-818b-22e3e812dee2
-  displayName: 
-  description: 
+  displayName: Smart Cuirass
+  description: '+15 Armor
+
+    +3 Intellect'
   icon: {fileID: 0}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
-  category: 0
-  allowedEquipLocation: 7
-  additiveModifiers: []
+  category: 1
+  allowedEquipLocation: 2
+  additiveModifiers:
+  - stat: 14
+    value: 15
+  - stat: 5
+    value: 3
   percentageModifiers: []

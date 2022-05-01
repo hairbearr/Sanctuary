@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Enduring Cuirass
   m_EditorClassIdentifier: 
   itemID: a0545954-5d34-48c8-9bfe-2fea73e13fca
-  displayName: 
-  description: 
+  displayName: Enduring Cuirass
+  description: '+15 Armor
+
+    + 3 Stamina'
   icon: {fileID: 0}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
-  category: 0
-  allowedEquipLocation: 7
-  additiveModifiers: []
+  category: 1
+  allowedEquipLocation: 2
+  additiveModifiers:
+  - stat: 4
+    value: 3
+  - stat: 14
+    value: 15
   percentageModifiers: []

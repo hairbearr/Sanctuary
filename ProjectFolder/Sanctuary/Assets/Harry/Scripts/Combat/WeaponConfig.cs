@@ -16,6 +16,13 @@ namespace Sanctuary.Harry.Combat
         [SerializeField] Weapons equippedPrefab = null;
         [SerializeField] bool isRightHanded = true;
         [SerializeField] Projectile projectile = null;
+        [SerializeField] Modifier[] additiveModifiers, percentageModifiers;
+
+        [System.Serializable] struct Modifier
+        {
+            public Stat stat;
+            public float value;
+        }
 
         const string weaponName = "Weapon";
 
@@ -75,7 +82,7 @@ namespace Sanctuary.Harry.Combat
 
         public float GetAttackSpeed()
         {
-            return atkSpd;
+            return ((float)Stat.AttackSpeed);
         }
 
         public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDmg)
@@ -96,17 +103,23 @@ namespace Sanctuary.Harry.Combat
 
         public IEnumerable<float> GetAdditiveMods(Stat stat)
         {
-            if (stat == Stat.Damage)
+            foreach(var modifier in additiveModifiers)
             {
-                yield return dmg;
+                if(modifier.stat == stat)
+                {
+                    yield return modifier.value;
+                }
             }
         }
 
         public IEnumerable<float> GetPercentageMods(Stat stat)
         {
-            if (stat == Stat.Damage)
+            foreach (var modifier in percentageModifiers)
             {
-                yield return percentageBonus;
+                if (modifier.stat == stat)
+                {
+                    yield return modifier.value;
+                }
             }
         }
     }

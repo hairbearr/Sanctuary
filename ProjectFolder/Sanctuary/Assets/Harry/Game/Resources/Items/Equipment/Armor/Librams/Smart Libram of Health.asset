@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
+  m_Name: Smart Libram of Health
+  m_EditorClassIdentifier: 
+  itemID: 1b696477-b498-4787-b964-77b3679fd0c3
+  displayName: Smart Libram of Health
+  description: '+2 Damage
+
+    +3 Intellect
+
+    +5 Health'
+  icon: {fileID: 21300000, guid: 791b4c3387afda7449dbda8e3c28de39, type: 3}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 1
+  allowedEquipLocation: 8
+  additiveModifiers:
+  - stat: 3
+    value: 2
+  - stat: 5
+    value: 3
+  - stat: 0
+    value: 5
+  percentageModifiers: []

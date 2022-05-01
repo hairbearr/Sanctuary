@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
+  m_Name: Smart Greaves
+  m_EditorClassIdentifier: 
+  itemID: f3c0c1ab-6760-4106-96f7-29acca9cedc6
+  displayName: Smart Greaves
+  description: '+15 Armor
+
+    +3 Intellect'
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 1
+  allowedEquipLocation: 3
+  additiveModifiers:
+  - stat: 14
+    value: 15
+  - stat: 5
+    value: 3
+  percentageModifiers: []

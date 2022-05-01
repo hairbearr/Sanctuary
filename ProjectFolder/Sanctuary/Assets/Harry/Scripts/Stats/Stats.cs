@@ -16,7 +16,8 @@
         TotalTraitPoints,
         BuyingDiscountPercentage,
         AttackSpeedPercentage,
-        Defence
+        Defence,
+        AttackSpeed
     }
     
 }

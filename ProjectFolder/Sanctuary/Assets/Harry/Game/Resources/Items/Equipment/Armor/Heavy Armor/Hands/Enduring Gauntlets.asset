@@ -10,16 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
-  m_Name: Strong Boots of Health
+  m_Name: Enduring Gauntlets
   m_EditorClassIdentifier: 
-  itemID: 6f9cbea1-f767-4382-bf88-fc84589a7507
-  displayName: 
-  description: 
-  icon: {fileID: 0}
+  itemID: 305c9270-a190-4bc5-b15b-ebf9cedf3572
+  displayName: Enduring Gauntlets
+  description: '+5 Armor
+
+    +1 Stamina'
+  icon: {fileID: 21300000, guid: 63ca4500ae2f6784686d588948f6a448, type: 3}
   pickup: {fileID: 0}
   stackable: 0
   price: 0
-  category: 0
-  allowedEquipLocation: 7
-  additiveModifiers: []
+  category: 1
+  allowedEquipLocation: 5
+  additiveModifiers:
+  - stat: 14
+    value: 5
+  - stat: 4
+    value: 1
   percentageModifiers: []
