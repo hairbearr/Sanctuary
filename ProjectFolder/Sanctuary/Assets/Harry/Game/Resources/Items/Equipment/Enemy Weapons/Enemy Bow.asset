@@ -21,9 +21,13 @@ MonoBehaviour:
   price: 0
   category: 2
   allowedEquipLocation: 7
-  wepRange: 12
-  atkSpd: 1.2
-  dmg: 8
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
+  weaponRange: 12
+  attackSpeed: 1.2
+  damage: 8
   percentageBonus: 0
   animatorOverride: {fileID: 22100000, guid: 19c454b247bc32c41bcb9b1bec7fcdea, type: 2}
   equippedPrefab: {fileID: 5200966411988371136, guid: f9751cb651cb6bb40af55cb21bc0e9d5, type: 3}

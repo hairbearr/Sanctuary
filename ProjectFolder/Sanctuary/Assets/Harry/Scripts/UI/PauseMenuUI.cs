@@ -9,12 +9,12 @@ namespace Sanctuary.Harry.UI
     public class PauseMenuUI : MonoBehaviour
     {
         PlayerController playerController;
+        [SerializeField] float playSpeed = 1f;
 
         private void Awake()
         {
             playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         }
-
 
         private void OnEnable()
         {
@@ -25,7 +25,8 @@ namespace Sanctuary.Harry.UI
 
         private void OnDisable()
         {
-            Time.timeScale = 1;
+            if(playerController == null) return;
+            Time.timeScale = playSpeed;
             playerController.SetEnable(true);
         }
 

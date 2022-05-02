@@ -7,6 +7,8 @@
         Player_Elementalist,
         Grunt,
         Mage,
-        Archer
+        Archer,
+        Lieutenant,
+        Boss
     }
 }
