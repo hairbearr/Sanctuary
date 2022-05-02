@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Enemy Bow
       objectReference: {fileID: 0}
+    - target: {fileID: 7971340431959951402, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
+      propertyPath: currentWeaponConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 08f4ea8cee210864a8bc352efa68c769, type: 2}
     - target: {fileID: 8183256493630453611, guid: 7a10ebdf2ad729e4fac5cb3bb560bbe7, type: 3}
       propertyPath: m_RootOrder
       value: 0

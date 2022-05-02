@@ -16,7 +16,7 @@ namespace Sanctuary.Harry.Combat
     {
         [SerializeField] Transform rightHandTrans = null, leftHandTrans = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
-        [SerializeField] float maxSpeedBoostPercentage = 80f, autoAttackRange = 4f;
+        [SerializeField] float maxSpeedBoostPercentage = 80f, autoAttackRange = 4f, armorStatScaling = 0.5f;
 
         Health target;
         Equipment equipment;
@@ -158,8 +158,8 @@ namespace Sanctuary.Harry.Combat
 
             if(targetBaseStats != null)
             {
-                float defence = targetBaseStats.GetStat(Stat.Armor);
-                damage /= 1 + defence / damage;
+                float armor = targetBaseStats.GetStat(Stat.Armor);
+                damage = damage / (1 + (armorStatScaling * armor)/ damage);
             }
 
             target.SetInCombat(true);

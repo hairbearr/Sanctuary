@@ -103,6 +103,10 @@ PrefabInstance:
       propertyPath: characterClass
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5544921126373478300, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: weapon
       value: 
@@ -139,6 +143,10 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Enemy Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: currentWeaponConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: cf556abd0a54bfa45a7f47a6bc3b64c2, type: 2}
     - target: {fileID: 8837560479840974753, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: health
       value: 20

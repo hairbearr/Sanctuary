@@ -60033,6 +60033,10 @@ PrefabInstance:
       propertyPath: m_Value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4433794005729933076, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: armorStatScaling
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4519603317174340837, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
