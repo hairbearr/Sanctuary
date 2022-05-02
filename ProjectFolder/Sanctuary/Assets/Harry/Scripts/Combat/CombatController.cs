@@ -158,7 +158,7 @@ namespace Sanctuary.Harry.Combat
 
             if(targetBaseStats != null)
             {
-                float defence = targetBaseStats.GetStat(Stat.Defence);
+                float defence = targetBaseStats.GetStat(Stat.Armor);
                 damage /= 1 + defence / damage;
             }
 
