@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900511a7d8dba55408fd4f42d16267f2, type: 3}
+  m_Name: Investigating the Camps
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: ObjectiveOne
+    description: Retrieve the Orders from Captain Lotharyn
+  - reference: ObjectiveTwo
+    description: Retrieve the Orders from Lieutenant Storvald
+  - reference: ObjectiveThree
+    description: Find the Location That the Travelers are Being Taken
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 30cde9e26956eee4b9e5ba0bc9f70b70, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: 65ad6a9cb2df5964eb7963210aca12c5, type: 2}

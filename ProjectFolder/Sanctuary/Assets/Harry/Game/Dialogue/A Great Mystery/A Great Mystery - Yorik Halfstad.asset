@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8442026735727327872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: c602fc81-ff71-4a32-ae98-3765ed04b5f6
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: My time isn't cheap.
+  children:
+  - f1f9c443-e243-4133-8780-4d590d591a12
+  rect:
+    serializedVersion: 2
+    x: 210
+    y: 199
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6314371258549770055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: a8e4dda8-343f-473b-bd47-8fd0f4166ea8
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: 800 plus meals and equipment. I require a down payment as well. Half. Up
+    front.
+  children:
+  - e634cc4d-6bdd-4cf7-bbe1-757ac56097b3
+  rect:
+    serializedVersion: 2
+    x: 1112
+    y: 255
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3387762722405186401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: e86ab936-e5ea-47ed-91d5-110310ac3994
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: What's the problem?
+  children:
+  - f1f9c443-e243-4133-8780-4d590d591a12
+  rect:
+    serializedVersion: 2
+    x: 211
+    y: 325
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-886866352003871264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: bc0022f1-2415-4591-a441-2dadc9369cdd
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: "I\u2019ll give you 800."
+  children:
+  - a8e4dda8-343f-473b-bd47-8fd0f4166ea8
+  rect:
+    serializedVersion: 2
+    x: 862
+    y: 255
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea4ddaec30ffb54ba323f82520f4a0d, type: 3}
+  m_Name: A Great Mystery - Yorik Halfstad
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 651290950716929057}
+  - {fileID: -8442026735727327872}
+  - {fileID: -3387762722405186401}
+  - {fileID: 731067049709427502}
+  - {fileID: 7701032888038800266}
+  - {fileID: -886866352003871264}
+  - {fileID: -6314371258549770055}
+  - {fileID: 2192275626738357975}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &651290950716929057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: cee7a191-01c2-4254-93f3-98b5a27fc562
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Thank you for meeting with me.
+  children:
+  - c602fc81-ff71-4a32-ae98-3765ed04b5f6
+  - e86ab936-e5ea-47ed-91d5-110310ac3994
+  rect:
+    serializedVersion: 2
+    x: -10
+    y: 257
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - A Great Mystery
+        negate: 1
+--- !u!114 &731067049709427502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: f1f9c443-e243-4133-8780-4d590d591a12
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: I'll make this quick. Recently, there have been an uptick in disappearances
+    along a back road from the Capital to the Teran-Fjorn Highway. There's a bypass
+    that skirts the Wolfwood. These disappearances are frequent, but for some reason
+    I cannot convince the mayor to send the guard to investigate. So, I have to rely
+    on adventurers like you. I will pay handsomely, of course.
+  children:
+  - 37703ff2-f2a8-4423-a976-9c69d1419444
+  rect:
+    serializedVersion: 2
+    x: 424
+    y: 255
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2192275626738357975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: e634cc4d-6bdd-4cf7-bbe1-757ac56097b3
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Deal. Meet my man, Thaeryn, by the bar in the morning. He'll set you up with
+    your gold and some equipment. You'll get the rest upon completion.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1362
+    y: 255
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &7701032888038800266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 37703ff2-f2a8-4423-a976-9c69d1419444
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: I'm not cheap. It'll cost you 1,000.
+  children:
+  - bc0022f1-2415-4591-a441-2dadc9369cdd
+  rect:
+    serializedVersion: 2
+    x: 644
+    y: 255
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

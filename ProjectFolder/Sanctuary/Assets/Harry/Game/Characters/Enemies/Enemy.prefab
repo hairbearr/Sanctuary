@@ -20,13 +20,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
-      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: -5468759226038719645}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
-      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 6245174745675301250}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1554811206770170392}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -36,12 +40,20 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: RandomDrop
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: RandomDrop
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Sanctuary.Harry.Inventories.RandomDropper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -49,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: Sanctuary.Harry.Inventories.RandomDropper, Assembly-CSharp
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -87,6 +99,14 @@ PrefabInstance:
       propertyPath: dropLibrary.Array.data[4]
       value: 
       objectReference: {fileID: 11400000, guid: c2a555d11c06fbb4fb903d393c62aef4, type: 2}
+    - target: {fileID: 1816156170848898081, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: Priority
+      value: 252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816156170848898081, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 459d7963da0f4894cbac56ce705915ae, type: 3}
     - target: {fileID: 2411921713614695063, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -281,6 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d04f9abdf02729f468416295549249c1, type: 3}
+--- !u!82 &1554811206770170392 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1816156170848898081, guid: d04f9abdf02729f468416295549249c1, type: 3}
+  m_PrefabInstance: {fileID: 911843565229839929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5840189981717528813 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}

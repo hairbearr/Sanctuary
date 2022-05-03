@@ -100,10 +100,6 @@ PrefabInstance:
       value: LeftFoot
       objectReference: {fileID: 0}
     - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
-      propertyPath: cursorMappings.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714899561610339745, guid: 2b335124d41de904e88c1b375d244d52, type: 3}
       propertyPath: cursorMappings.Array.data[1].type
       value: 1
       objectReference: {fileID: 0}

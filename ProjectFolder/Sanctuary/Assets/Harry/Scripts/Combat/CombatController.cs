@@ -193,6 +193,7 @@ namespace Sanctuary.Harry.Combat
 
         private bool GetIsInRange(Transform targetTransform)
         {
+            if(targetTransform==null){return false;}
             return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.GetWeaponRange();
         }
 

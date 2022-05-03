@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8804519075891596478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: e95db441-991b-4aed-be6a-e7b8583438f0
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: ...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1284
+    y: 411
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 1b599710-d105-4035-b594-ce4dd4a8a0da
+        negate: 1
+--- !u!114 &-6716651817818355391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 4cdab17f-c6db-48f4-868c-686d75e25fa6
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: No. You're bleeding a lot.
+  children:
+  - 4545e926-9e3a-4a35-b6d5-233366328263
+  rect:
+    serializedVersion: 2
+    x: 491
+    y: 137
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5458425564493166701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: b0a5e462-43c4-45b6-ac69-c44d89fd1d2d
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: It's getting pretty dark out. And cold...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1527
+    y: 195
+    width: 200
+    height: 100
+  onEnterAction: CompleteObjectiveThree
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &-2945369464243799529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: f21ba25b-434c-454d-b033-c73394056e3b
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: ...
+  children:
+  - 27cd413d-693e-461b-9244-5a86e922599e
+  rect:
+    serializedVersion: 2
+    x: 8
+    y: 136
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea4ddaec30ffb54ba323f82520f4a0d, type: 3}
+  m_Name: A Great Mystery - The Captain, The Lieutenant, & The Merchant
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 7510891147950232015}
+  - {fileID: -6716651817818355391}
+  - {fileID: 6952384560839037116}
+  - {fileID: 2665082368873834667}
+  - {fileID: 7711366113503901544}
+  - {fileID: 7199185629147676097}
+  - {fileID: 2434018277771101571}
+  - {fileID: -8804519075891596478}
+  - {fileID: -2945369464243799529}
+  - {fileID: -5458425564493166701}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2434018277771101571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 6d423eb5-5698-40af-a8ad-cd9df9512957
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: Hey! This says they're taking the "packages" up north!
+  children:
+  - c4033da4-5545-490e-bfb9-e391d2d51fef
+  - e95db441-991b-4aed-be6a-e7b8583438f0
+  rect:
+    serializedVersion: 2
+    x: 946
+    y: 230
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: CompleteObjectiveOne
+  condition:
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 0f6f5e15-5a77-4040-b22d-1c53c6a8afaa
+        negate: 0
+--- !u!114 &2665082368873834667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: b520a9ff-6ecb-4eae-bd6f-d08bd1f8cfb6
+  m_EditorClassIdentifier: 
+  currentSpeaker: 0
+  text: This letter says the bandits and their clients are meeting at "the mine."
+    Do you know where it's at?
+  children:
+  - 1e59076c-611a-4c05-b570-bf6f7190bacb
+  - c4033da4-5545-490e-bfb9-e391d2d51fef
+  rect:
+    serializedVersion: 2
+    x: 938
+    y: 51
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: CompleteObjectiveOne
+  condition:
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 1b599710-d105-4035-b594-ce4dd4a8a0da
+        negate: 0
+--- !u!114 &6952384560839037116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 4545e926-9e3a-4a35-b6d5-233366328263
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Yeah, I don't think I'll make it...
+  children:
+  - b520a9ff-6ecb-4eae-bd6f-d08bd1f8cfb6
+  - 6d423eb5-5698-40af-a8ad-cd9df9512957
+  rect:
+    serializedVersion: 2
+    x: 708
+    y: 135
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7199185629147676097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: c4033da4-5545-490e-bfb9-e391d2d51fef
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: The Old Pael Mine? That's up north...
+  children:
+  - b0a5e462-43c4-45b6-ac69-c44d89fd1d2d
+  rect:
+    serializedVersion: 2
+    x: 1277
+    y: 195
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: CompleteObjectiveTwo
+  condition:
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 1b599710-d105-4035-b594-ce4dd4a8a0da
+        negate: 0
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 0f6f5e15-5a77-4040-b22d-1c53c6a8afaa
+        negate: 0
+--- !u!114 &7510891147950232015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 27cd413d-693e-461b-9244-5a86e922599e
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Ah. You're not one of the Kyr's Hand, are ya?
+  children:
+  - 4cdab17f-c6db-48f4-868c-686d75e25fa6
+  rect:
+    serializedVersion: 2
+    x: 268
+    y: 136
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Investigating The Camps
+        negate: 1
+--- !u!114 &7711366113503901544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 1e59076c-611a-4c05-b570-bf6f7190bacb
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: ...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1263
+    y: -2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasItem
+        parameters:
+        - 0f6f5e15-5a77-4040-b22d-1c53c6a8afaa
+        negate: 1

@@ -15,6 +15,7 @@ TagManager:
   - HUD
   - InventoryCanvas
   - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX

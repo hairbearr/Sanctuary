@@ -18,10 +18,6 @@ namespace Sanctuary.Harry.SceneManagement
         [SerializeField] float autoSaveInterval = 30f;
         public float timer = 0;
 
-        void Start()
-        {
-            InvokeRepeating("Save", 30f, autoSaveInterval);
-        }
 
         public void ContinueGame()
         {
@@ -111,6 +107,11 @@ namespace Sanctuary.Harry.SceneManagement
         public IEnumerable<string> ListSaves()
         {
             return GetComponent<SavingSystem>().ListSaves();
+        }
+
+        public void AutoSave()
+        {
+            InvokeRepeating("Save", 1f, autoSaveInterval);
         }
     }
 }

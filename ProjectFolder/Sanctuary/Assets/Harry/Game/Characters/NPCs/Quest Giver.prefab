@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7008229917425543173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09920597
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.798
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572338859, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943189532572589149, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_Name
+      value: Quest Giver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030997595020858783, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 6e2c3779-25d8-4d9d-85e5-910ac9410d66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534843535421470551, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512985111354902656, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124157343046295755, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+--- !u!1 &8914210734860481624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1943189532572589149, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+  m_PrefabInstance: {fileID: 7008229917425543173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &475454576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914210734860481624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390459af5676e7a4ba4956bccad647d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversantName: Yorik Halfstad
+  dialogue: {fileID: 11400000, guid: 9d3790cd9c4f7c440af83a78bf66ddca, type: 2}
+--- !u!114 &475454577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914210734860481624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e29b39b7c709ea42b371e23113ba438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 5d0b9278cd2f1674cb8360364c2a42ad, type: 2}
+--- !u!114 &475454592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914210734860481624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475454577}
+        m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

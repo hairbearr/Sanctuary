@@ -56,7 +56,7 @@ namespace Sanctuary.Harry.Control
 
         private void Update()
         {
-            if (health.IsDead()) return;
+            if (health.IsDead()) {return;}
             HandleStates();
             UpdateTimers();
         }

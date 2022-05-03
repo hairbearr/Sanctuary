@@ -8,7 +8,7 @@ namespace Sanctuary.Harry.UI.Quests
     public class QuestListUI : MonoBehaviour
     {
         [SerializeField] QuestItemUI questPrefab;
-        QuestList questList;
+        [SerializeField] QuestList questList;
 
 
         // Start is called before the first frame update

@@ -7,6 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2280806830670867400, guid: b96320f1c3c296640b32da8cd8b3f6eb, type: 3}
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 176593469671569430, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3406358012408442868, guid: c4a8fc57598696047a829266e9d61aba, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

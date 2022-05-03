@@ -10,7 +10,7 @@ namespace Sanctuary.Harry.Quests
 {
     public class QuestList : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
-        List<QuestStatus> statuses = new List<QuestStatus>();
+        [SerializeField] List<QuestStatus> statuses = new List<QuestStatus>();
 
         public event Action onUpdate;
 
@@ -21,7 +21,6 @@ namespace Sanctuary.Harry.Quests
             QuestStatus newStatus = new QuestStatus(quest);
             statuses.Add(newStatus);
             if (onUpdate != null) { onUpdate(); }
-            
         }
 
         public bool HasQuest(Quest quest)
@@ -41,8 +40,6 @@ namespace Sanctuary.Harry.Quests
             if (status.IsComplete()) { GiveReward(quest); }
             if (onUpdate != null) { onUpdate(); }
         }
-
-        
 
         private QuestStatus GetQuestStatus(Quest quest)
         {
@@ -126,6 +123,8 @@ namespace Sanctuary.Harry.Quests
             {
                 statuses.Add(new QuestStatus(objectState));
             }
+
+            onUpdate?.Invoke();
         }
 
         public bool? Evaluate(string predicate, string[] parameters)

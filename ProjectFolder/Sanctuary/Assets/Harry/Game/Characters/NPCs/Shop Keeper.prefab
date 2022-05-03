@@ -60,30 +60,15 @@ PrefabInstance:
       value: Shop Keeper
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6038142255403573401, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
-    - {fileID: 7837797875638430418, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
-    - {fileID: 7977547795400424640, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
-    - {fileID: 430303885124810218, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
 --- !u!1 &8335756702010429315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1943189532572589149, guid: dd888f8365f05e74a9ca549551861bea, type: 3}
   m_PrefabInstance: {fileID: 7591122955775955934}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &1558161888699724474
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8335756702010429315}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5325254
-  m_Height: 2.1784897
-  m_Direction: 1
-  m_Center: {x: 0.0005636215, y: 0.8236296, z: -0.004945874}
 --- !u!114 &2146553680414392037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,3 +82,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopName: 
+  sellingPercentage: 80
+  maximumDiscount: 80
+  stockConfig: []
