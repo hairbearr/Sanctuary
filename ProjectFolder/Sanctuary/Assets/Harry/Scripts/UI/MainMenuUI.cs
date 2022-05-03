@@ -6,6 +6,7 @@ using Sanctuary.Harry.SceneManagement;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Sanctuary.Harry.UI
 {
@@ -63,6 +64,11 @@ namespace Sanctuary.Harry.UI
         public void FeedbackForm()
         {
             Application.OpenURL("https://forms.gle/ZzqYc7vN3nLgFZmYA");
+        }
+
+        public void ReturnToMainMenu()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
