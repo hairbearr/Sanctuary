@@ -121,7 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2012917585700316199}
   m_HandleRect: {fileID: 224153372062608982}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.5000002
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -593,7 +593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00048828125, y: -300.00095}
+  m_AnchoredPosition: {x: -0.00048828125, y: -300.00098}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4131155162176750999
@@ -6433,7 +6433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194762497213476471, guid: 1877fc9c4620795408239ec7796a1445, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5236397207783333966, guid: 1877fc9c4620795408239ec7796a1445, type: 3}
       propertyPath: m_Pivot.x
@@ -10630,6 +10630,18 @@ PrefabInstance:
     - target: {fileID: 2458397118944447048, guid: ea26a6348034d3748957297f3d89dcd6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882095082521123844, guid: ea26a6348034d3748957297f3d89dcd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7941731761043049917}
+    - target: {fileID: 2882095082521123844, guid: ea26a6348034d3748957297f3d89dcd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882095082521123844, guid: ea26a6348034d3748957297f3d89dcd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameDevTV.UI.ShowHideUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3187130096542535154, guid: ea26a6348034d3748957297f3d89dcd6, type: 3}
       propertyPath: m_AnchorMax.y

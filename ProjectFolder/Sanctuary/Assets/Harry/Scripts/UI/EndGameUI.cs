@@ -12,6 +12,13 @@ namespace Sanctuary.Harry.UI
 {
     public class EndGameUI : MonoBehaviour
     {
+
+        void Start()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+            fader.FadeIn(0.5f);
+        }
+
         public void QuitGame()
         {
             #if UNITY_EDITOR

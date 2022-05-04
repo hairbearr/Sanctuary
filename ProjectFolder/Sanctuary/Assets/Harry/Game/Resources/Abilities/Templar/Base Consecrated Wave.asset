@@ -24,11 +24,11 @@ MonoBehaviour:
   category: 0
   consumable: 0
   targetingStrategy: {fileID: 11400000, guid: 723e7540b770a124082f2869aaa54825, type: 2}
-  filterStrategies: []
+  filterStrategies:
+  - {fileID: 11400000, guid: 93c2e381f359f2f44963a03399fb0f4e, type: 2}
   effectStrategies:
-  - {fileID: 11400000, guid: f6feb6c454f13e747bc303971d3c2e5d, type: 2}
-  - {fileID: 11400000, guid: b8ce532287fa92e428eb1e7d3a60c4ca, type: 2}
   - {fileID: 11400000, guid: 0d5d72f55dc36be40adb2bd19912009f, type: 2}
-  - {fileID: 11400000, guid: fbb7f51647777af45a77da5684cd0f22, type: 2}
+  - {fileID: 11400000, guid: b8ce532287fa92e428eb1e7d3a60c4ca, type: 2}
+  - {fileID: 11400000, guid: f6feb6c454f13e747bc303971d3c2e5d, type: 2}
   cooldownTime: 20
   playerResourceCost: 30

@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c466ae2656033654a9e5611f07a695ef, type: 3}
-  m_Name: Consecrated Wave Swipe Delay
+  m_Name: Consecrated Wave Delay
   m_EditorClassIdentifier: 
   delay: 0.62
   delayedEffects:
   - {fileID: 11400000, guid: 8b8e34d84cf9bf74aa8072f31f66fd71, type: 2}
+  - {fileID: 11400000, guid: fbb7f51647777af45a77da5684cd0f22, type: 2}
   abortIfCancelled: 0

@@ -140,6 +140,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (85)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -328,6 +336,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -674,8 +690,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (128)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -744,6 +768,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (93)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -808,6 +840,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1185,6 +1225,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (125)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1400,6 +1448,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (62)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1531,6 +1587,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2209,6 +2273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Stool_06 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1109089713984714, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4103293987507708, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -2463,8 +2531,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (131)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2667,6 +2743,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (34)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -2862,8 +2946,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (121)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3112,6 +3204,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (67)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3181,6 +3281,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3697,6 +3805,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (59)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3761,6 +3877,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4136,6 +4260,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5054,6 +5186,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6113,6 +6253,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (105)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -6177,6 +6325,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6322,8 +6478,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (102)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6871,6 +7035,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7575,6 +7747,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -7706,6 +7886,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (116)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7912,6 +8100,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8267,6 +8463,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8844,6 +9048,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (25)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -9009,6 +9221,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9183,6 +9403,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9425,6 +9653,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9702,8 +9938,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (120)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9891,6 +10135,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10563,6 +10815,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (51)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -11127,8 +11387,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (99)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12103,6 +12371,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (90)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -12893,6 +13169,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (30)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -12984,6 +13268,10 @@ PrefabInstance:
     - target: {fileID: 968658246189729555, guid: 4454d0c620417a749956e04855f823db, type: 3}
       propertyPath: m_Name
       value: Portal to Wolfwood
+      objectReference: {fileID: 0}
+    - target: {fileID: 968658246189729555, guid: 4454d0c620417a749956e04855f823db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1291728593678263370, guid: 4454d0c620417a749956e04855f823db, type: 3}
       propertyPath: m_RootOrder
@@ -13083,6 +13371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4454d0c620417a749956e04855f823db, type: 3}
+--- !u!1 &540912527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 968658246189729555, guid: 4454d0c620417a749956e04855f823db, type: 3}
+  m_PrefabInstance: {fileID: 540912526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &545794481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13291,8 +13584,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (110)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13495,6 +13796,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (49)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -13559,6 +13868,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14162,6 +14479,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (24)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -14294,6 +14619,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (70)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -14358,6 +14691,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14572,7 +14913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1109089713984714, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4103293987507708, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
       propertyPath: m_RootOrder
@@ -15442,6 +15783,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (96)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -15807,6 +16156,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (43)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -16093,6 +16450,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16546,6 +16911,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17043,6 +17416,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (82)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -17189,6 +17570,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17710,6 +18099,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (60)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -18108,6 +18505,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18755,6 +19160,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19558,6 +19971,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (16)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -19632,6 +20053,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19755,6 +20184,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20272,8 +20709,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (106)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20405,6 +20850,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20585,6 +21038,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20957,8 +21418,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (117)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21025,6 +21494,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21117,6 +21594,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22381,6 +22866,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (84)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -22604,6 +23097,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22831,7 +23332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1109089713984714, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4103293987507708, guid: e4d999f7c222a8d48bd6066291f42fe8, type: 3}
       propertyPath: m_RootOrder
@@ -23183,6 +23684,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (134)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23986,6 +24495,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25275,6 +25792,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (114)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -25403,6 +25928,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (58)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -25524,6 +26057,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25709,6 +26250,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25972,8 +26521,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (119)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26097,6 +26654,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26480,6 +27045,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (23)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -26807,6 +27380,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (79)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -27084,6 +27665,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (68)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -27205,6 +27794,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27674,8 +28271,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (113)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27866,6 +28471,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28186,6 +28799,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28514,6 +29135,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29211,8 +29840,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (123)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29873,6 +30510,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (94)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -29939,6 +30584,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (41)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -30003,6 +30656,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30280,8 +30941,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (108)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30474,8 +31143,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (130)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30599,6 +31276,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31331,8 +32016,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (122)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31748,8 +32441,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (129)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32060,6 +32761,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32846,6 +33555,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (65)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -33066,6 +33783,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (21)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -33259,6 +33984,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33733,8 +34466,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (111)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34190,6 +34931,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (53)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -34341,6 +35090,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34564,6 +35321,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (13)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -34687,8 +35452,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (100)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34757,6 +35530,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (46)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -34821,6 +35602,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35045,8 +35834,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (107)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35367,6 +36164,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -35571,6 +36376,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36013,6 +36826,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (136)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36532,6 +37353,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (91)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -36598,8 +37427,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (118)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36930,6 +37767,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (89)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -37135,8 +37980,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (126)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37404,23 +38257,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1612767614}
+      objectReference: {fileID: 540912527}
     - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Sanctuary.Harry.Quests.QuestGiver, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475454592, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 144489098263697967, guid: e6dcf2a45f41e47469a80dde6097d2ad, type: 3}
       propertyPath: m_Controller
@@ -37869,6 +38734,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (86)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -37933,6 +38806,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38056,6 +38937,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38680,6 +39569,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (83)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -38744,6 +39641,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38815,6 +39720,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39002,8 +39915,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (112)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39070,6 +39991,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39491,6 +40420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1693090108208069405, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2146553680414392037, guid: 8f068c85a69792a49816ab7d2aca032b, type: 3}
       propertyPath: stockConfig.Array.size
       value: 1
@@ -39563,6 +40496,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39824,6 +40765,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40495,8 +41444,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (115)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40756,6 +41713,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (22)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -40960,6 +41925,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41320,6 +42293,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41896,6 +42877,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42856,6 +43845,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -43188,6 +44185,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44170,6 +45175,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (135)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -44607,6 +45620,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -44916,8 +45937,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (109)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44984,6 +46013,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45233,8 +46270,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (104)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46567,12 +47612,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4309782852203907953, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: cursorMappings.Array.data[6].type
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4309782852203907953, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: cursorMappings.Array.data[6].texture
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2800000, guid: 3c91d4a027422ac4a8f2152a853d036a, type: 3}
     - target: {fileID: 4317609093399787837, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -47757,6 +48802,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (26)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -47880,8 +48933,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (124)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -48131,8 +49192,16 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (101)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -49385,6 +50454,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -49752,6 +50829,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -50019,6 +51104,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (133)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -50083,6 +51176,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50216,6 +51317,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50419,6 +51528,14 @@ PrefabInstance:
       value: SM_Bld_House_Floor_Wood_07 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -50553,6 +51670,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50938,6 +52063,14 @@ PrefabInstance:
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_Name
       value: SM_Bld_House_Floor_Wood_07 (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 1041287014644602, guid: ee22c9d751ac69942a53a2660a6a5602, type: 3}
       propertyPath: m_StaticEditorFlags

@@ -27,13 +27,15 @@ MonoBehaviour:
   price: 0
   category: 2
   allowedEquipLocation: 7
+  equipCondition:
+    and: []
   additiveModifiers:
   - stat: 5
     value: 3
   - stat: 0
     value: 5
   percentageModifiers: []
-  weaponRange: 1.2
+  weaponRange: 1.5
   attackSpeed: 1.5
   damage: 8
   percentageBonus: 0

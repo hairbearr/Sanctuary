@@ -29,7 +29,7 @@ MonoBehaviour:
   - stat: 3
     value: 8
   percentageModifiers: []
-  weaponRange: 1.2
+  weaponRange: 1.5
   attackSpeed: 1.5
   damage: 0
   percentageBonus: 0

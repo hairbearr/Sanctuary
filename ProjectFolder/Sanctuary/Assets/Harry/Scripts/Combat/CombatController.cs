@@ -112,6 +112,8 @@ namespace Sanctuary.Harry.Combat
             float bestDistance = Mathf.Infinity;
             foreach (var candidate in FindAllTargetsInRange())
             {
+                if(candidate.CompareTag("NPC")) return null;
+
                 float candidateDistance = Vector3.Distance(transform.position, candidate.transform.position);
                 if(candidateDistance<bestDistance)
                 {

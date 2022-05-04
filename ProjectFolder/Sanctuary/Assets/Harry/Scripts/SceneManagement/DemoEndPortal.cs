@@ -14,9 +14,7 @@ namespace Sanctuary.Harry.SceneManagement
         {
             Fader fader = FindObjectOfType<Fader>();
             yield return fader.FadeOut(fadeTime);
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1);
-            yield return new WaitForSeconds(0.5f);
-            fader.FadeIn(fadeTime);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
 
         private void OnTriggerEnter(Collider other)
