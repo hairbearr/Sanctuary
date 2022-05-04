@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectives:
   - reference: ObjectiveOne
-    description: Retrieve the Orders from Captain Lotharyn
-  - reference: ObjectiveTwo
-    description: Retrieve the Orders from Lieutenant Storvald
-  - reference: ObjectiveThree
-    description: Find the Location That the Travelers are Being Taken
+    description: Retrieve the Orders from Captain Lotharyn & Lieutenant Storvald,
+      and then find someone who can tell you the location of the bandit's main camp.
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: 30cde9e26956eee4b9e5ba0bc9f70b70, type: 2}

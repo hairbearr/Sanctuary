@@ -31,6 +31,11 @@ MonoBehaviour:
         parameters:
         - A Great Mystery
         negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - A Great Mystery
+        negate: 1
 --- !u!114 &-5033766134530348727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,14 +51,40 @@ MonoBehaviour:
   currentSpeaker: 0
   text: ' A trail leads north. I should follow it, maybe I can learn something from
     the bandit leaders.'
-  children: []
+  children:
+  - 4af507be-b493-416e-8dfe-0d2fdb4d6ad2
   rect:
     serializedVersion: 2
-    x: 281
+    x: 280
     y: 158
     width: 200
     height: 100
-  onEnterAction: CompleteObjective
+  onEnterAction: 
+  onExitAction: CompleteObjective
+  condition:
+    and: []
+--- !u!114 &-4613996778283579244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adfc62c8c4f5d947826be6c4a9ee3e9, type: 3}
+  m_Name: 4af507be-b493-416e-8dfe-0d2fdb4d6ad2
+  m_EditorClassIdentifier: 
+  currentSpeaker: 1
+  text: Be prepared for more bandit attacks
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 531
+    y: 158
+    width: 200
+    height: 100
+  onEnterAction: 
   onExitAction: GiveQuest
   condition:
     and: []
@@ -72,4 +103,5 @@ MonoBehaviour:
   nodes:
   - {fileID: -7222063677980419029}
   - {fileID: -5033766134530348727}
+  - {fileID: -4613996778283579244}
   newNodeOffset: {x: 250, y: 0}

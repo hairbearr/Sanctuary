@@ -15,10 +15,10 @@ namespace Sanctuary.Harry.Stats
 
         private void Update()
         {
-            if(Input.GetKey(KeyCode.E))
-            {
-                GainXP(Time.deltaTime * 1000);
-            }
+            // if(Input.GetKey(KeyCode.E))
+            // {
+            //     GainXP(Time.deltaTime * 1000);
+            // }
         }
 
         public float GetXP()

@@ -20,7 +20,7 @@ MonoBehaviour:
   stackable: 1
   price: 20
   category: 3
-  consumable: 0
+  consumable: 1
   targetingStrategy: {fileID: 11400000, guid: 83dbaf91278b9d94e838c965ccae5971, type: 2}
   filterStrategies: []
   effectStrategies:

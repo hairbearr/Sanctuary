@@ -25,7 +25,7 @@ namespace Sanctuary.Harry.Dialogue
             }
             
             Health health = GetComponent<Health>();
-            if (health.IsDead() && health.IsDead()) return false;
+            if (health && health.IsDead()) return false;
 
             if (Input.GetMouseButtonDown(0))
             {

@@ -2747,6 +2747,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2473882210058266924, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036418748830234453, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417698462184422206, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877451207719947272, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
@@ -2760,6 +2772,10 @@ PrefabInstance:
     - target: {fileID: 9005722894168878737, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005722894168878737, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9022751334206812372, guid: d04f9abdf02729f468416295549249c1, type: 3}
       propertyPath: m_Enabled
@@ -2817,8 +2833,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Character
       objectReference: {fileID: 0}
+    - target: {fileID: 9022751334214154148, guid: d04f9abdf02729f468416295549249c1, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 7077520097311366675, guid: d04f9abdf02729f468416295549249c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d04f9abdf02729f468416295549249c1, type: 3}
 --- !u!4 &1943189532572338859 stripped
 Transform:

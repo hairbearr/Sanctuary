@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Investigating The Camp Quest Drop - Lotharyn
   m_EditorClassIdentifier: 
   potentialDrops:
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 705cb9079f8246243ad4b81a585afec9, type: 2}
     relativeChance:
-    - 1
+    - 100
     minNumber: 01000000
     maxNumber: 01000000
   dropChancePercentage:

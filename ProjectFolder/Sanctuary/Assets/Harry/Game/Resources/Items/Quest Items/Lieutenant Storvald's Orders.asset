@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8358f0fcfcb22418d7b5d788e02cc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 94cd4c250edf93a469162d2065b30af7, type: 3}
   m_Name: Lieutenant Storvald's Orders
   m_EditorClassIdentifier: 
   itemID: 1b599710-d105-4035-b594-ce4dd4a8a0da
@@ -28,5 +28,9 @@ MonoBehaviour:
   pickup: {fileID: 6476291491811154122, guid: 26b21c33e1cc517438c56743a459cb8f, type: 3}
   stackable: 0
   price: 0
-  category: 4
-  consumable: 0
+  category: 0
+  allowedEquipLocation: 10
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
