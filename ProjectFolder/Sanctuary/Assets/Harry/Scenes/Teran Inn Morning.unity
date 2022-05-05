@@ -47366,6 +47366,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2816381737111582320, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: toggleKey
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 2827412110872586082, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

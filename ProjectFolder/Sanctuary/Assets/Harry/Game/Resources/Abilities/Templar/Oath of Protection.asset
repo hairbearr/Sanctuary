@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 77f8299b-5bee-4265-80e1-874ae26ab577
   displayName: Oath of Protection
-  description: Shroud yourself in a holy shield, protecting you for X damage
+  description: Shroud yourself in a holy shield, protecting you for 20 damage
   icon: {fileID: 21300000, guid: 68bac698991dc654684837bb063360c0, type: 3}
   pickup: {fileID: 0}
   stackable: 0
@@ -26,5 +26,5 @@ MonoBehaviour:
   effectStrategies:
   - {fileID: 11400000, guid: 9ad9c8fab2259f144879aa714aaf48d2, type: 2}
   - {fileID: 11400000, guid: a1e4abefe929c03448c37ee0ccc6cb70, type: 2}
-  cooldownTime: 15
+  cooldownTime: 30
   playerResourceCost: 20

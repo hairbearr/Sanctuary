@@ -14137,6 +14137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
+--- !u!1 &413599863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1622550599822136, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
+  m_PrefabInstance: {fileID: 413599862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &421616463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24472,6 +24477,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4302701718009248, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
   m_PrefabInstance: {fileID: 413599862}
   m_PrefabAsset: {fileID: 0}
+--- !u!208 &638602883
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413599863}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2370001, y: 0.86500007, z: 0.081}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.344, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &641230195
 GameObject:
   m_ObjectHideFlags: 0
@@ -24672,6 +24693,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947f5ae0cb6cd9944ba9a66c0667d6be, type: 3}
+--- !u!1 &648257674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1091078321722050, guid: 947f5ae0cb6cd9944ba9a66c0667d6be, type: 3}
+  m_PrefabInstance: {fileID: 648257673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &648257675
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648257674}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3210001, y: 0.522, z: 0.065000005}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -1.2870001, y: 0.591, z: -0.006}
+  m_TimeToStationary: 0.5
 --- !u!1001 &661268848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41543,7 +41585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: CompleteObjectiveOne
+  action: CompleteObjective
   onTrigger:
     m_PersistentCalls:
       m_Calls:
@@ -41586,90 +41628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 9f2b7e34d6d9f7344ab5dc32e3cd8278, type: 2}
---- !u!114 &1502076770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502076751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7631d1a40dd944a9424f158614e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 1bc69161ec9443c4286201a1cf510663, type: 2}
-  objective: ObjectiveThree
---- !u!114 &1502076771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502076751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: CompleteObjectiveThree
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1502076770}
-        m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestCompletion, Assembly-CSharp
-        m_MethodName: CompleteObjective
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1502076772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502076751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7631d1a40dd944a9424f158614e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 1bc69161ec9443c4286201a1cf510663, type: 2}
-  objective: ObjectiveTwo
---- !u!114 &1502076773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502076751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a364672f7a83d45a3be5839acd56a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: CompleteObjectiveTwo
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1502076772}
-        m_TargetAssemblyTypeName: Sanctuary.Harry.Quests.QuestCompletion, Assembly-CSharp
-        m_MethodName: CompleteObjective
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1502076774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50525,6 +50483,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
+--- !u!1 &1756098374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1622550599822136, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
+  m_PrefabInstance: {fileID: 1756098373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760618646
 GameObject:
   m_ObjectHideFlags: 0
@@ -57735,6 +57698,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4302701718009248, guid: af957494f2660234dbed32e5a68bb73a, type: 3}
   m_PrefabInstance: {fileID: 1756098373}
   m_PrefabAsset: {fileID: 0}
+--- !u!208 &1907145394
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756098374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2370001, y: 0.86500007, z: 0.081}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.344, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1907247826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61137,6 +61116,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3641520311546868992, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3989337271312372176, guid: da24c816fefb06746b03087536602bde, type: 2}
     - target: {fileID: 3673257415452522559, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -56.399902
@@ -63113,6 +63096,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8437089906259487144, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3989337271312372176, guid: da24c816fefb06746b03087536602bde, type: 2}
     - target: {fileID: 8455989167853385540, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 5
@@ -63145,6 +63132,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685553458886617014, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3989337271312372176, guid: da24c816fefb06746b03087536602bde, type: 2}
     - target: {fileID: 8701637798359589858, guid: 5f185e8f91b961945b45a5fa179ccc24, type: 3}
       propertyPath: audioMixer
       value: 

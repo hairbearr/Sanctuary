@@ -73,6 +73,11 @@ MonoBehaviour:
         parameters:
         - Getting Started
         negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Getting Started
+        negate: 1
 --- !u!114 &1987935622247803824
 MonoBehaviour:
   m_ObjectHideFlags: 0
