@@ -73,7 +73,7 @@ namespace Sanctuary.Harry.Combat
 
         public void TargetNewTargetInRange()
         {
-            //target = null;
+            target = null;
             target = FindNewTargetInRange();
             if(target == null) return;
         }
